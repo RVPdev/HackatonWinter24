@@ -2,19 +2,19 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
- exports.up = function(knex) {
-    return knex.schema.createTable("healthMetrics",(table)=>{
-        table.increments("user_id").primary();
+exports.up = function(knex) {
+    return knex.schema.createTable("health_metrics", (table)=>{
+        table.increments("person_id").primary();
         table.string("gender");
         table.integer("age");
         table.string("occupation");
-        table.integer("sleep_duration");
+        table.decimal("sleep_duration");
         table.integer("quality_of_sleep");
-        table.integer("physical_activity_level");
+        table.integer("physical_activity");
         table.integer("stress_level");
-        table.timestamps(true, true);
-    })
-  
+        table.integer("daily_steps");
+        table.timestamps(true,true);
+    }); 
 };
 
 /**
@@ -22,6 +22,6 @@
  * @returns { Promise<void> }
  */
 exports.down = function(knex) {
-  return knex.schema.dropTable("healthMetrics")
+  return knex.schema.dropTable("health_metrics");
 };
 
