@@ -5,6 +5,7 @@ import Employees from "./Employees";
 import Admin from "./Admin";
 import NotFound from "./Page_not_found";
 import Home from "./Home";
+import Register from "./Register/Register";
 
 function Main() {
 
@@ -14,7 +15,8 @@ function Main() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/admin" element={<Admin />} />
-        <Route path="/employees" element={<Employees />} />
+        <Route path="/register/*" element={<Register />} />
+        <Route path="/employees/*" element={<Employees />} />
         <Route path="/employees/:employeeId" element={<Employee />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

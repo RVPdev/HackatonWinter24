@@ -7,6 +7,7 @@ html, body {
   height: 100%;
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +28,7 @@ body {
 header {
   background-color: lightblue;
   padding: 10px 10px;
+  z-index: 1;
 }
 
 main {
@@ -73,6 +75,10 @@ form {
   width: 50%;
 }
 
+.form-left-aligned {
+  align-items: start;
+}
+
 .form-input {
   display: flex;
   flex-direction: column;
@@ -81,13 +87,24 @@ form {
   border: none;
 }
 
+.formgroup-horizontal {
+  display: flex;
+  gap: 10px
+}
+
 input[type=text] {
   background-color: var(--input-bg);
   padding: 10px 10px;
   border: none;
 }
 
-button {
+.input-couple {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.submit-form-button {
   width: 100%;
   padding: 10px 0px;
   border: none;

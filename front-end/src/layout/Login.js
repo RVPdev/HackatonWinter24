@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Login() {
 
     function submitLogin(e){
@@ -18,7 +20,7 @@ function Login() {
                     <input required type="text" name="password" placeholder="Enter your password" />
                 </div>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a href="#">Create an account</a>
+                <Link to="/register">Create an account</Link>
                 <button type="submit">LOG IN</button>
         </form>
     </div>
