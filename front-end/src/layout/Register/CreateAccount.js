@@ -1,8 +1,28 @@
+import { useNavigate } from "react-router-dom";
+
 function CreateAccount() {
+
+  const navigate = useNavigate()
+
+  function handleCreateSubmit(e){
+    e.preventDefault();    
+    navigate("/register/activities")
+  }
+
   return (
     <div className="page">
       <h1>Create an account</h1>
-      <form>
+      <form onSubmit={handleCreateSubmit}>
+        <div className="radiogroup-wrapper">
+          <div className="formgroup-horizontal">
+            <input type="radio" name="employee" id="employee"/>
+            <label htmlFor="employee">Employee</label>
+          </div>
+          <div className="formgroup-horizontal">
+            <input type="radio" name="employee" id="admin"/>
+            <label htmlFor="admin">Admin</label>
+          </div>
+        </div>
         <div className="form-input">
           <label htmlFor="email">Email</label>
           <input
@@ -70,7 +90,7 @@ function CreateAccount() {
               <input
                 required
                 type="text"
-                name="last-name"
+                name="company"
                 placeholder="Enter your company"
               />
             </div>

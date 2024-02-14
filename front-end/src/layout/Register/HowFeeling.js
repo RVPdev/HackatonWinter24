@@ -1,10 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function HowFeeling() {
+
+    const navigate = useNavigate()
+
+    function handleFeelingSubmit(e){
+      e.preventDefault();    
+      navigate("/")
+    }
+
   return (
     <div className="page">
         <h1>How are you feeling?</h1>
-        <form>
+        <form onSubmit={handleFeelingSubmit}>
         <div className="form-input">
           <label htmlFor="email">Email</label>
           <input

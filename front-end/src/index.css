@@ -92,6 +92,13 @@ form {
   gap: 10px
 }
 
+.radiogroup-wrapper {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  width: 100%;
+}
+
 input[type=text] {
   background-color: var(--input-bg);
   padding: 10px 10px;
