@@ -3,8 +3,9 @@
   --input-bg: #D9D9D9;
 }
 
-html, body {
-  height: 100%;
+html{
+  /* makes the font size 10px */
+  font-size: 62.5%;
 }
 
 
@@ -103,6 +104,7 @@ input[type=text] {
   background-color: var(--input-bg);
   padding: 10px 10px;
   border: none;
+  box-sizing: border-box;
 }
 
 .input-couple {
