@@ -16,8 +16,8 @@ function Main() {
         <Route path="/login" element={<Login />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/register/*" element={<Register />} />
-        <Route path="/employees/*" element={<Employees />} />
         <Route path="/employees/:employeeId" element={<Employee />} />
+        <Route path="/employees/*" element={<Employees />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </main>

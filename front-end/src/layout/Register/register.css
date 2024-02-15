@@ -22,15 +22,10 @@
   
   body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
-  /* header {
-    background-color: lightblue;
-    padding: 10px 10px;
-    z-index: 1;
-  } */
-  
+
   main {
     flex-grow: 1;
     padding: 0px 0px;
@@ -125,8 +120,52 @@
     color: red
   }
 
+
+  .employee-page-wrapper {
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .employee-column-1 {
+    flex-basis: 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .emoji-wrapper {
+    display: flex;
+    gap: 5px;
+  }
+
+  .emoji {
+    width: 40px;
+  }
+
+
  @media all and (min-width: 768px) {
     .input-couple {
         flex-direction: row ;
     }
+
+    .employee-page-wrapper {
+        padding: 40px 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+      }
+
+      .employee-column-1 {
+        flex-basis: 1;
+        gap: 20px;
+      }
+    
  }
+
+.header {
+    position: sticky;
+}
+
