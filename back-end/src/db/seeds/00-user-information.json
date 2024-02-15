@@ -1,0 +1,22 @@
+[
+  {
+    "user_id":1,
+    "user_first_name":"Jane",
+    "user_last_name":"Doe",
+    "user_username":"guest",
+    "user_password":"guest",
+    "user_email":"janedoe@gmail.com",
+    "created_at": "2020-12-10T08:30:32.326Z",
+    "updated_at": "2020-12-10T08:30:32.326Z"
+  },
+  {
+    "user_id":2,
+    "user_first_name":"John",
+    "user_last_name":"Doe",
+    "user_username":"admin",
+    "user_password":"admin",
+    "user_email":"johndoe@gmail.com",
+    "created_at": "2020-12-10T08:30:32.326Z",
+    "updated_at": "2020-12-10T08:30:32.326Z"
+  }
+]
