@@ -1,13 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form"
+import { Navigate } from "react-router-dom";
 
 function Login() {
 
     const {register, handleSubmit, formState: {errors}} = useForm();
 
+    const navigate = useNavigate();
+
     function submitLogin(data){
         console.log(data)
-        /* Navigate to dashboard */
+        /*Backend needs to send me employee ID */
+        const employeeId = 1
+        navigate(`/employee/:${employeeId}`)
+        /* Navigate to employee/employeeId */
     }
 
     console.log({...register("password")})

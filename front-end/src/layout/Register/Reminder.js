@@ -11,8 +11,10 @@ function Reminder() {
   const navigate = useNavigate();
 
   function handleReminderSubmit(data) {
-    console.log(data)
-    navigate("/register/feeling");
+    /* Backend needs to send me employee id*/
+    const employeeId = 1;
+    navigate(`/employees/${employeeId}`);
+
   }
 
   return (
