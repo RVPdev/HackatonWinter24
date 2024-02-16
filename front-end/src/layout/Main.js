@@ -4,7 +4,7 @@ import Employee from "./Employee";
 import Employees from "./Employees";
 import Admin from "./Admin";
 import NotFound from "./Page_not_found";
-import Home from "./Home";
+import Home from "./Home/Home";
 import Register from "./Register/Register";
 
 function Main() {

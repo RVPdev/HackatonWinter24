@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+section {
+  --light-color: rgba(0, 0, 0, 0.6);
+  --light-background-color: #d3d2d2;
+  --primary-color: #131417;
+  --hover-light-color: #fff;
+  --transparent-light-color: #252830;
+  --transparent-dark-color: rgba(0, 0, 0, 0.1);
+  --font-family: "Noto Sans", sans-serif;
+  --body-font: "Montserrat", sans-serif;
+  --font-size-xsm: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 3rem;
+  --font-size-xl: 4rem;
+  --gap: 2rem;
+  --margin-sm: 2rem;
+  --margin-md: 3rem;
+  --item-min-height-sm: 20rem;
+  --item-min-height-md: 30rem;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    font-family: var(--font-family);
+    width: 100%;    
+    height: 600px;
+}
+
+.hero-section{
+    width: 90%;
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background-color: aqua; */
+}
+
+.hero-section .info h1{
+    font-size: var(--font-size-xl);
+    margin-bottom: .5rem;
+}
+
+.hero-section .info h2{
+    font-size: var(--font-size-md);
+}
+
+.centered-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 400px;
+    z-index: -1;
+}
+
+.stack{
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    /* align-items: center; */
+    position: relative;
+}
+
+.box{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.box > h2{
+    width: 60%;
+    /* text-align: right; */
+    font-size: var(--font-size-md);
+}
+
+.placeholder-box {
+    width: 40%; /* Sets the width of the placeholder box to 30% */
+    /* Add styles for visualization */
+    background-color: #f0f0f0; /* Example background color */
+    height: 150%; /* Adjust as needed */
+  }
+

@@ -80,10 +80,10 @@ function Header() {
             <i className="ri-close-line close-menu-icon"></i>
           </button>
 
-          <Link className="list-link screen-sm-hidden anchor" to="#">
+          <Link className="list-link screen-sm-hidden anchor" to="/login">
             Log in
           </Link>
-          <Link className="list-link screen-sm-hidden btn sign-up-btn anchor" to="#">
+          <Link className="list-link screen-sm-hidden btn sign-up-btn anchor" to="signup">
             Sign up
           </Link>
         </div>
