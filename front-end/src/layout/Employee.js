@@ -50,9 +50,12 @@ function Employee() {
               <p>Meh</p>
             </div>
           </div>
-          <button className="submit-form-button">ADD YOUR DAILY ENTRY</button>
+          <button className="add-entry-button">
+            <img className="plus-btn-img" src={HappyIcon} alt="icon"/>
+            <p>ADD YOUR DAILY ENTRY</p>
+          </button>
         </div>
-        <div>
+        <div className="employee-column-2">
           <h1>Weekly Reports</h1>
         </div>
       </div>
