@@ -1,6 +1,5 @@
 [
   {
-    "user_id":1,
     "user_first_name":"Jane",
     "user_last_name":"Doe",
     "user_username":"guest",
@@ -10,7 +9,6 @@
     "updated_at": "2020-12-10T08:30:32.326Z"
   },
   {
-    "user_id":2,
     "user_first_name":"John",
     "user_last_name":"Doe",
     "user_username":"admin",
