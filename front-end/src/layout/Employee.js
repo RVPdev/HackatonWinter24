@@ -57,6 +57,7 @@ function Employee() {
         </div>
         <div className="employee-column-2">
           <h1>Weekly Reports</h1>
+          <h1>Helpful tips</h1>
         </div>
       </div>
     );

@@ -148,16 +148,23 @@
     display: flex;
     flex-direction: column;
     border: 1px solid green;
+    align-items: center;
   }
 
   .employee-column-2 {
     border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   } 
 
 
   .emoji-wrapper {
     display: flex;
     gap: 5px;
+    justify-content: space-between;
+    padding: 0px 10px;
   }
 
   .emoji {
