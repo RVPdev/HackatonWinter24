@@ -24,23 +24,25 @@ section {
   height: 600px;
 }
 
-#hero{
-    background-color: #fffbf9;
+#hero {
+  background-color: #fffbf9;
+}
+
+#stress {
+  background-color: #fff0e7;
+  display: flex;
+  /* width: 100%; */
 }
 
 .hero-section {
   width: 90%;
   height: 100%;
   /* max-width: 1300px; */
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   align-items: center;
   position: relative;
   /* background-color: aqua; */
-}
-
-.info{
-    margin-left: 6rem;
 }
 
 .hero-section .info h1 {
@@ -72,11 +74,16 @@ section {
   font-weight: 600;
 }
 
+.info {
+  margin-left: 6rem;
+  
+}
+
 .centered-image {
   position: absolute;
   top: 60%;
-  left: 60%;
-  transform: translate(-5%, -50%);
+  left: 70%;
+  transform: translate(-1%, -50%);
   height: 433px;
   width: 650px;
   /* margin-left: 35rem; */
@@ -85,12 +92,11 @@ section {
 
 .stack {
   flex-direction: column;
-  width: 90%;
+  /* width: 90%; */
   height: 100%;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   margin: 0 auto;
   display: flex;
-  /* align-items: center; */
   position: relative;
 }
 
@@ -99,16 +105,24 @@ section {
   display: flex;
   align-items: center;
 }
-
+/* 
 .box > h2 {
   width: 60%;
-  /* text-align: right; */
   font-size: var(--font-size-md);
 }
 
 .placeholder-box {
-  width: 40%; /* Sets the width of the placeholder box to 30% */
-  /* Add styles for visualization */
-  background-color: #f0f0f0; /* Example background color */
-  height: 150%; /* Adjust as needed */
+  width: 40%;
+  background-color: #f0f0f0; 
+  height: 150%;
+} */
+
+.left-side {
+  width: 40%;
+  background-color: #f0f0f0;
+}
+
+.right-side {
+  width: 60%; /* Sets the right side to occupy 60% of the container's width */
+  background-color: #d3d3d3; /* Another example background color for visualization */
 }

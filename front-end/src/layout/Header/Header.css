@@ -60,9 +60,9 @@ i {
 /* reusable classes */
 
 .container {
-  max-width: 160rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  /* max-width: 160rem; */
+  margin: 0 6rem;
+  /* padding: 0 1.5rem; */
 }
 
 .place-items-center {

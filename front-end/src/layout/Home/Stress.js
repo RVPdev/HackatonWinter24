@@ -1,7 +1,7 @@
 function Stress() {
   return (
     <section className="hero" id="stress">
-      <div className="stack">
+      {/* <div className="stack">
         <div className="box">
           <h2>WE ARE EXPERIENCING AN UNPRECEDENTED AMOUNT OF STRESS</h2>
           <div className="placeholder-box"></div>
@@ -16,6 +16,13 @@ function Stress() {
           <h2>[INSERT % STATISTIC ABOUT EMPLOYEE WELLNESS]</h2>
           <div className="placeholder-box"></div>
         </div>
+      </div> */}
+
+      <div className="left-side"></div>
+      <div className="right-side stack">
+        <div className="box"></div>
+        <div className="box"></div>
+        <div className="box"></div>
       </div>
     </section>
   );
