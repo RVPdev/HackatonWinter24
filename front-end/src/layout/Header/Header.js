@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const [active, setActive] = useState(false); // state variable in charge for scrolling down
-  const [buttonActive, setButtonActive] = useState(false); //initialize state for the menu
 
   // Function to handle scroll
   const handleScroll = () => {
@@ -16,12 +16,12 @@ function Header() {
     }
   };
 
-  // function handle click
-  const clickHandler = () => {
-    console.log("button clicked")
-    console.log(buttonActive)
-    setButtonActive(!buttonActive);
+  let navigate = useNavigate();
+
+  const navigateTo = (path) => {
+    navigate(path);
   };
+
 
   // Adding the scroll event listener when component mounts and cleaning up when it unmounts
   useEffect(() => {
@@ -37,39 +37,9 @@ function Header() {
         <Link to="/" className="logo anchor">
           <h2>Mental Health App</h2>
         </Link>
-
-        {/* <div className={`menu ${buttonActive ? "activated" : ""}`} id="menu">
-          <ul className="list">
-            <li className="list-item ">
-              <Link className="list-link current anchor" to="/">
-                Home
-              </Link>
-            </li>
-            <li className="list-item">
-              <Link className="list-link anchor" to="/">
-                Reviews
-              </Link>
-            </li>
-            <li className="list-item">
-              <Link className="list-link anchor" to="/">
-                Contact
-              </Link>
-            </li>
-            <li className="list-item screen-lg-hidden">
-              <Link className="list-link anchor" to="/">
-                Log in
-              </Link>
-            </li>
-            <li className="list-item screen-lg-hidden">
-              <Link className="list-link anchor" to="/">
-                Sign up
-              </Link>
-            </li>
-          </ul>
-        </div> */}
         {/* Division of menu and buttons */}
         <div className="list list-right">
-          <button
+          {/* <button
             className={`btn place-items-center screen-lg-hidden menu-toggle-icon ${
               buttonActive ? "activated" : ""
             } `}
@@ -78,14 +48,20 @@ function Header() {
           >
             <i className="ri-menu-3-line open-menu-icon"></i>
             <i className="ri-close-line close-menu-icon"></i>
-          </button>
+          </button> */}
 
-          <Link className="list-link screen-sm-hidden anchor" to="/login">
-            Log in
-          </Link>
-          <Link className="list-link screen-sm-hidden btn sign-up-btn anchor" to="signup">
-            Sign up
-          </Link>
+          <button
+            className="list-link screen-sm-hidden anchor"
+            onClick={() => navigateTo("/login")}
+          >
+            LOGIN
+          </button>
+          <button
+            className="list-link screen-sm-hidden btn sign-up-btn anchor"
+            onClick={() => navigateTo("/signup")}
+          >
+            SIGN UP
+          </button>
         </div>
       </nav>
     </header>
