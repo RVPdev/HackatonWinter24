@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import '../Register/register.css';
 
@@ -8,9 +8,21 @@ function More() {
   const navigate = useNavigate();
 
   function handleMoreSubmit(data) {
+    /* Add this data to db leveraging employee id*/
     console.log(data);
-    navigate('/register/reminder');
+    navigate("/register/reminder", {
+      replace: true, 
+      state: {
+        employeeId: employeeId
+      }
+   })
   }
+
+  
+
+  const location = useLocation();  
+  const employeeId = location.state.employeeId
+  console.log(`employeeId more: ${employeeId}`)
 
   return (
     <div className="page">

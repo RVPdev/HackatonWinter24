@@ -1,15 +1,20 @@
 import { useState, useEffect } from "react";
 import "./Register/register.css";
-import { useParams } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import HappyIcon from "./../assets/happyicons/Happy.png";
 import AngryIcon from "./../assets/happyicons/Angry.png";
 import MehIcon from "./../assets/happyicons/Meh.png";
 import SadIcon from "./../assets/happyicons/Sad.png";
 import TiredIcon from "./../assets/happyicons/Tired.png";
 
+
 function Employee() {
   const [user, setUser] = useState(null);
   const { employeeId } = useParams();
+  const navigate = useNavigate();
+
+ 
+  console.log(`employee id employee page: ${employeeId}`)
 
   /* Load User via url*/
   useEffect(() => {
@@ -50,15 +55,17 @@ function Employee() {
               <p>Meh</p>
             </div>
           </div>
-          <button className="add-entry-button">
+          <button className="add-entry-button" onClick={()=>navigate(`/register/mental`, {replace: true, state: {
+            employeeId: employeeId
+          }})}>
             <img className="plus-btn-img" src={HappyIcon} alt="icon"/>
             <p>ADD YOUR DAILY ENTRY</p>
           </button>
         </div>
-        <div className="employee-column-2">
-          <h1>Weekly Reports</h1>
-          <h1>Helpful tips</h1>
-        </div>
+          <div className="employee-column-2">
+            <h1>Weekly Reports</h1>
+            <h1>Helpful tips</h1>
+          </div>
       </div>
     );
   }
