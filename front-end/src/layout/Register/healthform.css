@@ -1,0 +1,33 @@
+:root {
+    --bg-gray: #F5F5F5;
+    --input-bg: #D9D9D9;
+  }
+
+form {
+    border: 2px solid green;
+    background-color: var(--bg-gray);
+}
+
+.emoji-wrapper {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    padding: 0px 10px;
+    border: 1px dotted black;
+    width: 100%;
+  }
+
+  .emoji {
+    width: 40px;
+  }
+
+  .formatted-radio [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .formatted-radio [type=radio]:checked + div {
+    outline: 2px solid #f00;
+  }

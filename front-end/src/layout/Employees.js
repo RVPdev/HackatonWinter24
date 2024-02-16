@@ -1,6 +1,8 @@
 function Employees() {
+
+  console.log("employees")
   return (
-    <div>Employees</div>
+    <div>Employees 1</div>
   )
 }
 

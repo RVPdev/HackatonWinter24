@@ -12,8 +12,9 @@ function Reminder() {
 
   function handleReminderSubmit(data) {
     /* Backend needs to send me employee id*/
+    console.log(data)
     const employeeId = 1;
-    navigate(`/employees/${employeeId}`);
+    //navigate(`/employees/${employeeId}`);
 
   }
 

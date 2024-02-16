@@ -11,6 +11,7 @@
   * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
   
   #root {
@@ -22,15 +23,10 @@
   
   body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
-  /* header {
-    background-color: lightblue;
-    padding: 10px 10px;
-    z-index: 1;
-  } */
-  
+
   main {
     flex-grow: 1;
     padding: 0px 0px;
@@ -120,13 +116,96 @@
     border: none;
     background-color: var(--input-bg);
   }
+
+
+  .add-entry-button {
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    background-color: var(--input-bg);
+    display: flex;
+    gap: 10px;
+    padding: 10px 5px;
+    justify-content: center;
+  }
+  
   
   .form-error-alert {
     color: red
   }
 
+
+  .employee-page-wrapper {
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+  }
+
+ .employee-column-1 {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    align-items: center;
+  }
+
+  .employee-column-2 {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  } 
+
+
+  .emoji-wrapper {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+
+  .emoji {
+    width: 40px;
+  }
+
+  .plus-btn-img {
+    width: 20px;
+  }
+
+
  @media all and (min-width: 768px) {
     .input-couple {
         flex-direction: row ;
     }
+
+    .employee-column-1 {
+        width: 40%;
+        gap: 20px;
+        border: 1px solid red;
+    }
+
+    .employee-column-2 {
+        width: 60%;
+        border: 1px solid red;
+
+    }
+
+    .employee-page-wrapper {
+        padding: 40px 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        border: 4px solid red;
+      }
+
+    
+    
  }
+
+.header {
+    position: sticky;
+}
+

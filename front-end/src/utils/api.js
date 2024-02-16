@@ -49,3 +49,6 @@ async function fetchJson(url, options, onCancel) {
   }
 }
 
+export function createAccount(newAccountData) {
+  
+}

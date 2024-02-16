@@ -6,8 +6,10 @@ function CreateAccount() {
   const navigate = useNavigate();
 
   function handleCreateSubmit(data) {
+    console.log('heres the data');
+    
     console.log(data);
-    navigate("/register/reminder");
+    navigate("/register/more");
   }
 
   return (
@@ -50,24 +52,6 @@ function CreateAccount() {
               {...register("last-name", { required: true })}
             />
             {errors["last-name"] && <p className="form-error-alert">Please check the last name</p>}
-          </div>
-          <div className="form-input">
-            <label htmlFor="date-of-birth">Date of birth</label>
-            <input
-              type="date"
-              {...register("date-of-birth", { required: true })}
-            />
-            {errors["date-of-birth"] && <p className="form-error-alert">Please select a date of birth</p>}
-          </div>
-          <div className="form-input">
-            <label htmlFor="gender">Gender</label>
-            <select {...register("gender", { required: true })} defaultValue={""} >
-             <option value={""}>Select</option>
-              <option value={"female"}>Female</option>
-              <option value={"male"}>Male</option>
-              <option value={"non-binary"}>Non-binary</option>
-            </select>
-            {errors["gender"] && <p className="form-error-alert">Please select a gender</p>}
           </div>
         <button type="submit" className="submit-form-button">
           SUBMIT
