@@ -1,15 +1,21 @@
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import "./register.css"
+
 
 function CreateAccount() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
 
   function handleCreateSubmit(data) {
-    console.log('heres the data');
-    
     console.log(data);
-    navigate("/register/more");
+    /* need to submit to DB and receive an employeeId*/
+    navigate("/register/more", {
+      replace: true, 
+      state: {
+        employeeId: 123
+      }
+   });
   }
 
   return (

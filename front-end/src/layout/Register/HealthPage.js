@@ -1,9 +1,12 @@
 import HealthForm from "./HealthForm"
 
-function HealthPage() {
+function HealthPage({employeeId}) {
+
+  console.log(`employeeID healthpage: ${employeeId}`);
+  
   return (
     <div>
-        <HealthForm />
+        <HealthForm employeeId={employeeId} />
     </div>
   )
 }

@@ -3,9 +3,7 @@
     --input-bg: #D9D9D9;
   }
   
-  html, body {
-    height: 100%;
-  }
+
   
   
   * {
@@ -31,6 +29,7 @@
     flex-grow: 1;
     padding: 0px 0px;
     height: 100%;
+    font-size: 100%;
   }
   
   footer {

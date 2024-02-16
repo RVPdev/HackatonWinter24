@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 function Reminder() {
@@ -11,12 +11,14 @@ function Reminder() {
   const navigate = useNavigate();
 
   function handleReminderSubmit(data) {
-    /* Backend needs to send me employee id*/
+    /*send to db leveraging employeeId */
     console.log(data)
-    const employeeId = 1;
-    //navigate(`/employees/${employeeId}`);
-
+    navigate(`/employees/${employeeId}`);
   }
+
+  const location = useLocation();  
+  const employeeId = location.state.employeeId
+  console.log(`employee id Reminder: ${employeeId}`)
 
   return (
     <div className="page">
