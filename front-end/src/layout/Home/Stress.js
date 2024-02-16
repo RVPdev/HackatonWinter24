@@ -1,3 +1,5 @@
+import img from "../../assets/landing_page/Landing_Page_image_2.png";
+
 function Stress() {
   return (
     <section className="hero" id="stress">
@@ -18,11 +20,30 @@ function Stress() {
         </div>
       </div> */}
 
-      <div className="left-side"></div>
+      <div className="left-side">
+        <img src={img} alt="woman sitting" className="stress-img" />
+      </div>
       <div className="right-side stack">
-        <div className="box"></div>
-        <div className="box"></div>
-        <div className="box"></div>
+        <div className="box">
+          <div className="box-r">
+            <div className="bubble-card"></div>
+          </div>
+          <div className="box-l"></div>
+        </div>
+
+        <div className="box">
+          <div className="box-l"></div>
+          <div className="box-r">
+            <div className="bubble-card"></div>
+          </div>
+        </div>
+
+        <div className="box">
+          <div className="box-r">
+            <div className="bubble-card"></div>
+          </div>
+          <div className="box-l"></div>
+        </div>
       </div>
     </section>
   );
