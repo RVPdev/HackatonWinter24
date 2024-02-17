@@ -23,8 +23,8 @@ function CreateAccount() {
 
   return (
     <div className="page">
+      <form className="styled-form" onSubmit={handleSubmit(handleCreateSubmit)}>
       <h1>Create an account</h1>
-      <form onSubmit={handleSubmit(handleCreateSubmit)}>
         <div className="form-input">
           <label htmlFor="email">Email</label>
           <input

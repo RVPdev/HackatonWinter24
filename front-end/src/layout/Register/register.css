@@ -1,27 +1,38 @@
 :root {
     --bg-gray: #F5F5F5;
     --input-bg: #D9D9D9;
+    --maroon-color: #E58784
   }
-  
 
-  
-  
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
+  html {
+    height: 100%;
+  }
+
+  .styled-form {
+    border-radius: 10px;
+    background-color: #FFF0E3;
+    padding: 20px;
+    border-radius: 10px;
+  }
   
   #root {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     height: 100%;
+    min-height: 100vh;
   }
   
   body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    height: 100%;
   }
   
 
@@ -53,21 +64,35 @@
   
   .page {
     display: flex;
+    height: 100%;
+    gap: 20px;
+    border: 3px solid green;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    background-color: var(--bg-gray);
-    flex-direction: column;
-    gap: 20px;
+    padding: 20px;
+  }
+
+  .left-register-section {
+    border: 1px solid red;
+    flex-basis: 50%;
+  }
+
+  .register-image-wrapper {
+    border: 2px solid orange;
+    width: 300px;
+  }
+
+  .register-image img {
+    object-fit: scale-down;
+    max-width: 100%;
   }
   
-  
   form {
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    width: 50%;
   }
   
   .form-left-aligned {
@@ -81,6 +106,8 @@
     width: 100%;
     border: none;
   }
+
+  
   
   .formgroup-horizontal {
     display: flex;
@@ -94,10 +121,11 @@
     width: 100%;
   }
   
-  input, select {
-    background-color: var(--input-bg);
+  .styled-form input, .styled-form select {
+    background-color: white;
     padding: 10px 10px;
     border: none;
+    border-radius: 10px;
   }
 
 
@@ -113,8 +141,21 @@
     width: 100%;
     padding: 10px 0px;
     border: none;
-    background-color: var(--input-bg);
+    background-color: var(--maroon-color);
+    border-radius: 10px;
   }
+
+  .button-text {
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .button-text:link, .button-text:visited, .button-text:hover, .button-text:active {
+    text-decoration: none;
+  }
+
+  
+
 
 
   .add-entry-button {

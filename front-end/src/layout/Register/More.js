@@ -30,8 +30,8 @@ function More() {
 
   return (
     <div className="page">
-      <h1>Tell us more about you</h1>
-      <form onSubmit={handleSubmit(handleMoreSubmit)}>
+      <form className="styled-form" onSubmit={handleSubmit(handleMoreSubmit)}>
+        <h1>Tell us more about you</h1>
         <div className="input-couple">
           <div className="form-input">
             <label htmlFor="date-of-birth">Date of birth</label>
