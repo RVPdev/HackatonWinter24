@@ -17,6 +17,8 @@ headers.append("Content-Type", "application/json");
  */
 
 async function fetchJson(url, options, onCancel) {
+
+  console.log(`base url: ${API_BASE_URL}`)
   try {
     // Perform the fetch request with the provided URL and options
     const response = await fetch(url, options);
@@ -56,10 +58,13 @@ export async function createAccount(newAccountData) {
     body: JSON.stringify({ data: newAccountData }),
   };
 
-  return {
-    employeeId: 1,
-  };
-  //return await fetchJson(url, options, {})
+  // return {
+  //   employeeId: 1,
+  // };
+
+  const response = await fetchJson(url, options, {})
+  console.log(JSON.stringify(response))
+  return response.user_id;
 }
 
 export async function submitMore(employeeId, moreData) {
@@ -70,8 +75,7 @@ export async function submitMore(employeeId, moreData) {
     body: JSON.stringify({ data: moreData }),
   };
 
-  //await fetchJson(url, options);
-  //does not need to return anything to front-end
+  return await fetchJson(url, options)
 }
 
 export async function submitReminder(employeeId, reminderData) {

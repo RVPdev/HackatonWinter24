@@ -10,14 +10,14 @@ function More() {
 
   async function handleMoreSubmit(data) {
     /* Add this data to db leveraging employee id*/
-    console.log(`employeeid: ${employeeId}, data: ${JSON.stringify(data)}`);
+    console.log(`user_id: ${user_id}, data: ${JSON.stringify(data)}`);
 
-    await submitMore(employeeId, data)
+    await submitMore(user_id, data)
   
     navigate("/register/reminder", {
       replace: true, 
       state: {
-        employeeId: employeeId
+        user_id: user_id
       }
    })
   }
@@ -25,8 +25,8 @@ function More() {
   
 
   const location = useLocation();  
-  const employeeId = location.state.employeeId
-  console.log(`employeeId more: ${employeeId}`)
+  const user_id = location.state.user_id
+  console.log(`user_id more: ${user_id}`)
 
   return (
     <div className="page">

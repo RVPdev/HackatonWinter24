@@ -1,66 +1,78 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { createAccount } from "../../utils/api";
 import "./register.css"
+import ErrorAlert from "../ErrorAlert";
 
 
 function CreateAccount() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
+  const [error, setError] = useState(null)
 
   async function handleCreateSubmit(data) {
     console.log(data);
     /* need to submit to DB and receive an employeeId*/
-    const {employeeId} = await createAccount(data)
+    try {
+      const user_id = await createAccount(data)
 
-    navigate("/register/more", {
-      replace: true, 
-      state: {
-        employeeId: employeeId
-      }
-   });
+      navigate("/register/more", {
+        replace: true, 
+        state: {
+          user_id: user_id
+        }
+     });
+
+
+    } catch (error) {
+      setError(error)
+    }
+
+    
   }
 
   return (
     <div className="page">
+      {error ? <ErrorAlert error={error} /> : null}
       <form className="styled-form" onSubmit={handleSubmit(handleCreateSubmit)}>
       <h1>Create an account</h1>
         <div className="form-input">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="user_email">Email</label>
           <input
             type="email"
             placeholder="Enter your email address"
-            {...register("email", { required: true, minLength: 3 })}
+            {...register("user_email", { required: true, minLength: 3 })}
             minLength={3}
           />
-          {errors["email"] && <p className="form-error-alert">Please check the email</p>}
+          {errors["user_email"] && <p className="form-error-alert">Please check the email</p>}
         </div>
         <div className="form-input">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="user_password">Password</label>
           <input
             type="password"
             placeholder="Enter your password"
-            {...register("password", { required: true, minLength: 5, maxLength: 20 })}
+            {...register("user_password", { required: true, minLength: 5, maxLength: 20 })}
           />
-          {errors["password"] && <p className="form-error-alert">Please check the password</p>}
+          {errors["user_password"] && <p className="form-error-alert">Please check the password</p>}
         </div>
           <div className="form-input">
-            <label htmlFor="first-name">First Name</label>
+            <label htmlFor="user_first-name">First Name</label>
             <input
               type="text"
               placeholder="Enter your first name"
-              {...register("first-name", { required: true })}
+              {...register("user_first_name", { required: true })}
             />
-            {errors["first-name"] && <p className="form-error-alert">Please check the first name</p>}
+            {errors["user_first-name"] && <p className="form-error-alert">Please check the first name</p>}
           </div>
           <div className="form-input">
-            <label htmlFor="last-name">Last Name</label>
+            <label htmlFor="user_last-name">Last Name</label>
             <input
               type="text"
               placeholder="Enter your last name"
-              {...register("last-name", { required: true })}
+              {...register("user_last_name", { required: true })}
             />
-            {errors["last-name"] && <p className="form-error-alert">Please check the last name</p>}
+            {errors["user_last-name"] && <p className="form-error-alert">Please check the last name</p>}
           </div>
         <button type="submit" className="submit-form-button">
           SUBMIT
