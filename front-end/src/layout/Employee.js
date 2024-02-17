@@ -17,22 +17,22 @@ function Employee() {
   console.log(`employee id employee page: ${employeeId}`)
 
   /* Load User via url*/
-  useEffect(() => {
-    /* fetch from DB using employeeId*/
+  // useEffect(() => {
+  //   /* fetch from DB using employeeId*/
    
-    async function getUser(){
-      try {
-        const employee = await loadEmployee(1)
-        console.log(`employee: ${JSON.stringify(employee)}`)
-        setUser(employee)
-      } catch (error) {
-        console.log(`Error in getUser! ${JSON.stringify(error)}`)
-      }
+  //   async function getUser(){
+  //     try {
+  //       const employee = await loadEmployee(1)
+  //       console.log(`employee: ${JSON.stringify(employee)}`)
+  //       setUser(employee)
+  //     } catch (error) {
+  //       console.log(`Error in getUser! ${JSON.stringify(error)}`)
+  //     }
       
-    }
-    getUser()
+  //   }
+  //   getUser()
 
-  }, []);
+  // }, []);
 
   if (user) {
     return (

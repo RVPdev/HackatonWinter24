@@ -42,72 +42,72 @@ function More() {
         <h1>Tell us more about you</h1>
         <div className="input-couple">
           <div className="form-input">
-            <label htmlFor="date-of-birth">Date of birth</label>
+            <label htmlFor="user_dob">Date of birth</label>
             <input
               type="date"
-              {...register("date-of-birth", { required: true })}
+              {...register("user_dob", { required: true })}
             />
-            {errors["date-of-birth"] && (
+            {errors["user_dob"] && (
               <p className="form-error-alert">Please select a date of birth</p>
             )}
           </div>
           <div className="form-input">
-            <label htmlFor="gender">Gender</label>
-            <select {...register("gender", { required: true })} defaultValue="">
+            <label htmlFor="user_gender">Gender</label>
+            <select {...register("user_gender", { required: true })} defaultValue="">
               <option value="">Select</option>
               <option value="female">Female</option>
               <option value="male">Male</option>
               <option value="non-binary">Non-binary</option>
             </select>
-            {errors["gender"] && (
+            {errors["user_gender"] && (
               <p className="form-error-alert">Please select a gender</p>
             )}
           </div>
         </div>
         <div className="input-couple">
           <div className="form-input">
-            <label htmlFor="occupation">Occupation</label>
+            <label htmlFor="user_occupation">Occupation</label>
             <input
               type="text"
               placeholder="Enter your occupation"
-              {...register("occupation", { required: true, minLength: 2 })}
+              {...register("user_occupation", { required: true, minLength: 2 })}
             />
-            {errors["occupation"] && (
+            {errors["user_occupation"] && (
               <p className="form-error-alert">Please check the occupation</p>
             )}
           </div>
           <div className="form-input">
-            <label htmlFor="company">Company</label>
+            <label htmlFor="user_company">Company</label>
             <input
               type="text"
               placeholder="Enter your company"
-              {...register("company", { required: true, minLength: 2 })}
+              {...register("user_company", { required: true, minLength: 2 })}
             />
-            {errors["company"] && (
+            {errors["user_company"] && (
               <p className="form-error-alert">Please check the company</p>
             )}
           </div>
         </div>
         <div className="input-couple">
           <div className="form-input">
-            <label htmlFor="weight">Weight</label>
+            <label htmlFor="user_weight">Weight</label>
             <input
               type="number"
               placeholder="Enter your weight in pounds"
-              {...register("weight", { required: true })}
+              {...register("user_weight", { required: true })}
             />
-            {errors["weight"] && (
+            {errors["user_weight"] && (
               <p className="form-error-alert">Please check the weight</p>
             )}
           </div>
           <div className="form-input">
-            <label htmlFor="height">Height</label>
+            <label htmlFor="user_height">Height</label>
             <input
               type="number"
               placeholder="Enter your height in inches"
-              {...register("height", { required: true })}
+              {...register("user_height", { required: true })}
             />
-            {errors["height"] && (
+            {errors["user_height"] && (
               <p className="form-error-alert">Please check the height</p>
             )}
           </div>

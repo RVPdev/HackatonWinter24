@@ -48,8 +48,11 @@ function Reminder() {
           name="time"
           id="time"
           required
-          {...register("time")}
+          {...register("user_scheduled_time")}
         />
+        {errors["user_scheduled_time"] && (
+              <p className="form-error-alert">Please select a date of birth</p>
+            )}
         <button type="submit" className="submit-form-button">
           SUBMIT
         </button>

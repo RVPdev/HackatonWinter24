@@ -16,12 +16,13 @@ function Login() {
 
   async function submitLogin(data) {
     console.log(data);
-    const { employeeId, isAdmin } = await login(data);
+    const { user_id, administer_access } = await login(data);
     /*Backend needs to send me employee ID */
-    if (isAdmin) {
+    console.log(`USERID: ${user_id}`)
+    if (administer_access) {
       navigate(`/admin`);
     } else {
-      navigate(`/employees/${employeeId}`);
+      navigate(`/employees/${user_id}`);
     }
     /* Navigate to employee/employeeId */
   }
@@ -37,23 +38,23 @@ function Login() {
       <form className="styled-form" onSubmit={handleSubmit(submitLogin)}>
         <h1>Log in</h1>
         <div className="form-input">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="user_email">Email</label>
           <input
             required
             type="text"
-            name="email"
+            name="user_email"
             placeholder="Enter your email address"
-            {...register("email")}
+            {...register("user_email")}
           />
         </div>
         <div className="form-input">
-          <label htmlFor="password">Password</label>
+          <label htmlFor="user_password">Password</label>
           <input
             required
             type="password"
-            name="password"
+            name="user_password"
             placeholder="Enter your password"
-            {...register("password")}
+            {...register("user_password")}
           />
         </div>
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

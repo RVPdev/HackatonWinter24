@@ -67,24 +67,24 @@ export async function createAccount(newAccountData) {
   return response.user_id;
 }
 
-export async function submitMore(employeeId, moreData) {
-  const url = `${API_BASE_URL}/employee/${employeeId}`;
+export async function submitMore(user_id, moreData) {
+  const url = `${API_BASE_URL}/signup/additional_info`;
   const options = {
     method: "PUT", //assuming put since employee record is already created
     headers,
-    body: JSON.stringify({ data: moreData }),
+    body: JSON.stringify({ data: {...moreData, user_id }, }),
   };
 
   return await fetchJson(url, options)
 }
 
-export async function submitReminder(employeeId, reminderData) {
-  const url = `${API_BASE_URL}/employee/${employeeId}`;
-  const options = {
-    method: "PUT", //assuming put since employee record is already created
-    headers,
-    body: JSON.stringify({ data: reminderData }),
-  };
+export async function submitReminder(user_id, reminderData) {
+  // const url = `${API_BASE_URL}/employee/${employeeId}`;
+  // const options = {
+  //   method: "PUT", //assuming put since employee record is already created
+  //   headers,
+  //   body: JSON.stringify({ data: {reminderData, ...user_id} }),
+  // };
 
   //await fetchJson(url, options);
   //does not need to return anything to front-end
@@ -99,38 +99,40 @@ export async function loadEmployee(employeeId) {
     headers,
   };
 
-  return {
-      first_name: "Jane",
-      last_name: "Doe",
-      average_mood: 3.5,
-      helpful_tips: ["meditate", "go for a run", "eat healthier"],
-      quote: "Believe in yourself",
-      summary: [
-        {
-          date: "2024-02-16",
-          activity: 2.5,
-          sleep: 2,
-          stress: 3,
-        },
-      ],
-  };
-  //return await fetchJson(url, options, {})
+  // return {
+  //     first_name: "Jane",
+  //     last_name: "Doe",
+  //     average_mood: 3.5,
+  //     helpful_tips: ["meditate", "go for a run", "eat healthier"],
+  //     quote: "Believe in yourself",
+  //     summary: [
+  //       {
+  //         date: "2024-02-16",
+  //         activity: 2.5,
+  //         sleep: 2,
+  //         stress: 3,
+  //       },
+  //     ],
+  // };
+  return await fetchJson(url, options, {})
 }
 
 export async function login(loginData) {
   const url = `${API_BASE_URL}/login`
 
   const options = {
-    method: "GET",
-    body: JSON.stringify({data: {loginData}}),
+    method: "POST",
+    body: JSON.stringify({data: loginData }),
     headers,
   };
 
-  return {
-    employeeId: 1,
-    isAdmin: false
-  }
-  //return await fetchJson(url, options, {})
+  // return {
+  //   employeeId: 1,
+  //   isAdmin: false
+  // }
+  const response = await fetchJson(url, options, {})
+  console.log(`Response: ${JSON.stringify(response)}`)
+  return response;
 
 }
 
@@ -140,7 +142,7 @@ export async function submitHealthData(employeeId, healthData) {
 
   const options = {
     method: "PUT",
-    body: JSON.stringify({data: {healthData}}),
+    body: JSON.stringify({data: healthData}),
     headers,
   };
 
