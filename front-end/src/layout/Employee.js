@@ -6,7 +6,7 @@ import AngryIcon from "./../assets/happyicons/Angry.png";
 import MehIcon from "./../assets/happyicons/Meh.png";
 import SadIcon from "./../assets/happyicons/Sad.png";
 import TiredIcon from "./../assets/happyicons/Tired.png";
-
+import { loadEmployee } from "../utils/api";
 
 function Employee() {
   const [user, setUser] = useState(null);
@@ -19,19 +19,26 @@ function Employee() {
   /* Load User via url*/
   useEffect(() => {
     /* fetch from DB using employeeId*/
-    setUser({
-      email: "a@b.com",
-      "first-name": "first name",
-      "last-name": "last name",
-      password: "test-password",
-    });
+   
+    async function getUser(){
+      try {
+        const employee = await loadEmployee(1)
+        console.log(`employee: ${JSON.stringify(employee)}`)
+        setUser(employee)
+      } catch (error) {
+        console.log(`Error in getUser! ${JSON.stringify(error)}`)
+      }
+      
+    }
+    getUser()
+
   }, []);
 
   if (user) {
     return (
       <div className="employee-page-wrapper">
         <div className="employee-column-1">
-          <h1>Welcome {user["first-name"]}</h1>
+          <h1>Welcome {user["first_name"]}</h1>
           <h1>How are you feeling?</h1>
           <div className="emoji-wrapper">
             <div>

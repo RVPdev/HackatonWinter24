@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { createAccount } from "../../utils/api";
 import "./register.css"
 
 
@@ -7,13 +8,15 @@ function CreateAccount() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
 
-  function handleCreateSubmit(data) {
+  async function handleCreateSubmit(data) {
     console.log(data);
     /* need to submit to DB and receive an employeeId*/
+    const {employeeId} = await createAccount(data)
+
     navigate("/register/more", {
       replace: true, 
       state: {
-        employeeId: 123
+        employeeId: employeeId
       }
    });
   }

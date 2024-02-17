@@ -1,15 +1,19 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import { submitMore } from '../../utils/api';
 import '../Register/register.css';
 
 function More() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
 
-  function handleMoreSubmit(data) {
+  async function handleMoreSubmit(data) {
     /* Add this data to db leveraging employee id*/
-    console.log(data);
+    console.log(`employeeid: ${employeeId}, data: ${JSON.stringify(data)}`);
+
+    await submitMore(employeeId, data)
+  
     navigate("/register/reminder", {
       replace: true, 
       state: {
