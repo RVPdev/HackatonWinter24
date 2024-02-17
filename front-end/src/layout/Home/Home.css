@@ -138,6 +138,15 @@ section {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0px 8px 10px -5px #c0b7b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    padding: 2rem;
+}
+
+.bubble-card > h3 {
+  font-size: 2rem;
 }
 
 /* 

@@ -26,7 +26,9 @@ function Stress() {
       <div className="right-side stack">
         <div className="box">
           <div className="box-r">
-            <div className="bubble-card"></div>
+            <div className="bubble-card">
+              <h3>We are experienceing an unprecedented amount of stress</h3>
+            </div>
           </div>
           <div className="box-l"></div>
         </div>
@@ -34,13 +36,17 @@ function Stress() {
         <div className="box">
           <div className="box-l"></div>
           <div className="box-r">
-            <div className="bubble-card"></div>
+            <div className="bubble-card">
+              <h3>Stress can lead to a lack of morale, resilience, and productivity</h3>
+            </div>
           </div>
         </div>
 
         <div className="box">
           <div className="box-r">
-            <div className="bubble-card"></div>
+            <div className="bubble-card">
+              <h3>[Insert % statistic about employee wellness]</h3>
+            </div>
           </div>
           <div className="box-l"></div>
         </div>
