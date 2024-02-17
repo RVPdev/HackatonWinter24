@@ -2,6 +2,7 @@ import Help from "./Help";
 import Hero from "./Hero";
 import "./Home.css";
 import Stress from "./Stress";
+import Ready from "./Ready";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Hero />
       <Stress />
       <Help />
+      <Ready />
     </body>
   );
 }
