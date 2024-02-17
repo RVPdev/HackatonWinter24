@@ -16,6 +16,14 @@ const createFakeUser = () => ({
   user_username: faker.internet.userName(), 
   user_password: faker.internet.password(),
   user_email: faker.internet.email(),
+  user_dob: faker.date.birthdate({ min: 18, max: 65, mode: 'age' }),
+  user_gender: faker.person.sex(),
+  user_occupation:faker.person.jobTitle(),
+  user_company: faker.company.name(),
+  user_weight: faker.helpers.rangeToNumber({ min: 90, max: 499 }),
+  user_height:faker.helpers.rangeToNumber({ min: 53, max: 84 }),
+  user_scheduled_time:"12:00",
+  administer_access: faker.datatype.boolean(0.1),
 }); 
 
 exports.seed = async function(knex,Promise) {

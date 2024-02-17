@@ -1,18 +1,11 @@
 const knex = require("../db/connection")
 
-function list(){
-    return knex
-    .select("*")
-    .from("user_information");
-}
-
-function checkUser(useremailReq){
+function list(userData){
     return knex("user_information")
+    .where({user_email: userData.user_email,user_password:userData.user_password})
     .select("*")
-    .where({user_email:useremailReq})
 }
 
 module.exports={
-    list,
-    checkUser
+    list
 }

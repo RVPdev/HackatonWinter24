@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const controller = require("./signup.controller"); 
 
-router.route("/").get(controller.list);
+router.route("/additional_info").put(controller.update);
+router.route("/").post(controller.create);
 
 module.exports = router;

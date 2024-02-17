@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const controller = require("./login.controller"); 
 
-router.route("/").get(controller.list).post(controller.isEmailValid);
+router.route("/").post(controller.login);
 
 module.exports = router;
