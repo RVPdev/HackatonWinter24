@@ -28,6 +28,12 @@ section {
   height: 795px;
 }
 
+#help{
+  background-color: #fffbf9;
+  height: 715px;
+  /* display: flex; */
+}
+
 #stress {
   background-color: #fff0e7;
   display: flex;
@@ -89,6 +95,8 @@ section {
   /* width: 650px; */
 }
 
+/* second section */
+
 .stack {
   flex-direction: column;
   height: 100%;
@@ -149,14 +157,43 @@ section {
   font-size: 2rem;
 }
 
-/* 
-.box > h2 {
-  width: 60%;
-  font-size: var(--font-size-md);
+/* third section */
+
+.help-title{
+  height: 20%;
+  font-size: 2rem;
+  padding-left: 6rem;
 }
 
-.placeholder-box {
-  width: 40%;
-  background-color: #f0f0f0; 
-  height: 150%;
-} */
+.help-title > h2{
+  margin-top: 8rem;
+}
+
+.mood-banner{
+  height: 80%;
+  margin: 0 6rem;
+  display: flex;
+}
+
+.sgt-bnr{
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sgt-bnr > P{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.img-one, .img-two, .img-three{
+  width: 400px;
+}
+
+
+.img-one, .img-three{
+  margin-top: 3rem;
+}
+
