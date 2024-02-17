@@ -7,6 +7,8 @@ import TiredIcon from "./../../assets/happyicons/Tired.png";
 import "./healthform.css";
 import { useNavigate, useLocation } from "react-router-dom";
 import { submitHealthData } from "../../utils/api";
+import { useState } from "react";
+import ErrorAlert from "../ErrorAlert";
 
 function HealthForm() {
   const {
@@ -15,21 +17,28 @@ function HealthForm() {
     formState: { errors },
   } = useForm();
   const navigate = useNavigate();
+  const [error, setError] = useState(null)
 
   const location = useLocation();
-  const employeeId = location.state.employeeId;
+  const user_id = location.state.user_id;
 
   async function onSubmit(data) {
     /* Submit healthform to db leveraging employee ID*/
     console.log(data);
-    await submitHealthData(employeeId, data)
-    navigate(`/employees/${employeeId}`);
+    try {
+      await submitHealthData(user_id, data)
+      navigate(`/employees/${user_id}`);
+    } catch (error) {
+      setError(error)
+    }
+    
   }
 
-  console.log(`employeeId healthform: ${employeeId}`);
+  console.log(`user_id healthform: ${user_id}`);
 
   return (
     <div className="health-form-wrapper">
+      {error ? <ErrorAlert error={error} /> : null}
       <h1>Daily Health Tracker</h1>
       <form className="health-form" onSubmit={handleSubmit(onSubmit)}>
         <h4>How are you feeling?</h4>

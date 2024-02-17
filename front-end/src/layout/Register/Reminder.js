@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { submitReminder } from "../../utils/api";
+import ErrorAlert from "../ErrorAlert";
 
 function Reminder() {
   const {
@@ -10,25 +11,32 @@ function Reminder() {
     formState: { errors },
   } = useForm();
   const navigate = useNavigate();
+  const [error, setError] = useState(null);
 
   async function handleReminderSubmit(data) {
     /*send to db leveraging employeeId */
     console.log(data);
-    await submitReminder(employeeId, data);
-    navigate("/register/mental", {
-      replace: true,
-      state: {
-        employeeId: employeeId,
-      },
-    });
+
+    try {
+      await submitReminder(user_id, data);
+      navigate("/register/mental", {
+        replace: true,
+        state: {
+          user_id: user_id,
+        },
+      });
+    } catch (error) {
+      setError(error);
+    }
   }
 
   const location = useLocation();
-  const employeeId = location.state.employeeId;
-  console.log(`employee id Reminder: ${employeeId}`);
+  const user_id = location.state.user_id;
+  console.log(`user_id Reminder: ${user_id}`);
 
   return (
     <div className="page">
+      {error ? <ErrorAlert error={error} /> : null}
       <form
         className="styled-form"
         onSubmit={handleSubmit(handleReminderSubmit)}

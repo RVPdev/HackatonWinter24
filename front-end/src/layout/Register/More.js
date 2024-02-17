@@ -1,35 +1,43 @@
-import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { useForm } from 'react-hook-form';
-import { submitMore } from '../../utils/api';
-import '../Register/register.css';
+import React, { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { submitMore } from "../../utils/api";
+import "../Register/register.css";
+import ErrorAlert from "../ErrorAlert";
 
 function More() {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
   const navigate = useNavigate();
+  const [error, setError] = useState(null);
 
   async function handleMoreSubmit(data) {
     /* Add this data to db leveraging employee id*/
     console.log(`user_id: ${user_id}, data: ${JSON.stringify(data)}`);
+    try {
+      await submitMore(user_id, data);
 
-    await submitMore(user_id, data)
-  
-    navigate("/register/reminder", {
-      replace: true, 
-      state: {
-        user_id: user_id
-      }
-   })
+      navigate("/register/reminder", {
+        replace: true,
+        state: {
+          user_id: user_id,
+        },
+      });
+    } catch (error) {
+      setError(error)
+    }
   }
 
-  
-
-  const location = useLocation();  
-  const user_id = location.state.user_id
-  console.log(`user_id more: ${user_id}`)
+  const location = useLocation();
+  const user_id = location.state.user_id;
+  console.log(`user_id more: ${user_id}`);
 
   return (
     <div className="page">
+      {error ? <ErrorAlert error={error} /> : null}
       <form className="styled-form" onSubmit={handleSubmit(handleMoreSubmit)}>
         <h1>Tell us more about you</h1>
         <div className="input-couple">
@@ -37,19 +45,23 @@ function More() {
             <label htmlFor="date-of-birth">Date of birth</label>
             <input
               type="date"
-              {...register('date-of-birth', { required: true })}
+              {...register("date-of-birth", { required: true })}
             />
-            {errors['date-of-birth'] && <p className="form-error-alert">Please select a date of birth</p>}
+            {errors["date-of-birth"] && (
+              <p className="form-error-alert">Please select a date of birth</p>
+            )}
           </div>
           <div className="form-input">
             <label htmlFor="gender">Gender</label>
-            <select {...register('gender', { required: true })} defaultValue="">
+            <select {...register("gender", { required: true })} defaultValue="">
               <option value="">Select</option>
               <option value="female">Female</option>
               <option value="male">Male</option>
               <option value="non-binary">Non-binary</option>
             </select>
-            {errors['gender'] && <p className="form-error-alert">Please select a gender</p>}
+            {errors["gender"] && (
+              <p className="form-error-alert">Please select a gender</p>
+            )}
           </div>
         </div>
         <div className="input-couple">
@@ -58,18 +70,22 @@ function More() {
             <input
               type="text"
               placeholder="Enter your occupation"
-              {...register('occupation', { required: true, minLength: 2 })}
+              {...register("occupation", { required: true, minLength: 2 })}
             />
-            {errors['occupation'] && <p className="form-error-alert">Please check the occupation</p>}
+            {errors["occupation"] && (
+              <p className="form-error-alert">Please check the occupation</p>
+            )}
           </div>
           <div className="form-input">
             <label htmlFor="company">Company</label>
             <input
               type="text"
               placeholder="Enter your company"
-              {...register('company', { required: true, minLength: 2 })}
+              {...register("company", { required: true, minLength: 2 })}
             />
-            {errors['company'] && <p className="form-error-alert">Please check the company</p>}
+            {errors["company"] && (
+              <p className="form-error-alert">Please check the company</p>
+            )}
           </div>
         </div>
         <div className="input-couple">
@@ -78,18 +94,22 @@ function More() {
             <input
               type="number"
               placeholder="Enter your weight in pounds"
-              {...register('weight', { required: true })}
+              {...register("weight", { required: true })}
             />
-            {errors['weight'] && <p className="form-error-alert">Please check the weight</p>}
+            {errors["weight"] && (
+              <p className="form-error-alert">Please check the weight</p>
+            )}
           </div>
           <div className="form-input">
             <label htmlFor="height">Height</label>
             <input
               type="number"
               placeholder="Enter your height in inches"
-              {...register('height', { required: true })}
+              {...register("height", { required: true })}
             />
-            {errors['height'] && <p className="form-error-alert">Please check the height</p>}
+            {errors["height"] && (
+              <p className="form-error-alert">Please check the height</p>
+            )}
           </div>
         </div>
         <button type="submit" className="submit-form-button">
