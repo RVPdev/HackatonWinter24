@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form"
-import { Navigate } from "react-router-dom";
+import { login } from "../utils/api";
 
 function Login() {
 
@@ -8,15 +8,18 @@ function Login() {
 
     const navigate = useNavigate();
 
-    function submitLogin(data){
+    async function submitLogin(data){
         console.log(data)
+        const {employeeId, isAdmin} = await login(data)
         /*Backend needs to send me employee ID */
-        const employeeId = 1
-        navigate(`/employee/:${employeeId}`)
+        if(isAdmin) {
+            navigate(`/admin`)
+        } else {
+            navigate(`/employees/${employeeId}`)
+        }
         /* Navigate to employee/employeeId */
     }
 
-    console.log({...register("password")})
 
   return (
     <div className="page">

@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { submitReminder } from "../../utils/api";
 
 function Reminder() {
   const {
@@ -10,10 +11,16 @@ function Reminder() {
   } = useForm();
   const navigate = useNavigate();
 
-  function handleReminderSubmit(data) {
+  async function handleReminderSubmit(data) {
     /*send to db leveraging employeeId */
     console.log(data)
-    navigate(`/employees/${employeeId}`);
+    await submitReminder(employeeId, data)
+    navigate("/register/mental", {
+      replace: true, 
+      state: {
+        employeeId: employeeId
+      }
+   });
   }
 
   const location = useLocation();  

@@ -6,6 +6,7 @@ import SadIcon from "./../../assets/happyicons/Sad.png";
 import TiredIcon from "./../../assets/happyicons/Tired.png";
 import "./healthform.css";
 import { useNavigate, useLocation } from "react-router-dom";
+import { submitHealthData } from "../../utils/api";
 
 function HealthForm() {
   const {
@@ -18,9 +19,10 @@ function HealthForm() {
   const location = useLocation();
   const employeeId = location.state.employeeId;
 
-  function onSubmit(data) {
+  async function onSubmit(data) {
     /* Submit healthform to db leveraging employee ID*/
     console.log(data);
+    await submitHealthData(employeeId, data)
     navigate(`/employees/${employeeId}`);
   }
 
