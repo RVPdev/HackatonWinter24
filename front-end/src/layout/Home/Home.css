@@ -43,7 +43,16 @@ section {
 
 #ready {
   background-color: #fff0e7;
-  height: 400px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#footer {
+  background-color: #fffbf9;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,11 +82,22 @@ section {
   margin-bottom: 5rem;
 }
 
-#ready > h2{
+#ready > h2 {
   font-size: 3.2rem;
   font-weight: 700;
   /* margin-bottom: 5rem; */
   padding-bottom: 4rem;
+}
+
+#footer > h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+#footer > p {
+  font-size: 2.4rem;
+  padding-bottom: 1rem;
 }
 
 .hero-section .info button,
