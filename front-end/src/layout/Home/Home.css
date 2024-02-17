@@ -4,10 +4,9 @@
 section {
   --light-color: rgba(0, 0, 0, 0.6);
   --light-background-color: #d3d2d2;
-  --primary-color: #131417;
+  --primary-color: #270A07;
+  --secondary-color: #442826;
   --hover-light-color: #fff;
-  --transparent-light-color: #252830;
-  --transparent-dark-color: rgba(0, 0, 0, 0.1);
   --font-family: "Noto Sans", sans-serif;
   --body-font: "Montserrat", sans-serif;
 }
@@ -20,6 +19,7 @@ section {
 
 .hero {
   font-family: var(--body-font);
+  color: var(--primary-color);
   width: 100%;
 }
 
@@ -74,12 +74,14 @@ section {
   font-size: 4.8rem;
   margin-bottom: 2rem;
   line-height: 58px;
+  color: var(--secondary-color);
 }
 
 .hero-section .info h2 {
   font-size: 3.2rem;
   font-weight: 500;
   margin-bottom: 5rem;
+  color: var(--secondary-color);
 }
 
 #ready > h2 {
@@ -116,6 +118,7 @@ section {
   text-decoration: none; /* Remove default text decoration */
   outline: none; /* Remove focus outline */
   font-weight: 600;
+  color: var(--primary-color);
 }
 
 .info {
