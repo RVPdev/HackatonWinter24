@@ -125,16 +125,19 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 70%;
 }
 .box-l{
     display: flex;
-    width: 40%;
+    width: 30%;
 }
 
 .bubble-card{
-    width: 453px;
+    width: 600px;
     height: 102px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px -5px #c0b7b1;
 }
 
 /* 
