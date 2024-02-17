@@ -19,6 +19,10 @@ exports.up = function (knex) {
     table.integer("physical_activity");
     table.integer("stress_level");
     table.integer("daily_steps");
+    table.integer("user_activity");
+    table.integer("user_mood");
+    table.integer("user_sleep");
+    table.integer("user_stress");
     table.timestamps(true, true);
   });
 };

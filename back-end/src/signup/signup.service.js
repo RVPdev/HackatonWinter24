@@ -21,8 +21,16 @@ function update(data) {
       "user_height",
     ]);
 }
+function add(data) {
+  return knex("user_information")
+    .where({ user_id: data.user_id })
+    .update(data, [
+      "user_scheduled_time",
+    ]);
+}
 module.exports = {
   create,
   isEmailNotExists,
   update,
+  add,
 };

@@ -9,8 +9,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 42,
       "stress_level": 6,
-      "daily_steps": 4200
-    },
+      "daily_steps": 4200,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 2,
@@ -21,8 +25,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 60,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 3,
@@ -33,8 +41,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 60,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 4,
@@ -45,8 +57,12 @@
       "quality_of_sleep": 4,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 3000
-    },
+      "daily_steps": 3000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 5,
@@ -57,8 +73,12 @@
       "quality_of_sleep": 4,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 3000
-    },
+      "daily_steps": 3000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 6,
@@ -69,8 +89,12 @@
       "quality_of_sleep": 4,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 3000
-    },
+      "daily_steps": 3000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 7,
@@ -81,8 +105,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 40,
       "stress_level": 7,
-      "daily_steps": 3500
-    },
+      "daily_steps": 3500,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 8,
@@ -93,8 +121,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 9,
@@ -105,8 +137,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 10,
@@ -117,8 +153,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 11,
@@ -129,8 +169,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 12,
@@ -141,8 +185,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 13,
@@ -153,8 +201,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 14,
@@ -165,8 +217,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 15,
@@ -177,8 +233,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 16,
@@ -189,8 +249,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 17,
@@ -201,8 +265,12 @@
       "quality_of_sleep": 5,
       "physical_activity": 40,
       "stress_level": 7,
-      "daily_steps": 4000
-    },
+      "daily_steps": 4000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 18,
@@ -213,8 +281,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 19,
@@ -225,8 +297,12 @@
       "quality_of_sleep": 5,
       "physical_activity": 40,
       "stress_level": 7,
-      "daily_steps": 4000
-    },
+      "daily_steps": 4000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 20,
@@ -237,8 +313,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 21,
@@ -249,8 +329,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 22,
@@ -261,8 +345,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 23,
@@ -273,8 +361,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 24,
@@ -285,8 +377,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 25,
@@ -297,8 +393,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 26,
@@ -309,8 +409,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 27,
@@ -321,8 +425,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 28,
@@ -333,8 +441,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 29,
@@ -345,8 +457,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 30,
@@ -357,8 +473,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 31,
@@ -369,8 +489,12 @@
       "quality_of_sleep": 5,
       "physical_activity": 35,
       "stress_level": 7,
-      "daily_steps": 4100
-    },
+      "daily_steps": 4100,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 32,
@@ -381,8 +505,12 @@
       "quality_of_sleep": 5,
       "physical_activity": 35,
       "stress_level": 7,
-      "daily_steps": 4100
-    },
+      "daily_steps": 4100,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 33,
@@ -393,8 +521,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 75,
       "stress_level": 4,
-      "daily_steps": 6800
-    },
+      "daily_steps": 6800,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 34,
@@ -405,8 +537,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 35,
@@ -417,8 +553,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 36,
@@ -429,8 +569,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 37,
@@ -441,8 +585,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 38,
@@ -453,8 +601,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 39,
@@ -465,8 +617,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 40,
@@ -477,8 +633,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 41,
@@ -489,8 +649,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 42,
@@ -501,8 +665,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 43,
@@ -513,8 +681,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 44,
@@ -525,8 +697,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 45,
@@ -537,8 +713,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 46,
@@ -549,8 +729,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 47,
@@ -561,8 +745,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 48,
@@ -573,8 +761,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 49,
@@ -585,8 +777,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 50,
@@ -597,8 +793,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 51,
@@ -609,8 +809,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 45,
       "stress_level": 3,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 52,
@@ -621,8 +825,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 45,
       "stress_level": 3,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 53,
@@ -633,8 +841,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 54,
@@ -645,8 +857,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 55,
@@ -657,8 +873,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 56,
@@ -669,8 +889,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 57,
@@ -681,8 +905,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 58,
@@ -693,8 +921,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 59,
@@ -705,8 +937,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 60,
@@ -717,8 +953,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 75,
       "stress_level": 6,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 61,
@@ -729,8 +969,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 62,
@@ -741,8 +985,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 63,
@@ -753,8 +1001,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 64,
@@ -765,8 +1017,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 65,
@@ -777,8 +1033,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 66,
@@ -789,8 +1049,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 67,
@@ -801,8 +1065,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 50,
       "stress_level": 6,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 68,
@@ -813,8 +1081,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 69,
@@ -825,8 +1097,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 50,
       "stress_level": 6,
-      "daily_steps": 5500
-    },
+      "daily_steps": 5500,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 70,
@@ -837,8 +1113,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 50,
       "stress_level": 6,
-      "daily_steps": 5500
-    },
+      "daily_steps": 5500,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 71,
@@ -849,8 +1129,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 72,
@@ -861,8 +1145,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 73,
@@ -873,8 +1161,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 74,
@@ -885,8 +1177,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 75,
@@ -897,8 +1193,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 76,
@@ -909,8 +1209,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 77,
@@ -921,8 +1225,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 78,
@@ -933,8 +1241,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 79,
@@ -945,8 +1257,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 80,
@@ -957,8 +1273,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 30,
       "stress_level": 8,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 81,
@@ -969,8 +1289,12 @@
       "quality_of_sleep": 4,
       "physical_activity": 32,
       "stress_level": 8,
-      "daily_steps": 5200
-    },
+      "daily_steps": 5200,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 82,
@@ -981,8 +1305,12 @@
       "quality_of_sleep": 4,
       "physical_activity": 32,
       "stress_level": 8,
-      "daily_steps": 5200
-    },
+      "daily_steps": 5200,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 83,
@@ -993,8 +1321,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 40,
       "stress_level": 5,
-      "daily_steps": 5600
-    },
+      "daily_steps": 5600,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 84,
@@ -1005,8 +1337,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 40,
       "stress_level": 5,
-      "daily_steps": 5600
-    },
+      "daily_steps": 5600,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 85,
@@ -1017,8 +1353,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 86,
@@ -1029,8 +1369,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 87,
@@ -1041,8 +1385,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 88,
@@ -1053,8 +1401,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 89,
@@ -1065,8 +1417,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 90,
@@ -1077,8 +1433,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 91,
@@ -1089,8 +1449,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 92,
@@ -1101,8 +1465,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 93,
@@ -1113,8 +1481,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 94,
@@ -1125,8 +1497,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 3300
-    },
+      "daily_steps": 3300,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 95,
@@ -1137,8 +1513,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 96,
@@ -1149,8 +1529,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 97,
@@ -1161,8 +1545,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 98,
@@ -1173,8 +1561,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 99,
@@ -1185,8 +1577,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 100,
@@ -1197,8 +1593,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 101,
@@ -1209,8 +1609,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 102,
@@ -1221,8 +1625,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 103,
@@ -1233,8 +1641,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 104,
@@ -1245,8 +1657,12 @@
       "quality_of_sleep": 5,
       "physical_activity": 35,
       "stress_level": 7,
-      "daily_steps": 4800
-    },
+      "daily_steps": 4800,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 105,
@@ -1257,8 +1673,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 106,
@@ -1269,8 +1689,12 @@
       "quality_of_sleep": 5,
       "physical_activity": 35,
       "stress_level": 7,
-      "daily_steps": 4800
-    },
+      "daily_steps": 4800,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 107,
@@ -1281,8 +1705,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 42,
       "stress_level": 6,
-      "daily_steps": 4200
-    },
+      "daily_steps": 4200,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 108,
@@ -1293,8 +1721,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 70,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 109,
@@ -1305,8 +1737,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 70,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 110,
@@ -1317,8 +1753,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 111,
@@ -1329,8 +1769,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 112,
@@ -1341,8 +1785,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 113,
@@ -1353,8 +1801,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 114,
@@ -1365,8 +1817,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 115,
@@ -1377,8 +1833,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 116,
@@ -1389,8 +1849,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 117,
@@ -1401,8 +1865,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 118,
@@ -1413,8 +1881,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 119,
@@ -1425,8 +1897,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 120,
@@ -1437,8 +1913,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 121,
@@ -1449,8 +1929,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 122,
@@ -1461,8 +1945,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 123,
@@ -1473,8 +1961,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 124,
@@ -1485,8 +1977,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 125,
@@ -1497,8 +1993,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 126,
@@ -1509,8 +2009,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 127,
@@ -1521,8 +2025,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 128,
@@ -1533,8 +2041,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 129,
@@ -1545,8 +2057,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 130,
@@ -1557,8 +2073,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 131,
@@ -1569,8 +2089,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 132,
@@ -1581,8 +2105,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 133,
@@ -1593,8 +2121,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 134,
@@ -1605,8 +2137,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 135,
@@ -1617,8 +2153,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 136,
@@ -1629,8 +2169,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 137,
@@ -1641,8 +2185,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 138,
@@ -1653,8 +2201,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 139,
@@ -1665,8 +2217,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 140,
@@ -1677,8 +2233,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 141,
@@ -1689,8 +2249,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 142,
@@ -1701,8 +2265,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 143,
@@ -1713,8 +2281,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 144,
@@ -1725,8 +2297,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 4,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 145,
@@ -1737,8 +2313,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 146,
@@ -1749,8 +2329,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 3300
-    },
+      "daily_steps": 3300,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 147,
@@ -1761,8 +2345,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 148,
@@ -1773,8 +2361,12 @@
       "quality_of_sleep": 5,
       "physical_activity": 40,
       "stress_level": 7,
-      "daily_steps": 4000
-    },
+      "daily_steps": 4000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 149,
@@ -1785,8 +2377,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 50,
       "stress_level": 6,
-      "daily_steps": 5500
-    },
+      "daily_steps": 5500,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 150,
@@ -1797,8 +2393,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 80,
       "stress_level": 3,
-      "daily_steps": 7500
-    },
+      "daily_steps": 7500,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 151,
@@ -1809,8 +2409,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 80,
       "stress_level": 3,
-      "daily_steps": 7500
-    },
+      "daily_steps": 7500,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 152,
@@ -1821,8 +2425,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 153,
@@ -1833,8 +2441,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 154,
@@ -1845,8 +2457,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 155,
@@ -1857,8 +2473,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 156,
@@ -1869,8 +2489,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 157,
@@ -1881,8 +2505,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 158,
@@ -1893,8 +2521,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 159,
@@ -1905,8 +2537,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 160,
@@ -1917,8 +2553,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 161,
@@ -1929,8 +2569,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 60,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 162,
@@ -1941,8 +2585,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 55,
       "stress_level": 6,
-      "daily_steps": 7300
-    },
+      "daily_steps": 7300,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 163,
@@ -1953,8 +2601,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 55,
       "stress_level": 6,
-      "daily_steps": 7300
-    },
+      "daily_steps": 7300,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 164,
@@ -1965,8 +2617,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 165,
@@ -1977,8 +2633,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 166,
@@ -1989,8 +2649,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 167,
@@ -2001,8 +2665,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 70,
       "stress_level": 6,
-      "daily_steps": 6200
-    },
+      "daily_steps": 6200,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 168,
@@ -2013,8 +2681,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 55,
       "stress_level": 6,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 169,
@@ -2025,8 +2697,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 55,
       "stress_level": 6,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 170,
@@ -2037,8 +2713,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 171,
@@ -2049,8 +2729,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 172,
@@ -2061,8 +2745,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 173,
@@ -2073,8 +2761,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 174,
@@ -2085,8 +2777,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 175,
@@ -2097,8 +2793,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 176,
@@ -2109,8 +2809,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 177,
@@ -2121,8 +2825,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 178,
@@ -2133,8 +2841,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 179,
@@ -2145,8 +2857,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 180,
@@ -2157,8 +2873,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 181,
@@ -2169,8 +2889,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 182,
@@ -2181,8 +2905,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 183,
@@ -2193,8 +2921,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 184,
@@ -2205,8 +2937,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 185,
@@ -2217,8 +2953,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 186,
@@ -2229,8 +2969,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 187,
@@ -2241,8 +2985,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 188,
@@ -2253,8 +3001,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 189,
@@ -2265,8 +3017,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 190,
@@ -2277,8 +3033,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 191,
@@ -2289,8 +3049,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 192,
@@ -2301,8 +3065,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 193,
@@ -2313,8 +3081,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 194,
@@ -2325,8 +3097,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 195,
@@ -2337,8 +3113,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 196,
@@ -2349,8 +3129,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 197,
@@ -2361,8 +3145,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 198,
@@ -2373,8 +3161,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 199,
@@ -2385,8 +3177,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 200,
@@ -2397,8 +3193,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 201,
@@ -2409,8 +3209,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 202,
@@ -2421,8 +3225,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 203,
@@ -2433,8 +3241,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 204,
@@ -2445,8 +3257,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 47,
       "stress_level": 7,
-      "daily_steps": 6800
-    },
+      "daily_steps": 6800,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 205,
@@ -2457,8 +3273,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 75,
       "stress_level": 4,
-      "daily_steps": 6800
-    },
+      "daily_steps": 6800,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 206,
@@ -2469,8 +3289,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 207,
@@ -2481,8 +3305,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 208,
@@ -2493,8 +3321,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 209,
@@ -2505,8 +3337,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 210,
@@ -2517,8 +3353,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 211,
@@ -2529,8 +3369,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 212,
@@ -2541,8 +3385,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 213,
@@ -2553,8 +3401,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 214,
@@ -2565,8 +3417,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 215,
@@ -2577,8 +3433,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 216,
@@ -2589,8 +3449,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 217,
@@ -2601,8 +3465,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 218,
@@ -2613,8 +3481,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 219,
@@ -2625,8 +3497,12 @@
       "quality_of_sleep": 8,
       "physical_activity": 90,
       "stress_level": 5,
-      "daily_steps": 8000
-    },
+      "daily_steps": 8000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 220,
@@ -2637,8 +3513,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 221,
@@ -2649,8 +3529,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 222,
@@ -2661,8 +3545,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 223,
@@ -2673,8 +3561,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 224,
@@ -2685,8 +3577,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 225,
@@ -2697,8 +3593,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 226,
@@ -2709,8 +3609,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 227,
@@ -2721,8 +3625,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 228,
@@ -2733,8 +3641,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 229,
@@ -2745,8 +3657,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 230,
@@ -2757,8 +3673,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 231,
@@ -2769,8 +3689,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 232,
@@ -2781,8 +3705,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 233,
@@ -2793,8 +3721,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 234,
@@ -2805,8 +3737,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 235,
@@ -2817,8 +3753,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 236,
@@ -2829,8 +3769,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 237,
@@ -2841,8 +3785,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 238,
@@ -2853,8 +3801,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 239,
@@ -2865,8 +3817,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 240,
@@ -2877,8 +3833,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 241,
@@ -2889,8 +3849,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 242,
@@ -2901,8 +3865,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 243,
@@ -2913,8 +3881,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 244,
@@ -2925,8 +3897,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 245,
@@ -2937,8 +3913,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 246,
@@ -2949,8 +3929,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 247,
@@ -2961,8 +3945,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 248,
@@ -2973,8 +3961,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 249,
@@ -2985,8 +3977,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 250,
@@ -2997,8 +3993,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 251,
@@ -3009,8 +4009,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 30,
       "stress_level": 6,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 252,
@@ -3021,8 +4025,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 30,
       "stress_level": 6,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 253,
@@ -3033,8 +4041,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 254,
@@ -3045,8 +4057,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 255,
@@ -3057,8 +4073,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 256,
@@ -3069,8 +4089,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 257,
@@ -3081,8 +4105,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 258,
@@ -3093,8 +4121,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 259,
@@ -3105,8 +4137,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 260,
@@ -3117,8 +4153,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 261,
@@ -3129,8 +4169,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 262,
@@ -3141,8 +4185,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 263,
@@ -3153,8 +4201,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 4,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 264,
@@ -3165,8 +4217,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 55,
       "stress_level": 5,
-      "daily_steps": 5500
-    },
+      "daily_steps": 5500,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 265,
@@ -3177,8 +4233,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 65,
       "stress_level": 5,
-      "daily_steps": 3500
-    },
+      "daily_steps": 3500,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 266,
@@ -3189,8 +4249,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 267,
@@ -3201,8 +4265,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 65,
       "stress_level": 5,
-      "daily_steps": 3500
-    },
+      "daily_steps": 3500,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 268,
@@ -3213,8 +4281,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 269,
@@ -3225,8 +4297,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 270,
@@ -3237,8 +4313,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 271,
@@ -3249,8 +4329,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 272,
@@ -3261,8 +4345,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 273,
@@ -3273,8 +4361,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 274,
@@ -3285,8 +4377,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 275,
@@ -3297,8 +4393,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 276,
@@ -3309,8 +4409,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 277,
@@ -3321,8 +4425,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 85,
       "stress_level": 3,
-      "daily_steps": 3700
-    },
+      "daily_steps": 3700,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 278,
@@ -3333,8 +4441,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 85,
       "stress_level": 3,
-      "daily_steps": 3700
-    },
+      "daily_steps": 3700,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 279,
@@ -3345,8 +4457,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 280,
@@ -3357,8 +4473,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 281,
@@ -3369,8 +4489,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 282,
@@ -3381,8 +4505,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 283,
@@ -3393,8 +4521,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 284,
@@ -3405,8 +4537,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 285,
@@ -3417,8 +4553,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 286,
@@ -3429,8 +4569,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 287,
@@ -3441,8 +4585,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 288,
@@ -3453,8 +4601,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 289,
@@ -3465,8 +4617,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 290,
@@ -3477,8 +4633,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 291,
@@ -3489,8 +4649,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 292,
@@ -3501,8 +4665,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 293,
@@ -3513,8 +4681,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 294,
@@ -3525,8 +4697,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 295,
@@ -3537,8 +4713,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 296,
@@ -3549,8 +4729,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 297,
@@ -3561,8 +4745,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 298,
@@ -3573,8 +4761,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 299,
@@ -3585,8 +4777,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 300,
@@ -3597,8 +4793,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 301,
@@ -3609,8 +4809,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 302,
@@ -3621,8 +4825,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 303,
@@ -3633,8 +4841,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 55,
       "stress_level": 6,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 304,
@@ -3645,8 +4857,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 305,
@@ -3657,8 +4873,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 306,
@@ -3669,8 +4889,12 @@
       "quality_of_sleep": 6,
       "physical_activity": 90,
       "stress_level": 8,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 307,
@@ -3681,8 +4905,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 308,
@@ -3693,8 +4921,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 309,
@@ -3705,8 +4937,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 310,
@@ -3717,8 +4953,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 311,
@@ -3729,8 +4969,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 312,
@@ -3741,8 +4985,12 @@
       "quality_of_sleep": 7,
       "physical_activity": 45,
       "stress_level": 7,
-      "daily_steps": 6000
-    },
+      "daily_steps": 6000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 313,
@@ -3753,8 +5001,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 314,
@@ -3765,8 +5017,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 315,
@@ -3777,8 +5033,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 316,
@@ -3789,8 +5049,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 317,
@@ -3801,8 +5065,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 318,
@@ -3813,8 +5081,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 319,
@@ -3825,8 +5097,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 320,
@@ -3837,8 +5113,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 321,
@@ -3849,8 +5129,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 322,
@@ -3861,8 +5145,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 323,
@@ -3873,8 +5161,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 324,
@@ -3885,8 +5177,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 325,
@@ -3897,8 +5193,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 326,
@@ -3909,8 +5209,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 327,
@@ -3921,8 +5225,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 328,
@@ -3933,8 +5241,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 329,
@@ -3945,8 +5257,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 330,
@@ -3957,8 +5273,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 331,
@@ -3969,8 +5289,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 332,
@@ -3981,8 +5305,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 333,
@@ -3993,8 +5321,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 334,
@@ -4005,8 +5337,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 335,
@@ -4017,8 +5353,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 336,
@@ -4029,8 +5369,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 337,
@@ -4041,8 +5385,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 338,
@@ -4053,8 +5401,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 339,
@@ -4065,8 +5417,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 30,
       "stress_level": 3,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 340,
@@ -4077,8 +5433,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 4,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 341,
@@ -4089,8 +5449,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 4,
-      "daily_steps": 5000
-    },
+      "daily_steps": 5000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 342,
@@ -4101,8 +5465,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 90,
       "stress_level": 3,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 343,
@@ -4113,8 +5481,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 90,
       "stress_level": 3,
-      "daily_steps": 10000
-    },
+      "daily_steps": 10000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 344,
@@ -4125,8 +5497,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 345,
@@ -4137,8 +5513,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 346,
@@ -4149,8 +5529,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 347,
@@ -4161,8 +5545,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 348,
@@ -4173,8 +5561,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 349,
@@ -4185,8 +5577,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 350,
@@ -4197,8 +5593,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 351,
@@ -4209,8 +5609,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 352,
@@ -4221,8 +5625,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 353,
@@ -4233,8 +5641,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 354,
@@ -4245,8 +5657,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 355,
@@ -4257,8 +5673,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 356,
@@ -4269,8 +5689,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 357,
@@ -4281,8 +5705,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 358,
@@ -4293,8 +5721,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 359,
@@ -4305,8 +5737,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 360,
@@ -4317,8 +5753,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 361,
@@ -4329,8 +5769,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 362,
@@ -4341,8 +5785,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 363,
@@ -4353,8 +5801,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 364,
@@ -4365,8 +5817,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 365,
@@ -4377,8 +5833,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 366,
@@ -4389,8 +5849,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 367,
@@ -4401,8 +5865,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 368,
@@ -4413,8 +5881,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 369,
@@ -4425,8 +5897,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 370,
@@ -4437,8 +5913,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 371,
@@ -4449,8 +5929,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 372,
@@ -4461,8 +5945,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 373,
@@ -4473,8 +5961,12 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    },
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      },
     {
       "person_id":1,
       "metric_id": 374,
@@ -4485,6 +5977,10 @@
       "quality_of_sleep": 9,
       "physical_activity": 75,
       "stress_level": 3,
-      "daily_steps": 7000
-    }
+      "daily_steps": 7000,
+      "user_activity": 4,
+      "user_mood": 2,
+      "user_sleep": 1,
+      "user_stress": 5
+      }
    ]
