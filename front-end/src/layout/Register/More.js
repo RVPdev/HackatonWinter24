@@ -77,7 +77,7 @@ function More() {
             <label htmlFor="weight">Weight</label>
             <input
               type="number"
-              placeholder="Enter your weight"
+              placeholder="Enter your weight in pounds"
               {...register('weight', { required: true })}
             />
             {errors['weight'] && <p className="form-error-alert">Please check the weight</p>}
@@ -86,7 +86,7 @@ function More() {
             <label htmlFor="height">Height</label>
             <input
               type="number"
-              placeholder="Enter your height"
+              placeholder="Enter your height in inches"
               {...register('height', { required: true })}
             />
             {errors['height'] && <p className="form-error-alert">Please check the height</p>}

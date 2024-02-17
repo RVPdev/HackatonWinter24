@@ -49,7 +49,7 @@ async function fetchJson(url, options, onCancel) {
 }
 
 export async function createAccount(newAccountData) {
-  const url = `${API_BASE_URL}/new_account`;
+  const url = `${API_BASE_URL}/signup`;
   const options = {
     method: "POST",
     headers,

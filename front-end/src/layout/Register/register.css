@@ -82,9 +82,9 @@
     width: 300px;
   }
 
-  .register-image img {
+  .register-image-wrapper img {
     object-fit: scale-down;
-    max-width: 100%;
+    width: 300px;
   }
   
   form {
