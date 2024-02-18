@@ -99,22 +99,22 @@ export async function loadEmployee(employeeId) {
     headers,
   };
 
-  // return {
-  //     first_name: "Jane",
-  //     last_name: "Doe",
-  //     average_mood: 3.5,
-  //     helpful_tips: ["meditate", "go for a run", "eat healthier"],
-  //     quote: "Believe in yourself",
-  //     summary: [
-  //       {
-  //         date: "2024-02-16",
-  //         activity: 2.5,
-  //         sleep: 2,
-  //         stress: 3,
-  //       },
-  //     ],
-  // };
-  return await fetchJson(url, options, {})
+  return {
+      first_name: "Jane",
+      last_name: "Doe",
+      average_mood: 3.5,
+      helpful_tips: ["meditate", "go for a run", "eat healthier"],
+      quote: "Believe in yourself",
+      summary: [
+        {
+          date: "2024-02-16",
+          activity: 2.5,
+          sleep: 2,
+          stress: 3,
+        },
+      ],
+  };
+  //return await fetchJson(url, options, {})
 }
 
 export async function login(loginData) {
