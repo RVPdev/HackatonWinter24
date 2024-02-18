@@ -10,28 +10,29 @@ import { submitHealthData } from "../../utils/api";
 import { useState } from "react";
 import ErrorAlert from "../ErrorAlert";
 
-function HealthForm() {
+function HealthForm({ userId, handleClose }) {
+  /* Users can navigate here either through registration process or modal on employee page - props come from when user is on employee page */
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const navigate = useNavigate();
-  const [error, setError] = useState(null)
+  const [error, setError] = useState(null);
 
   const location = useLocation();
-  const user_id = location.state.user_id;
+  const user_id = location?.state?.user_id ?? userId;
 
   async function onSubmit(data) {
     /* Submit healthform to db leveraging employee ID*/
     console.log(data);
     try {
-      await submitHealthData(user_id, data)
-      navigate(`/employees/${user_id}`);
+      await submitHealthData(user_id, data);
+      handleClose ? handleClose() : navigate(`/employees/${user_id}`);
     } catch (error) {
-      setError(error)
+      console.log("error");
+      setError(error);
     }
-    
   }
 
   console.log(`user_id healthform: ${user_id}`);
@@ -104,8 +105,9 @@ function HealthForm() {
             </div>
           </label>
         </div>
-        {errors["user_mood"] && <p className="form-error-alert">Please check the mood</p>}
-
+        {errors["user_mood"] && (
+          <p className="form-error-alert">Please check the mood</p>
+        )}
 
         <h4>How long did you sleep?</h4>
         <div className="emoji-wrapper">
@@ -155,7 +157,9 @@ function HealthForm() {
             />
           </label>
         </div>
-        {errors["user_sleep"] && <p className="form-error-alert">Please check the sleep</p>}
+        {errors["user_sleep"] && (
+          <p className="form-error-alert">Please check the sleep</p>
+        )}
 
         <h4>How active were you today?</h4>
         <div className="emoji-wrapper">
@@ -205,8 +209,9 @@ function HealthForm() {
             />
           </label>
         </div>
-        {errors["user_activity"] && <p className="form-error-alert">Please check the activity</p>}
-
+        {errors["user_activity"] && (
+          <p className="form-error-alert">Please check the activity</p>
+        )}
 
         <h4>How stressed are you feeling today?</h4>
         <div className="emoji-wrapper">
@@ -256,10 +261,13 @@ function HealthForm() {
             />
           </label>
         </div>
-        {errors["user_stress"] && <p className="form-error-alert">Please check the stress</p>}
+        {errors["user_stress"] && (
+          <p className="form-error-alert">Please check the stress</p>
+        )}
 
-
-        <button type="submit" className="submit-form-button">SUBMIT</button>
+        <button type="submit" className="submit-form-button">
+          SUBMIT
+        </button>
       </form>
     </div>
   );

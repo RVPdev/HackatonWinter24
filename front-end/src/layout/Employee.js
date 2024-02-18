@@ -11,21 +11,40 @@ import HappyColored from "./../assets/happyicons/Happy_color.png";
 import HealthierImage from "./../assets/dashboard/healthier.png"
 import MeditateImage from "./../assets/dashboard/meditate.png"
 import RunImage from "./../assets/dashboard/run.png"
-
+import Modal from '@mui/material/Modal'
 import { loadEmployee } from "../utils/api";
+import { Box, Typography } from "@mui/material"
+import HealthForm from "./Register/HealthForm.js"
+import Chart from "./Chart.js";
+
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 
 function Employee() {
   const [user, setUser] = useState(null);
-  //const { employeeId } = useParams();
-  const employeeId = 1;
+  //const { userId } = useParams();
+  const userId = 1;
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false); 
 
   const navigate = useNavigate();
 
-  console.log(`employee id employee page: ${employeeId}`);
+  console.log(`userId employee page: ${userId}`);
 
   /* Load User via url*/
   useEffect(() => {
-    /* fetch from DB using employeeId*/
+    /* fetch from DB using userId*/
 
     async function getUser() {
       try {
@@ -42,42 +61,31 @@ function Employee() {
   if (user) {
     return (
       <div>
+         <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <HealthForm userId={userId} handleClose={handleClose}/>
+        </Box>
+      </Modal>
         <h1 className="employee-header">Welcome {user["first_name"]}</h1>
         <div className="employee-page-wrapper">
           <div className="employee-column-1">
             <h1>How are you feeling?</h1>
-            <div className="emoji-wrapper">
-              <div>
-                <img className="emoji" src={HappyIcon} alt="happy icon" />
-                <p>Happy</p>
-              </div>
-              <div>
-                <img className="emoji" src={SadIcon} alt="upset icon" />
-                <p>Sad</p>
-              </div>
-              <div>
-                <img className="emoji" src={AngryIcon} alt="upset icon" />
-                <p>Upset</p>
-              </div>
-              <div>
-                <img className="emoji" src={TiredIcon} alt="tired icon" />
-                <p>Tired</p>
-              </div>
-              <div>
-                <img className="emoji" src={MehIcon} alt="meh icon" />
-                <p>Meh</p>
-              </div>
-            </div>
             <button
               className="add-entry-button"
-              onClick={() =>
-                navigate(`/register/mental`, {
-                  replace: true,
-                  state: {
-                    employeeId: employeeId,
-                  },
-                })
-              }
+              onClick={handleOpen}
+              // onClick={() =>
+              //   navigate(`/register/mental`, {
+              //     replace: true,
+              //     state: {
+              //       employeeId: employeeId,
+              //     },
+              //   })
+              // }
             >
               <img className="plus-btn-img" src={HappyIcon} alt="icon" />
               <p>ADD YOUR DAILY ENTRY</p>
@@ -110,7 +118,9 @@ function Employee() {
           <div className="employee-column-2">
             <div className="weekly-reports-section">
               <h1>Weekly Reports</h1>
+              <Chart />
             </div>
+           
             <div className="helpful-tips-section">
               <h1>Helpful tips</h1>
               <div className="healthy-tips-wrapper">

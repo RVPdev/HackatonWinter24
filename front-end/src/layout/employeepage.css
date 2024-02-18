@@ -284,7 +284,10 @@ form {
 }
 
 .weekly-reports-section {
-    flex-basis: 1
+    flex-basis: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .healthy-tips-wrapper {
