@@ -1,5 +1,12 @@
 const knex = require("../db/connection");
 
+function create(newData) {
+    return knex("health_metrics")
+      .insert(newData)
+      .returning("*")
+      .then((insertData) => insertData[0]);
+  }
+
 function isUserExists(user_id) {
   return knex("user_information").select("*").where({ user_id: user_id });
 }
@@ -39,7 +46,10 @@ function avgHappy(user_id) {
       knex.raw("hm.person_id =?", [user_id])
     ).first();
 }
+
+
 module.exports = {
+  create,
   isUserExists,
   list,
   average,

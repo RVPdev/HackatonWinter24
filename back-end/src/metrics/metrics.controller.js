@@ -2,13 +2,13 @@ const { query } = require("express");
 const service = require("./metrics.service");
 const hasProperties = require("../errors/hasProperties");
 const moment = require("moment");
-// const hasRequiredProperties = hasProperties(
-//     "person_id",
-//     "user_activity",
-//     "user_mood",
-//     "user_sleep",
-//     "user_stress"
-// );
+const hasRequiredProperties = hasProperties(
+    "person_id",
+    "user_activity",
+    "user_mood",
+    "user_sleep",
+    "user_stress"
+);
 
 async function isUser(req, res, next) {
   const id = req.params.user_id;
@@ -40,7 +40,28 @@ async function list(req, res, next) {
   }
 }
 
+function create(req, res, next) {
+    service
+      .create(req.body.data)
+      .then((data) => res.status(201).json({ data }))
+      .catch(next);
+  }
+
+  async function isUserValid(req, res, next) {
+    const id = req.body.data.person_id;
+    let response;
+    response = await service.isUserExists(id);
+    if (response.length === 0) {
+        return next({
+          status: 400,
+          message: `ID ${id} does not exists`,
+        });
+    } else {
+        return next();
+    }
+  }
 
 module.exports = {
   list: [isUser, list],
+  create:[hasRequiredProperties,isUserValid,create]
 };
