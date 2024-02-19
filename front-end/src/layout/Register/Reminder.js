@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Navigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { submitReminder } from "../../utils/api";
 import ErrorAlert from "../ErrorAlert";
 
-function Reminder() {
+function Reminder({loggedIn}) {
   const {
     register,
     handleSubmit,
@@ -12,6 +12,12 @@ function Reminder() {
   } = useForm();
   const navigate = useNavigate();
   const [error, setError] = useState(null);
+  const location = useLocation();
+  const user_id = location?.state?.user_id;
+
+  if(!loggedIn || !user_id) {
+    return <Navigate to="/register" replace />
+  }
 
   async function handleReminderSubmit(data) {
     /*send to db leveraging employeeId */
@@ -30,9 +36,6 @@ function Reminder() {
     }
   }
 
-  const location = useLocation();
-  const user_id = location.state.user_id;
-  console.log(`user_id Reminder: ${user_id}`);
 
   return (
     <div className="page">

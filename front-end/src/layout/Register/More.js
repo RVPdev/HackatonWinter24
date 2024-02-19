@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Navigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { submitMore } from "../../utils/api";
 import "../Register/register.css";
 import ErrorAlert from "../ErrorAlert";
 
-function More() {
+function More({loggedIn}) {
   const {
     register,
     handleSubmit,
@@ -13,9 +13,15 @@ function More() {
   } = useForm();
   const navigate = useNavigate();
   const [error, setError] = useState(null);
+  const location = useLocation();
+  const user_id = location?.state?.user_id;
+
+
+  if(!loggedIn || !user_id) {
+    return <Navigate to="/register" replace />
+  }
 
   async function handleMoreSubmit(data) {
-    /* Add this data to db leveraging employee id*/
     console.log(`user_id: ${user_id}, data: ${JSON.stringify(data)}`);
     try {
       await submitMore(user_id, data);
@@ -31,9 +37,7 @@ function More() {
     }
   }
 
-  const location = useLocation();
-  const user_id = location.state.user_id;
-  console.log(`user_id more: ${user_id}`);
+
 
   return (
     <div className="page">

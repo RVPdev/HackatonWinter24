@@ -2,12 +2,16 @@
 import Footer from "./Footer";
 import Header from "./Header/Header";
 import Main from "./Main";
+import { useState } from "react";
 
 function Layout() {
+
+  const [loggedIn, setLoggedIn] = useState(false)
+
   return (
     <>
-        <Header/>
-        <Main />
+        <Header loggedIn={loggedIn}/>
+        <Main loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
     </>
   );
 }

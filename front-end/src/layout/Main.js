@@ -7,15 +7,16 @@ import NotFound from "./Page_not_found";
 import Home from "./Home/Home";
 import Register from "./Register/Register";
 
-function Main() {
+function Main({loggedIn, setLoggedIn}) {
+
 
   return (
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login loggedIn={loggedIn} setLoggedIn={setLoggedIn} />} />
         <Route path="/admin" element={<Admin />} />
-        <Route path="/register/*" element={<Register />} />
+        <Route path="/register/*" element={<Register loggedIn={loggedIn}/>} />
         <Route path="/employees/:employeeId" element={<Employee />} />
         <Route path="/employees/*" element={<Employees />} />
         <Route path="*" element={<NotFound />} />

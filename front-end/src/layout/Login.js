@@ -4,7 +4,7 @@ import { login } from "../utils/api";
 import "./Register/register.css";
 import LoginImage from "./../assets/login_create/login_image.png";
 
-function Login() {
+function Login({loggedIn, setLoggedIn}) {
   const {
     register,
     handleSubmit,
@@ -18,12 +18,12 @@ function Login() {
     const { user_id, administer_access } = await login(data);
     /*Backend needs to send me employee ID */
     console.log(`USERID: ${user_id}`);
+    setLoggedIn(true)
     if (administer_access) {
       navigate(`/admin`);
     } else {
       navigate(`/employees/${user_id}`);
     }
-    /* Navigate to employee/employeeId */
   }
 
   return (
