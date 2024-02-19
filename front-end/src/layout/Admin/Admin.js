@@ -30,10 +30,13 @@ function Admin() {
   const navigate = useNavigate();
   const [employeeToDelete, setEmployeeToDelete] = useState(null)
 
+  /* Determines if pop-up is open or not*/
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
+
+  /* Runs when pop-up closes */
   const handleClose = () => {
-    setEmployeeToDelete(null)
+    setEmployeeToDelete(null);
     setOpen(false)
   }; 
 
@@ -46,11 +49,11 @@ function Admin() {
     setEmployeeToDelete(user)
   }
 
+  /* Loads employees from db - called when search query is executed or when employee is deleted */
   const loadEmployees = useCallback(
     async () => {
        try {
          const response = await searchEmployees(searchQuery);
-         console.log( `response is ${JSON.stringify(response)}`)
          setEmployees([...response])
        } catch (error) {
          setError(error)
@@ -62,7 +65,7 @@ function Admin() {
   /* Opens modal (pop-up) if there is an employee to delete*/ 
   useEffect(()=>{
     if(employeeToDelete) {
-      setOpen(true)
+      handleOpen()
     }
   }, [employeeToDelete])
 
@@ -83,7 +86,7 @@ function Admin() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          {employeeToDelete ? <DeleteEmployee employeeToDelete={employeeToDelete} handleClose={handleClose} setError={setError}/>: null}
+          {employeeToDelete ? <DeleteEmployee employeeToDelete={employeeToDelete} handleClose={handleClose} setError={setError} loadEmployees={loadEmployees}/>: null}
         </Box>
       </Modal>
     <section className="admin-section" id="admin">

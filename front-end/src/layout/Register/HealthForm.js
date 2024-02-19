@@ -25,7 +25,7 @@ function HealthForm({ userId, handleClose }) {
 
   async function onSubmit(data) {
     /* Submit healthform to db leveraging employee ID*/
-    console.log(data);
+    console.log(`Healthdata! ${JSON.stringify(data)}`);
     try {
       await submitHealthData(user_id, data);
       handleClose ? handleClose() : navigate(`/employees/${user_id}`);

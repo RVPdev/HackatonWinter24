@@ -1,7 +1,7 @@
 import React from 'react'
 import { deleteEmployee } from '../../utils/api'
 
-function DeleteEmployee({employeeToDelete, handleClose, setError}) {
+function DeleteEmployee({employeeToDelete, handleClose, setError, loadEmployees}) {
 
    const onCancel = ()=> {
     handleClose()
@@ -10,14 +10,13 @@ function DeleteEmployee({employeeToDelete, handleClose, setError}) {
    const onDelete = async ()=> {
      try {
       await deleteEmployee(employeeToDelete.user_id)
-      handleClose();
+      loadEmployees();
     } catch (error) {
       setError(error)
-      handleClose()
     }
+    handleClose();
    }
 
-   console.log(`employeetodelete: ${JSON.stringify(employeeToDelete)}`)
 
   return (
     <>

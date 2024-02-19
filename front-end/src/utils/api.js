@@ -2,8 +2,7 @@
 // const API_BASE_URL =
 //   process.env.REACT_APP_API_BASE_URL || "http://localhost:5001";
 
-
-  const API_BASE_URL = "https://hackathon-services.onrender.com"
+const API_BASE_URL = "https://hackathon-services.onrender.com";
 
 // Initialize a new Headers object to configure HTTP request headers
 const headers = new Headers();
@@ -20,8 +19,6 @@ headers.append("Content-Type", "application/json");
  */
 
 async function fetchJson(url, options, onCancel) {
-
-  console.log(`base url: ${API_BASE_URL}`)
   try {
     // Perform the fetch request with the provided URL and options
     const response = await fetch(url, options);
@@ -61,155 +58,133 @@ export async function createAccount(newAccountData) {
     body: JSON.stringify({ data: newAccountData }),
   };
 
-  // return {
-  //   employeeId: 1,
-  // };
-
-  const response = await fetchJson(url, options, {})
-  console.log(JSON.stringify(response))
+  const response = await fetchJson(url, options, {});
   return response.user_id;
 }
 
 export async function submitMore(user_id, moreData) {
   const url = `${API_BASE_URL}/signup/additional_info`;
   const options = {
-    method: "PUT", //assuming put since employee record is already created
+    method: "PUT",
     headers,
-    body: JSON.stringify({ data: {...moreData, user_id }, }),
+    body: JSON.stringify({ data: { ...moreData, user_id } }),
   };
 
-  return await fetchJson(url, options)
+  return await fetchJson(url, options);
 }
 
 export async function submitReminder(user_id, reminderData) {
   const url = `${API_BASE_URL}/signup/additional_info/schedule_reminder`;
   const options = {
-    method: "PUT", 
+    method: "PUT",
     headers,
-    body: JSON.stringify({ data: {...reminderData, user_id} }),
+    body: JSON.stringify({ data: { ...reminderData, user_id } }),
   };
 
   await fetchJson(url, options);
   //does not need to return anything to front-end
 }
 
-
-
 export async function loadEmployee(employeeId) {
-  const url = `${API_BASE_URL}/employee/${employeeId}`;
+  const url = `${API_BASE_URL}/metrics/${employeeId}`;
   const options = {
     method: "GET",
     headers,
   };
 
+  const response = await fetchJson(url, options)
+  console.log(`loadEmployee response: ${JSON.stringify(response)}`)
+  return response;
+
   return {
-      user_first_name: "Jane",
-      user_last_name: "Doe",
-      user_average_mood: 3.5,
-      dataset: [
-        {
-          seriesname: "Activity",
-          data: [
-            { value: "4" },
-            { value: "2" },
-            { value: "3" },
-            { value: "4" },
-            { value: "5" },
-            { value: "3" },
-            { value: "5" }
-          ]
-        },
-        {
-          seriesname: "Sleep",
-          data: [
-            { value: "4" },
-            { value: "3" },
-            { value: "1" },
-            { value: "2" },
-            { value: "3" },
-            { value: "5" },
-            { value: "1" }
-          ]
-        },
-        {
-          seriesname: "Stress",
-          data: [
-            { value: "3" },
-            { value: "2" },
-            { value: "4" },
-            { value: "1" },
-            { value: "5" },
-            { value: "2" },
-            { value: "4" }
-          ]
-        }
-      ]
+    user_first_name: "Jane",
+    user_last_name: "Doe",
+    user_average_mood: 3.5,
+    dataset: [
+      {
+        seriesname: "Activity",
+        data: [
+          { value: "4" },
+          { value: "2" },
+          { value: "3" },
+          { value: "4" },
+          { value: "5" },
+          { value: "3" },
+          { value: "5" },
+        ],
+      },
+      {
+        seriesname: "Sleep",
+        data: [
+          { value: "4" },
+          { value: "3" },
+          { value: "1" },
+          { value: "2" },
+          { value: "3" },
+          { value: "5" },
+          { value: "1" },
+        ],
+      },
+      {
+        seriesname: "Stress",
+        data: [
+          { value: "3" },
+          { value: "2" },
+          { value: "4" },
+          { value: "1" },
+          { value: "5" },
+          { value: "2" },
+          { value: "4" },
+        ],
+      },
+    ],
   };
   //return await fetchJson(url, options, {})
 }
 
 export async function searchEmployees(searchKeyword) {
-  const url = `${API_BASE_URL}/login`
+  const url = `${API_BASE_URL}/admin/${searchKeyword}`;
 
   const options = {
-    method: "POST",
-    body: JSON.stringify({data: searchKeyword }),
+    method: "GET",
     headers,
   };
-
-  return employees;
+  const response = await fetchJson(url, options);
+  return response;
 }
 
 export async function deleteEmployee(employeeId) {
-  const url = `${API_BASE_URL}/login`
+  const url = `${API_BASE_URL}/admin/${employeeId}`;
 
   const options = {
     method: "DELETE",
-    body: JSON.stringify({data: employeeId }),
     headers,
   };
 
-  const employeeToDelete = employees.findIndex(employee => employee.user_id === employeeId)  
-  if(employeeToDelete > -1) {
-    employees.splice(employeeToDelete, 1)
-  }
-  console.log(`new employees: ${JSON.stringify(employees)}`)
-
+  await fetchJson(url, options);
 }
 
 export async function login(loginData) {
-  const url = `${API_BASE_URL}/login`
+  const url = `${API_BASE_URL}/login`;
 
   const options = {
     method: "POST",
-    body: JSON.stringify({data: loginData }),
+    body: JSON.stringify({ data: loginData }),
     headers,
   };
 
-  // return {
-  //   employeeId: 1,
-  //   isAdmin: false
-  // }
-  const response = await fetchJson(url, options, {})
-  console.log(`Response: ${JSON.stringify(response)}`)
+  const response = await fetchJson(url, options, {});
   return response;
-
 }
 
 export async function submitHealthData(employeeId, healthData) {
-
-  const url = `${API_BASE_URL}/employee/${employeeId}/health`
+  const url = `${API_BASE_URL}/metrics`;
 
   const options = {
-    method: "PUT",
-    body: JSON.stringify({data: healthData}),
+    method: "POST",
+    body: JSON.stringify({ data: { person_id: employeeId, ...healthData } }),
     headers,
   };
-
- //does not need to return anything
-
+  const healthDataResponse = await fetchJson(url, options);
+  return healthDataResponse;
 }
-
-/* Fake data */
-const employees = [{user_id: 1, user_first_name: "User1", user_last_name: "User1Last Name", user_email: "email1@email.com"},
-{user_id: 2, user_first_name: "Test Name", user_last_name: "User2 Last Name", user_email: "email2@email.com"}]
