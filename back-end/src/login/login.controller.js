@@ -6,13 +6,14 @@ const hasRequiredProperties = hasProperties(
   );
 
 
-
 function login(req,res,next){
     service
     .list(req.body.data)
     .then((data)=>res.status(201).json({data}))
     .catch(next)
 }
+
+
 
 // const { query } = require("express");
 // const service = require("./login.service");
@@ -52,5 +53,5 @@ module.exports = {
     login:[
         hasRequiredProperties,
         login
-    ]    
+    ],   
 }

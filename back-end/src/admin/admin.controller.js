@@ -1,5 +1,5 @@
 const service = require("./admin.service");
-const hasProperties = require("../errors/hasProperties");
+
 
 function showAllUsers(req, res, next) {
   service

@@ -7,6 +7,8 @@ function list(userData){
     .first();
 }
 
+
+
 module.exports={
-    list
+    list,
 }
