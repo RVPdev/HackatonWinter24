@@ -198,16 +198,17 @@ export async function login(loginData) {
 
 export async function submitHealthData(employeeId, healthData) {
 
-  const url = `${API_BASE_URL}/employee/${employeeId}/health`
+  const url = `${API_BASE_URL}/metrics`
 
   const options = {
-    method: "PUT",
-    body: JSON.stringify({data: healthData}),
+    method: "POST",
+    body: JSON.stringify({data: {person_id: employeeId, ...healthData}}),
     headers,
   };
 
- //does not need to return anything
 
+  const healthDataResponse = await fetchJson(url, options)
+  console.log(`Health data response: ${JSON.stringify(healthDataResponse)}`)
 }
 
 /* Fake data */

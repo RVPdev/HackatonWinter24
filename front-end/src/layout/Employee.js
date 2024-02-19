@@ -51,7 +51,7 @@ function Employee({loggedIn, setLoggedIn}) {
 
     async function getUser() {
       try {
-        const employee = await loadEmployee(1);
+        const employee = await loadEmployee(userId);
         console.log(`employee: ${JSON.stringify(employee)}`);
         setUser(employee);
       } catch (error) {
@@ -59,7 +59,7 @@ function Employee({loggedIn, setLoggedIn}) {
       }
     }
     getUser();
-  }, []);
+  }, [userId]);
 
 
   function getEmojiAndText(){
