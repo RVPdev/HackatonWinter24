@@ -9,7 +9,7 @@ function More({loggedIn, userId}) {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState : {errors},
   } = useForm();
   const navigate = useNavigate();
   const [error, setError] = useState(null);

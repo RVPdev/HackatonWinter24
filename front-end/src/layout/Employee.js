@@ -11,98 +11,146 @@ import HappyColored from "./../assets/happyicons/Happy_color.png";
 import AngryColored from "./../assets/happyicons/Angry_color.png";
 import TiredColored from "./../assets/happyicons/Tired_color.png";
 import SadColored from "./../assets/happyicons/Sad_color.png";
-import HealthierImage from "./../assets/dashboard/healthier.png"
-import MeditateImage from "./../assets/dashboard/meditate.png"
-import RunImage from "./../assets/dashboard/run.png"
-import Modal from '@mui/material/Modal'
+import HealthierImage from "./../assets/dashboard/healthier.png";
+import MeditateImage from "./../assets/dashboard/meditate.png";
+import RunImage from "./../assets/dashboard/run.png";
+import Modal from "@mui/material/Modal";
 import { loadEmployee } from "../utils/api";
-import { Box, Typography } from "@mui/material"
-import HealthForm from "./Register/HealthForm.js"
+import { Box, Typography } from "@mui/material";
+import HealthForm from "./Register/HealthForm.js";
 import Chart from "./Chart.js";
 import ErrorAlert from "./ErrorAlert.js";
 
-
 const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  bgcolor: "background.paper",
+  border: "2px solid #000",
   boxShadow: 24,
   p: 4,
 };
 
-function Employee({loggedIn, setLoggedIn}) {
+function Employee({ loggedIn, setLoggedIn }) {
   const [user, setUser] = useState(null);
   const { userId } = useParams();
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false); 
-  const [error, setError] = useState(false)
-
+  const handleClose = () => setOpen(false);
+  const [error, setError] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   /* Load User from database using parameter from URL */
   useEffect(() => {
     const abortController = new AbortController();
     async function getUser() {
       try {
-        const employee = await loadEmployee(userId);
+        //const employee = await loadEmployee(userId) - backend not working properly;
+        const employee = {
+          user_first_name: "Jane",
+          user_last_name: "Doe",
+          administer_access: true,
+          average_mood: 3,
+          dataset: [
+            {
+              seriesname: "Activity",
+              data: [
+                {
+                  value: 4,
+                },
+                {
+                  value: 2,
+                },
+              ],
+            },
+            {
+              seriesname: "Sleep",
+              data: [
+                {
+                  value: 1,
+                },
+                {
+                  value: 4,
+                },
+              ],
+            },
+            {
+              seriesname: "Stress",
+              data: [
+                {
+                  value: 5,
+                },
+                {
+                  value: 5,
+                },
+              ],
+            },
+          ],
+        };
         setUser(employee);
+        setIsAdmin(employee.administer_access);
       } catch (error) {
-        setError(error)
+        setError(error);
       }
     }
     getUser();
-    return ()=> abortController.abort();
+    return () => abortController.abort();
   }, [userId]);
 
-
-  function getEmojiAndText(){
-    const avgMood = user.user_average_mood
-    if(avgMood > 4) {
-      return {emoji: MehColored, text: "Meh"}
+  function getEmojiAndText() {
+    const avgMood = user.average_mood;
+    if (avgMood > 4) {
+      return { emoji: MehColored, text: "Meh" };
     } else if (avgMood > 3) {
-      return {emoji: TiredColored, text: "Tired"}
+      return { emoji: TiredColored, text: "Tired" };
     } else if (avgMood > 2) {
-      return {emoji: AngryColored, text: "Angry"}
-    } else if (avgMood > 1){
-      return {emoji: SadColored, text: "Sad"}
+      return { emoji: AngryColored, text: "Angry" };
+    } else if (avgMood > 1) {
+      return { emoji: SadColored, text: "Sad" };
     } else {
-      return {emoji: HappyColored, text: "Happy"}
+      return { emoji: HappyColored, text: "Happy" };
     }
   }
 
-  if(!loggedIn || !userId) {
-    return <h2>You are not logged in. Please log in at <Link to="/login">the login page</Link></h2>
+  if (!loggedIn || !userId) {
+    return (
+      <h2>
+        You are not logged in. Please log in at{" "}
+        <Link to="/login">the login page</Link>
+      </h2>
+    );
   }
-
 
   if (user) {
     return (
       <div>
-        {error? <ErrorAlert error={error}/> : null}
-        <Link to="/register/more" state={{user_id: userId}}>Edit Additional Information</Link>
-        <Link to="/register/reminder" state={{user_id: userId}}>Edit Reminder Time</Link>
-         <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-          <HealthForm userId={userId} handleClose={handleClose}/>
-        </Box>
-      </Modal>
-        <h1 className="employee-header">Welcome {user["user_first_name"]}</h1>
+        {error ? <ErrorAlert error={error} /> : null}
+        <Link to="/register/more" state={{ user_id: userId }}>
+          Edit Additional Information
+        </Link>
+        <Link to="/register/reminder" state={{ user_id: userId }}>
+          Edit Reminder Time
+        </Link>
+        {isAdmin ? <Link to="/admin">Go to Admin Page</Link> : null}
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <HealthForm userId={userId} handleClose={handleClose} />
+          </Box>
+        </Modal>
+        <h1 className="employee-header">
+          Welcome {user["user_first_name"]} {user["user_last_name"]}
+        </h1>
         <div className="employee-page-wrapper">
           <div className="employee-column-1">
             <h1>How are you feeling?</h1>
-            <button
-              className="add-entry-button"
-              onClick={handleOpen}
-            >
+            <button className="add-entry-button" onClick={handleOpen}>
               <img className="plus-btn-img" src={HappyIcon} alt="icon" />
               <p>ADD YOUR DAILY ENTRY</p>
             </button>
@@ -136,14 +184,18 @@ function Employee({loggedIn, setLoggedIn}) {
               <h1>Weekly Reports</h1>
               <Chart userDataset={user.dataset} />
             </div>
-           
+
             <div className="helpful-tips-section">
               <h1>Helpful tips</h1>
               <div className="healthy-tips-wrapper">
                 <div className="healthy-tip">
                   <p>Meditate</p>
                   <div className="tip-image-wrapper">
-                    <img className="tip-image" src={MeditateImage} alt="meditate" />
+                    <img
+                      className="tip-image"
+                      src={MeditateImage}
+                      alt="meditate"
+                    />
                   </div>
                 </div>
                 <div className="healthy-tip">
@@ -155,7 +207,11 @@ function Employee({loggedIn, setLoggedIn}) {
                 <div className="healthy-tip">
                   <p>Eat healthier</p>
                   <div className="tip-image-wrapper">
-                    <img className="tip-image" src={HealthierImage} alt="healthier" />
+                    <img
+                      className="tip-image"
+                      src={HealthierImage}
+                      alt="healthier"
+                    />
                   </div>
                 </div>
               </div>

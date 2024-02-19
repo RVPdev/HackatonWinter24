@@ -86,11 +86,15 @@ export async function submitReminder(user_id, reminderData) {
 }
 
 export async function loadEmployee(employeeId) {
-  const url = `${API_BASE_URL}/employee/${employeeId}`;
+  const url = `${API_BASE_URL}/metrics/${employeeId}`;
   const options = {
     method: "GET",
     headers,
   };
+
+  const response = await fetchJson(url, options)
+  console.log(`loadEmployee response: ${JSON.stringify(response)}`)
+  return response;
 
   return {
     user_first_name: "Jane",
