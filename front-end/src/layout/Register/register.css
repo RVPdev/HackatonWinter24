@@ -230,3 +230,33 @@
   margin-top: 2rem;
   margin-bottom: 10rem;
 }
+
+/* reminder */
+
+.reminder-format{
+  width: 50%;
+  height: 70vh;
+  margin-top: 9rem;
+}
+
+.reminder-format > h1{
+  width: 50%;
+  font-size: 4rem;
+  text-align: center;
+  margin: 8rem auto;
+}
+
+.reminder-format > input {
+  border-radius: 15px;
+  height: 3.6rem;
+  border: none;
+  font-size: 1.8rem;
+  width: 60%;
+  padding: 0 3rem;
+  margin-top: 2rem;
+}
+
+.custom-btn{
+  width: 65%;
+  margin-top: 15rem;
+}

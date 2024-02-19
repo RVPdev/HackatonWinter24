@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { submitReminder } from "../../utils/api";
 import ErrorAlert from "../ErrorAlert";
 
-function Reminder({loggedIn, userId}) {
+function Reminder({ loggedIn, userId }) {
   const {
     register,
     handleSubmit,
@@ -15,9 +15,9 @@ function Reminder({loggedIn, userId}) {
   const location = useLocation();
   const user_id = location?.state?.user_id || userId;
 
-  if(!loggedIn || !user_id) {
-    return <Navigate to="/register" replace />
-  }
+  // if(!loggedIn || !user_id) {
+  //   return <Navigate to="/register" replace />
+  // }
 
   async function handleReminderSubmit(data) {
     /*send to db leveraging employeeId */
@@ -36,30 +36,27 @@ function Reminder({loggedIn, userId}) {
     }
   }
 
-
   return (
     <div className="page">
-      {error ? <ErrorAlert error={error} /> : null}
-      <form
-        className="styled-form"
-        onSubmit={handleSubmit(handleReminderSubmit)}
-      >
-        <h1>When would you like to receive a reminder?</h1>
-        <input
-          style={{ width: "100%" }}
-          type="time"
-          name="time"
-          id="time"
-          required
-          {...register("user_scheduled_time")}
-        />
-        {errors["user_scheduled_time"] && (
-              <p className="form-error-alert">Please select a date of birth</p>
-            )}
-        <button type="submit" className="submit-form-button">
-          SUBMIT
-        </button>
-      </form>
+      <div className="page-container">
+        {error ? <ErrorAlert error={error} /> : null}
+        <form className="styled-form reminder-format" onSubmit={handleSubmit(handleReminderSubmit)}>
+          <h1>When would you like to receive a reminder?</h1>
+          <input
+            type="time"
+            name="time"
+            id="time"
+            required
+            {...register("user_scheduled_time")}
+          />
+          {errors["user_scheduled_time"] && (
+            <p className="form-error-alert">Please select a date of birth</p>
+          )}
+          <button type="submit" className="submit-form-btn custom-btn">
+            SUBMIT
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

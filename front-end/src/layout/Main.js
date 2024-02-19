@@ -5,7 +5,8 @@ import Admin from "./Admin/Admin";
 import NotFound from "./Page_not_found";
 import Home from "./Home/Home";
 import Register from "./Register/Register";
-import More from "./Register/More";
+import Reminder from "./Register/Reminder";
+
 
 function Main({loggedIn, setLoggedIn}) {
 
@@ -18,6 +19,7 @@ function Main({loggedIn, setLoggedIn}) {
         <Route path="/admin" element={<Admin />} />
         <Route path="/register/*" element={<Register loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>} />
         <Route path="/employees/:userId" element={<Employee loggedIn={loggedIn} setLoggedIn={setLoggedIn} />} />
+        <Route path="/remind" element={<Reminder />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
