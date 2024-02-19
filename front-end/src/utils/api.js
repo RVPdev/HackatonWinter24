@@ -157,10 +157,7 @@ export async function searchEmployees(searchKeyword) {
     headers,
   };
 
-  return [
-    {user_id: 1, user_first_name: "User1", user_last_name: "User1Last Name", user_email: "email1@email.com"},
-    {user_id: 2, user_first_name: "Test Name", user_last_name: "User2 Last Name", user_email: "email2@email.com"}
-  ]
+  return employees;
 }
 
 export async function deleteEmployee(employeeId) {
@@ -172,7 +169,12 @@ export async function deleteEmployee(employeeId) {
     headers,
   };
 
-  
+  const employeeToDelete = employees.findIndex(employee => employee.user_id === employeeId)  
+  if(employeeToDelete > -1) {
+    employees.splice(employeeToDelete, 1)
+  }
+  console.log(`new employees: ${JSON.stringify(employees)}`)
+
 }
 
 export async function login(loginData) {
@@ -209,3 +211,5 @@ export async function submitHealthData(employeeId, healthData) {
 }
 
 /* Fake data */
+const employees = [{user_id: 1, user_first_name: "User1", user_last_name: "User1Last Name", user_email: "email1@email.com"},
+{user_id: 2, user_first_name: "Test Name", user_last_name: "User2 Last Name", user_email: "email2@email.com"}]

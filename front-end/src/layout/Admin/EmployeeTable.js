@@ -3,7 +3,7 @@ function EmployeeTable({employees, handleDelete}) {
 
   const rows = employees.map((employee) => {
     return (
-        <tr>
+        <tr key={employee.user_id}>
             <td>
                 {employee.user_first_name}
             </td>
@@ -14,7 +14,7 @@ function EmployeeTable({employees, handleDelete}) {
                 {employee.user_email}
             </td>
             <td>
-                <button onClick={()=> handleDelete(employee.user_id)}>Delete</button>
+                <button onClick={()=> handleDelete(employee)}>Delete</button>
             </td>
         </tr>
     )
