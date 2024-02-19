@@ -3,7 +3,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-function Header() {
+function Header({ loggedIn }) {
   const [active, setActive] = useState(false); // state variable in charge for scrolling down
 
   // Function to handle scroll
@@ -21,7 +21,6 @@ function Header() {
   const navigateTo = (path) => {
     navigate(path);
   };
-
 
   // Adding the scroll event listener when component mounts and cleaning up when it unmounts
   useEffect(() => {
@@ -50,18 +49,22 @@ function Header() {
             <i className="ri-close-line close-menu-icon"></i>
           </button> */}
 
-          <button
-            className="list-link screen-sm-hidden anchor"
-            onClick={() => navigateTo("/login")}
-          >
-            LOGIN
-          </button>
-          <button
-            className="list-link screen-sm-hidden btn sign-up-btn anchor"
-            onClick={() => navigateTo("/signup")}
-          >
-            SIGN UP
-          </button>
+          {!loggedIn ? (
+            <>
+              <button
+                className="list-link screen-sm-hidden anchor"
+                onClick={() => navigateTo("/login")}
+              >
+                LOGIN
+              </button>
+              <button
+                className="list-link screen-sm-hidden btn sign-up-btn anchor"
+                onClick={() => navigateTo("/register")}
+              >
+                SIGN UP
+              </button>
+            </>
+          ) : null}
         </div>
       </nav>
     </header>

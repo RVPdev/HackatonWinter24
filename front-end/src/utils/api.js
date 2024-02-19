@@ -100,19 +100,47 @@ export async function loadEmployee(employeeId) {
   };
 
   return {
-      first_name: "Jane",
-      last_name: "Doe",
-      average_mood: 3.5,
-      helpful_tips: ["meditate", "go for a run", "eat healthier"],
-      quote: "Believe in yourself",
-      summary: [
+      user_first_name: "Jane",
+      user_last_name: "Doe",
+      user_average_mood: 3.5,
+      dataset: [
         {
-          date: "2024-02-16",
-          activity: 2.5,
-          sleep: 2,
-          stress: 3,
+          seriesname: "Activity",
+          data: [
+            { value: "4" },
+            { value: "2" },
+            { value: "3" },
+            { value: "4" },
+            { value: "5" },
+            { value: "3" },
+            { value: "5" }
+          ]
         },
-      ],
+        {
+          seriesname: "Sleep",
+          data: [
+            { value: "4" },
+            { value: "3" },
+            { value: "1" },
+            { value: "2" },
+            { value: "3" },
+            { value: "5" },
+            { value: "1" }
+          ]
+        },
+        {
+          seriesname: "Stress",
+          data: [
+            { value: "3" },
+            { value: "2" },
+            { value: "4" },
+            { value: "1" },
+            { value: "5" },
+            { value: "2" },
+            { value: "4" }
+          ]
+        }
+      ]
   };
   //return await fetchJson(url, options, {})
 }

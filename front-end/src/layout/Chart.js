@@ -1,11 +1,12 @@
 import FusionCharts from "fusioncharts";
 import charts from "fusioncharts/fusioncharts.charts";
+import { useMemo } from "react";
 import ReactFusioncharts from "react-fusioncharts";
 
 // Resolves charts dependancy
 charts(FusionCharts);
 
-const dataSource = {
+const dataSourceTemplate = {
   chart: {
     caption: "Weekly Summary",
     showhovereffect: "1",
@@ -93,15 +94,19 @@ const dataSource = {
   ]
 };
 
-export default function Chart() {
- 
+export default function Chart({userDataset}) {
+
+    const dataset = useMemo(()=> {
+      return {...dataSourceTemplate, dataset: userDataset }
+    }, [userDataset]) 
+
     return (
       <ReactFusioncharts
         type="msline"
         width="100%"
         height="100%"
         dataFormat="JSON"
-        dataSource={dataSource}
+        dataSource={dataset}
       />
     )
 

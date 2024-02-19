@@ -8,6 +8,9 @@ import SadIcon from "./../assets/happyicons/Sad.png";
 import TiredIcon from "./../assets/happyicons/Tired.png";
 import MehColored from "./../assets/happyicons/Meh_color.png";
 import HappyColored from "./../assets/happyicons/Happy_color.png";
+import AngryColored from "./../assets/happyicons/Angry_color.png";
+import TiredColored from "./../assets/happyicons/Tired_color.png";
+import SadColored from "./../assets/happyicons/Sad_color.png";
 import HealthierImage from "./../assets/dashboard/healthier.png"
 import MeditateImage from "./../assets/dashboard/meditate.png"
 import RunImage from "./../assets/dashboard/run.png"
@@ -58,6 +61,23 @@ function Employee() {
     getUser();
   }, []);
 
+
+  function getEmojiAndText(){
+    const avgMood = user.user_average_mood
+    if(avgMood > 4) {
+      return {emoji: MehColored, text: "Meh"}
+    } else if (avgMood > 3) {
+      return {emoji: TiredColored, text: "Tired"}
+    } else if (avgMood > 2) {
+      return {emoji: AngryColored, text: "Angry"}
+    } else if (avgMood > 1){
+      return {emoji: SadColored, text: "Sad"}
+    } else {
+      return {emoji: HappyColored, text: "Happy"}
+    }
+  }
+
+
   if (user) {
     return (
       <div>
@@ -71,21 +91,13 @@ function Employee() {
           <HealthForm userId={userId} handleClose={handleClose}/>
         </Box>
       </Modal>
-        <h1 className="employee-header">Welcome {user["first_name"]}</h1>
+        <h1 className="employee-header">Welcome {user["user_first_name"]}</h1>
         <div className="employee-page-wrapper">
           <div className="employee-column-1">
             <h1>How are you feeling?</h1>
             <button
               className="add-entry-button"
               onClick={handleOpen}
-              // onClick={() =>
-              //   navigate(`/register/mental`, {
-              //     replace: true,
-              //     state: {
-              //       employeeId: employeeId,
-              //     },
-              //   })
-              // }
             >
               <img className="plus-btn-img" src={HappyIcon} alt="icon" />
               <p>ADD YOUR DAILY ENTRY</p>
@@ -100,12 +112,12 @@ function Employee() {
               <div className="variable_mood">
                 <div className="mood-image-wrapper">
                   <img
-                    src={HappyColored}
+                    src={getEmojiAndText().emoji}
                     className="mood-image"
                     alt="variable"
                   />
                 </div>
-                <p>Happy</p>
+                <p>{getEmojiAndText().text}</p>
               </div>
             </div>
             <div className="quote-section">
@@ -118,7 +130,7 @@ function Employee() {
           <div className="employee-column-2">
             <div className="weekly-reports-section">
               <h1>Weekly Reports</h1>
-              <Chart />
+              <Chart userDataset={user.dataset} />
             </div>
            
             <div className="helpful-tips-section">
