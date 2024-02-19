@@ -5,7 +5,7 @@ import { submitMore } from "../../utils/api";
 import "../Register/register.css";
 import ErrorAlert from "../ErrorAlert";
 
-function More({loggedIn}) {
+function More({loggedIn, userId}) {
   const {
     register,
     handleSubmit,
@@ -14,7 +14,7 @@ function More({loggedIn}) {
   const navigate = useNavigate();
   const [error, setError] = useState(null);
   const location = useLocation();
-  const user_id = location?.state?.user_id;
+  const user_id = location?.state?.user_id || userId;
 
 
   if(!loggedIn || !user_id) {
