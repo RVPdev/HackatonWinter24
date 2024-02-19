@@ -15,12 +15,10 @@ function CreateAccount({ loggedIn, setLoggedIn }) {
   const navigate = useNavigate();
   const [error, setError] = useState(null);
 
+  /* Submits data to DB and receives an employee ID*/
   async function handleCreateSubmit(data) {
-    console.log(data);
-    /* need to submit to DB and receive an employeeId*/
     try {
       const user_id = await createAccount(data);
-      console.log(`Created user id: ${user_id}`);
       setLoggedIn(true);
       navigate("/register/more", {
         replace: true,

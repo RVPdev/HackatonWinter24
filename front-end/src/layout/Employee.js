@@ -19,6 +19,7 @@ import { loadEmployee } from "../utils/api";
 import { Box, Typography } from "@mui/material"
 import HealthForm from "./Register/HealthForm.js"
 import Chart from "./Chart.js";
+import ErrorAlert from "./ErrorAlert.js";
 
 
 const style = {
@@ -39,26 +40,22 @@ function Employee({loggedIn, setLoggedIn}) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false); 
+  const [error, setError] = useState(false)
 
 
-  const navigate = useNavigate();
-
-  console.log(`userId employee page: ${userId}`);
-
-  /* Load User via url*/
+  /* Load User from database using parameter from URL */
   useEffect(() => {
-    /* fetch from DB using userId*/
-
+    const abortController = new AbortController();
     async function getUser() {
       try {
         const employee = await loadEmployee(userId);
-        console.log(`employee: ${JSON.stringify(employee)}`);
         setUser(employee);
       } catch (error) {
-        console.log(`Error in getUser! ${JSON.stringify(error)}`);
+        setError(error)
       }
     }
     getUser();
+    return ()=> abortController.abort();
   }, [userId]);
 
 
@@ -77,16 +74,17 @@ function Employee({loggedIn, setLoggedIn}) {
     }
   }
 
-  // if(!loggedIn || !userId) {
-  //   return <h2>Please log in at <Link to="/login">the login page</Link></h2>
-  // }
+  if(!loggedIn || !userId) {
+    return <h2>You are not logged in. Please log in at <Link to="/login">the login page</Link></h2>
+  }
 
 
   if (user) {
     return (
       <div>
-        <Link to={{pathname: "/register/more", state: {user_id: userId}}}>Edit Additional Information</Link>
-        <Link to={{pathname: "/register/reminder", state: {user_id: userId}}}>Edit Reminder Time</Link>
+        {error? <ErrorAlert error={error}/> : null}
+        <Link to="/register/more" state={{user_id: userId}}>Edit Additional Information</Link>
+        <Link to="/register/reminder" state={{user_id: userId}}>Edit Reminder Time</Link>
          <Modal
         open={open}
         onClose={handleClose}

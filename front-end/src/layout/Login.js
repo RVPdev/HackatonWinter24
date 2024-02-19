@@ -22,7 +22,7 @@ function Login({loggedIn, setLoggedIn}) {
     const response = await login(data);
 
     if(!response) {
-      setError({message: "Username and password doesn't exist"})
+      setError({message: "Username and password doesn't exist or is incorrect"})
     } else {
       const { user_id, administer_access } = response;
       console.log(`USERID: ${user_id}`);
