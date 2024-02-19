@@ -93,6 +93,7 @@
   border: none;
   padding-left: 3rem;
   font-size: 1.8rem;
+  padding-right: 3rem;
 }
 
 .btn-text{
@@ -173,4 +174,59 @@
   display: flex;
   flex-direction: column;
   width: 85%;
+}
+
+/* more Section */
+
+
+.page-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.styled-form-3{
+  width: 65%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  background-color: #fff0e3;
+  border-radius: 15px;
+}
+
+.style-2{
+  width: 65%;
+}
+
+.form-input-container{
+  margin-top: 6rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.sm-padding-left{
+  padding-left: 8rem;
+}
+
+.sm-padding-right{
+  padding-right: 8rem;
+}
+
+.form-input > select{
+  border-radius: 15px;
+  height: 3.6rem;
+  margin-bottom: 4rem;
+  border: none;
+  padding-left: 3rem;
+  font-size: 1.8rem;
+}
+
+.more-btn{
+  margin-top: 2rem;
+  margin-bottom: 10rem;
 }
