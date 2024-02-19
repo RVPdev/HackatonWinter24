@@ -42,13 +42,13 @@ async function list(req, res, next) {
 
 async function listActivity(req, res, next) {
   try {
-    const dashboardResp = await service.list(req.params.user_id);
+    const listActivity = await service.listActivity(req.params.user_id);
     dashboardResp.forEach((item) => {
       item.created_at = moment(item.created_at).format("dddd");
     });
     res
       .status(200)
-      .json({ dashboard: dashboardResp, ...averageMood, ...averageHappy});
+      .json({ dashboard: listActivity});
   } catch (error) {
     next();
   }
