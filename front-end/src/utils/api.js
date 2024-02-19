@@ -148,6 +148,33 @@ export async function loadEmployee(employeeId) {
   //return await fetchJson(url, options, {})
 }
 
+export async function searchEmployees(searchKeyword) {
+  const url = `${API_BASE_URL}/login`
+
+  const options = {
+    method: "POST",
+    body: JSON.stringify({data: searchKeyword }),
+    headers,
+  };
+
+  return [
+    {user_id: 1, user_first_name: "User1", user_last_name: "User1Last Name", user_email: "email1@email.com"},
+    {user_id: 2, user_first_name: "Test Name", user_last_name: "User2 Last Name", user_email: "email2@email.com"}
+  ]
+}
+
+export async function deleteEmployee(employeeId) {
+  const url = `${API_BASE_URL}/login`
+
+  const options = {
+    method: "DELETE",
+    body: JSON.stringify({data: employeeId }),
+    headers,
+  };
+
+  
+}
+
 export async function login(loginData) {
   const url = `${API_BASE_URL}/login`
 

@@ -77,14 +77,16 @@ function Employee({loggedIn, setLoggedIn}) {
     }
   }
 
-  if(!loggedIn || !userId) {
-    return <h2>Please log in at <Link to="/login">the login page</Link></h2>
-  }
+  // if(!loggedIn || !userId) {
+  //   return <h2>Please log in at <Link to="/login">the login page</Link></h2>
+  // }
 
 
   if (user) {
     return (
       <div>
+        <Link to={{pathname: "/register/more", state: {user_id: userId}}}>Edit Additional Information</Link>
+        <Link to={{pathname: "/register/reminder", state: {user_id: userId}}}>Edit Reminder Time</Link>
          <Modal
         open={open}
         onClose={handleClose}

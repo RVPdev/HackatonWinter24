@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import { login } from "../utils/api";
 import "./Register/register.css";
 import LoginImage from "./../assets/login_create/login_image.png";
+import ErrorAlert from "./ErrorAlert";
+import { useState } from "react";
 
 function Login({loggedIn, setLoggedIn}) {
   const {
@@ -13,17 +15,25 @@ function Login({loggedIn, setLoggedIn}) {
 
   const navigate = useNavigate();
 
+  const [error, setError] = useState(null)
+
   async function submitLogin(data) {
     console.log(data);
-    const { user_id, administer_access } = await login(data);
-    /*Backend needs to send me employee ID */
-    console.log(`USERID: ${user_id}`);
-    setLoggedIn(true)
-    if (administer_access) {
-      navigate(`/admin`);
+    const response = await login(data);
+
+    if(!response) {
+      setError({message: "Username and password doesn't exist"})
     } else {
-      navigate(`/employees/${user_id}`);
+      const { user_id, administer_access } = response;
+      console.log(`USERID: ${user_id}`);
+      setLoggedIn(true)
+      if (administer_access) {
+        navigate(`/admin`);
+      } else {
+        navigate(`/employees/${user_id}`);
+      }
     }
+    
   }
 
   return (
@@ -43,6 +53,7 @@ function Login({loggedIn, setLoggedIn}) {
       <div className="right-register-section">
         <form className="styled-form" onSubmit={handleSubmit(submitLogin)}>
           <h1>Log in</h1>
+          {error? <ErrorAlert error={error} /> : null}
           <div className="form-input">
             <label htmlFor="user_email">Email</label>
             <input
@@ -50,7 +61,7 @@ function Login({loggedIn, setLoggedIn}) {
               type="text"
               name="user_email"
               placeholder="Enter your email address"
-              {...register("user_email")}
+              {...register("user_email", {required: true})}
             />
           </div>
           <div className="form-input">
@@ -60,7 +71,8 @@ function Login({loggedIn, setLoggedIn}) {
               type="password"
               name="user_password"
               placeholder="Enter your password"
-              {...register("user_password")}
+              autoComplete="on"
+              {...register("user_password", {required: true})}
             />
           </div>
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

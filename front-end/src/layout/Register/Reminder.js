@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { submitReminder } from "../../utils/api";
 import ErrorAlert from "../ErrorAlert";
 
-function Reminder({loggedIn}) {
+function Reminder({loggedIn, userId}) {
   const {
     register,
     handleSubmit,
@@ -13,7 +13,7 @@ function Reminder({loggedIn}) {
   const navigate = useNavigate();
   const [error, setError] = useState(null);
   const location = useLocation();
-  const user_id = location?.state?.user_id;
+  const user_id = location?.state?.user_id || userId;
 
   if(!loggedIn || !user_id) {
     return <Navigate to="/register" replace />
