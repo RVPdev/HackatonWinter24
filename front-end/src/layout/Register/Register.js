@@ -6,12 +6,12 @@ import HealthPage from "./HealthPage";
 
 
 
-function Register({loggedIn}) {  
+function Register({loggedIn, setLoggedIn}) {  
 
   return (
     <Routes>
       <Route path="/" element={<Navigate to="create" />}></Route>
-      <Route path="create" element={<CreateAccount />}></Route>
+      <Route path="create" element={<CreateAccount loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>}></Route>
       <Route path="more" element={<More loggedIn={loggedIn} />}></Route>
       <Route path="reminder" element={<Reminder loggedIn={loggedIn}/>}></Route>
       <Route path="mental" element={<HealthPage loggedIn={loggedIn}/>}></Route>

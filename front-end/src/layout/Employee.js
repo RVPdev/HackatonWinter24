@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./employeepage.css";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link, useNavigate, Navigate } from "react-router-dom";
 import HappyIcon from "./../assets/happyicons/Happy.png";
 import AngryIcon from "./../assets/happyicons/Angry.png";
 import MehIcon from "./../assets/happyicons/Meh.png";
@@ -33,13 +33,13 @@ const style = {
   p: 4,
 };
 
-function Employee() {
+function Employee({loggedIn, setLoggedIn}) {
   const [user, setUser] = useState(null);
-  //const { userId } = useParams();
-  const userId = 1;
+  const { userId } = useParams();
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false); 
+
 
   const navigate = useNavigate();
 
@@ -75,6 +75,10 @@ function Employee() {
     } else {
       return {emoji: HappyColored, text: "Happy"}
     }
+  }
+
+  if(!loggedIn || !userId) {
+    return <h2>Please log in at <Link to="/login">the login page</Link></h2>
   }
 
 

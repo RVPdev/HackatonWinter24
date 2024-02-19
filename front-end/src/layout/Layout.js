@@ -10,7 +10,7 @@ function Layout() {
 
   return (
     <>
-        <Header loggedIn={loggedIn}/>
+        <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
         <Main loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
     </>
   );

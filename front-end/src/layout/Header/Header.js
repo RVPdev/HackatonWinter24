@@ -3,7 +3,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-function Header({ loggedIn }) {
+function Header({ loggedIn, setLoggedIn}) {
   const [active, setActive] = useState(false); // state variable in charge for scrolling down
 
   // Function to handle scroll
@@ -65,6 +65,15 @@ function Header({ loggedIn }) {
               </button>
             </>
           ) : null}
+          {loggedIn ?  <button
+                className="list-link screen-sm-hidden btn sign-up-btn anchor"
+                onClick={() => {
+                  setLoggedIn(false)
+                  navigateTo("/")
+                }}
+              >
+                LOG OUT
+              </button> : null }
         </div>
       </nav>
     </header>

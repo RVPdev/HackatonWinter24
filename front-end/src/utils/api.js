@@ -1,6 +1,9 @@
 // Define the base URL for the API, prioritizing the environment variable if it exists, or defaulting to localhost
-const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "http://localhost:5001";
+// const API_BASE_URL =
+//   process.env.REACT_APP_API_BASE_URL || "http://localhost:5001";
+
+
+  const API_BASE_URL = "https://hackathon-services.onrender.com"
 
 // Initialize a new Headers object to configure HTTP request headers
 const headers = new Headers();
@@ -79,14 +82,14 @@ export async function submitMore(user_id, moreData) {
 }
 
 export async function submitReminder(user_id, reminderData) {
-  // const url = `${API_BASE_URL}/employee/${employeeId}`;
-  // const options = {
-  //   method: "PUT", //assuming put since employee record is already created
-  //   headers,
-  //   body: JSON.stringify({ data: {reminderData, ...user_id} }),
-  // };
+  const url = `${API_BASE_URL}/signup/additional_info/schedule_reminder`;
+  const options = {
+    method: "PUT", 
+    headers,
+    body: JSON.stringify({ data: {...reminderData, user_id} }),
+  };
 
-  //await fetchJson(url, options);
+  await fetchJson(url, options);
   //does not need to return anything to front-end
 }
 

@@ -6,7 +6,7 @@ import "./register.css"
 import ErrorAlert from "../ErrorAlert";
 
 
-function CreateAccount() {
+function CreateAccount({loggedIn, setLoggedIn}) {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
   const [error, setError] = useState(null)
@@ -16,7 +16,8 @@ function CreateAccount() {
     /* need to submit to DB and receive an employeeId*/
     try {
       const user_id = await createAccount(data)
-
+      console.log(`Created user id: ${user_id}`)
+      setLoggedIn(true);
       navigate("/register/more", {
         replace: true, 
         state: {
