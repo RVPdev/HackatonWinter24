@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Login from "./Login";
 import Employee from "./Employee";
-import Employees from "./Employees";
 import Admin from "./Admin/Admin";
 import NotFound from "./Page_not_found";
 import Home from "./Home/Home";
