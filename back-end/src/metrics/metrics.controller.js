@@ -27,28 +27,47 @@ async function isUser(req, res, next) {
 async function list(req, res, next) {
   try {
     const dashboardResp = await service.list(req.params.user_id);
-    const averageMood = await service.average(req.params.user_id);
-    const averageHappy = await service.avgHappy(req.params.user_id);
-    dashboardResp.forEach((item) => {
-      item.created_at = moment(item.created_at).format("dddd");
-    });
-    res
-      .status(200)
-      .json({ dashboard: dashboardResp, ...averageMood, ...averageHappy});
-  } catch (error) {
-    next();
-  }
-}
-
-async function listActivity(req, res, next) {
-  try {
-    const listActivity = await service.listActivity(req.params.user_id);
-    dashboardResp.forEach((item) => {
-      item.created_at = moment(item.created_at).format("dddd");
-    });
-    res
-      .status(200)
-      .json({ dashboard: listActivity});
+    if(dashboardResp.length>0){
+      const activityObj={
+        seriesname:"Activity",
+        data:[]
+      }
+      const sleepObj={
+        seriesname:"Sleep",
+        data:[]
+      };
+      const stressObj={
+        seriesname:"Stress",
+        data:[]
+      };
+      dashboardResp.forEach(item=>{
+        const aObj={value:item.user_activity};
+        const slObj={value:item.user_sleep};
+        const stObj={value:item.user_stress};
+        activityObj.data.push(aObj);
+        sleepObj.data.push(slObj);
+        stressObj.data.push(stObj);
+      })
+      const result = {
+        user_first_name:dashboardResp[0].user_first_name,
+        user_last_name:dashboardResp[0].user_last_name,
+        administer_access:dashboardResp[0].administer_access,
+        dataset:[]
+      }
+      result.dataset.push(activityObj);
+      result.dataset.push(sleepObj);
+      result.dataset.push(stressObj);
+      const averageMood = await service.average(req.params.user_id);
+      const averageHappy = await service.avgHappy(req.params.user_id);
+      dashboardResp.forEach((item) => {
+        item.created_at = moment(item.created_at).format("dddd");
+      });
+      res
+        .status(200)
+        .json({ ...result, ...averageMood, ...averageHappy});
+    }else{
+      res.status(200).json({result:'No data found'})
+    }
   } catch (error) {
     next();
   }
@@ -77,6 +96,6 @@ function create(req, res, next) {
   }
 
 module.exports = {
-  list: [isUser, list, listActivity],
+  list: [isUser, list],
   create:[hasRequiredProperties,isUserValid,create]
 };
