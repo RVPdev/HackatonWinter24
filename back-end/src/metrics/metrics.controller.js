@@ -40,6 +40,21 @@ async function list(req, res, next) {
   }
 }
 
+async function listActivity(req, res, next) {
+  try {
+    const dashboardResp = await service.list(req.params.user_id);
+    dashboardResp.forEach((item) => {
+      item.created_at = moment(item.created_at).format("dddd");
+    });
+    res
+      .status(200)
+      .json({ dashboard: dashboardResp, ...averageMood, ...averageHappy});
+  } catch (error) {
+    next();
+  }
+}
+
+
 function create(req, res, next) {
     service
       .create(req.body.data)
@@ -62,6 +77,6 @@ function create(req, res, next) {
   }
 
 module.exports = {
-  list: [isUser, list],
+  list: [isUser, list, listActivity],
   create:[hasRequiredProperties,isUserValid,create]
 };

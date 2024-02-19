@@ -23,6 +23,18 @@ function list(user_id) {
     );
 }
 
+function listActivity(user_id) {
+  return knex("")
+    .select(
+      knex.raw(
+        "user_activity,created_at from health_metrics hm"
+      )
+    )
+    .where(
+      knex.raw("hm.person_id =? order by hm.created_at desc limit 7", [user_id])
+    );
+}
+
 function average(user_id) {
     return knex("")
     .select(
@@ -53,5 +65,6 @@ module.exports = {
   isUserExists,
   list,
   average,
-  avgHappy
+  avgHappy,
+  listActivity
 };
