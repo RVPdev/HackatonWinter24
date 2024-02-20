@@ -64,7 +64,7 @@ async function list(req, res, next) {
       });
       res
         .status(200)
-        .json({ ...result, ...averageMood, ...averageHappy});
+        .json({data:{ ...result, ...averageMood, ...averageHappy}});
     }else{
       res.status(200).json({result:'No data found'})
     }
