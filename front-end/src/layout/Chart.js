@@ -8,10 +8,23 @@ charts(FusionCharts);
 
 const dataSourceTemplate = {
   chart: {
+    bgColor: "#ffffff",
+    captionFontSize: 20,
+    captionFontColor: "#000000",
+    canvasbgColor: "#ffffff",
+    canvasBorderThickness: 1,
+    showAlternateHGridColor: 0,
+    basefont: "Montserrat",
     caption: "Weekly Summary",
     showhovereffect: "1",
     drawcrossline: "1",
-    theme: "candy"
+    theme: "umber",
+    showCanvasBorder: 1,
+    showBorder: 0,
+    yAxisValueFontBold: 1,    
+    xAxisValueFontBold: 1,
+    labelFontBold: 1,
+    legendBorderThickness: 0,
   },
   categories: [
     {
@@ -104,7 +117,7 @@ export default function Chart({userDataset}) {
       <ReactFusioncharts
         type="msline"
         width="100%"
-        height="100%"
+        height="600"
         dataFormat="JSON"
         dataSource={dataset}
       />

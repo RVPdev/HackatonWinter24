@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "./employeepage.css";
-import { useParams, Link, useNavigate, Navigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import HappyIcon from "./../assets/happyicons/Happy.png";
 import AngryIcon from "./../assets/happyicons/Angry.png";
 import MehIcon from "./../assets/happyicons/Meh.png";
@@ -58,7 +58,7 @@ function Employee({ loggedIn, setLoggedIn }) {
     return () => abortController.abort();
   }, [userId]);
 
-  function getEmojiAndText() {
+  const getEmojiAndText = useCallback(() => {
     const avgMood = user.average_mood;
     if (avgMood > 4) {
       return { emoji: MehColored, text: "Meh" };
@@ -71,7 +71,9 @@ function Employee({ loggedIn, setLoggedIn }) {
     } else {
       return { emoji: HappyColored, text: "Happy" };
     }
-  }
+  }, [user])
+
+
 
   if (!loggedIn || !userId) {
     return (
@@ -84,15 +86,17 @@ function Employee({ loggedIn, setLoggedIn }) {
 
   if (user) {
     return (
-      <div>
+      <div className="employee-page">
         {error ? <ErrorAlert error={error} /> : null}
-        <Link to="/register/more" state={{ user_id: userId }}>
-          Edit Additional Information
-        </Link>
-        <Link to="/register/reminder" state={{ user_id: userId }}>
-          Edit Reminder Time
-        </Link>
-        {isAdmin ? <Link to="/admin">Go to Admin Page</Link> : null}
+        <div className="link-wrapper">
+          <Link className="styled-nav-button" to="/register/more" state={{ user_id: userId }}>
+            Edit Additional Information
+          </Link>
+          <Link className="styled-nav-button" to="/register/reminder" state={{ user_id: userId }}>
+            Edit Reminder Time
+          </Link>
+          {isAdmin ? <Link to="/admin">Go to Admin Page</Link> : null}
+        </div>
         <Modal
           open={open}
           onClose={handleClose}
@@ -108,17 +112,19 @@ function Employee({ loggedIn, setLoggedIn }) {
         </h1>
         <div className="employee-page-wrapper">
           <div className="employee-column-1">
-            <h1>How are you feeling?</h1>
-            <button className="add-entry-button" onClick={handleOpen}>
-              <img className="plus-btn-img" src={HappyIcon} alt="icon" />
-              <p>ADD YOUR DAILY ENTRY</p>
-            </button>
+            <div className="how-feeling-section">
+              <h1>How are you feeling?</h1>
+              <button className="styled-employee-button" onClick={handleOpen}>
+                {/* <img className="plus-btn-img" src={HappyIcon} alt="icon" /> */}
+                <p>ADD YOUR DAILY ENTRY</p>
+              </button>
+            </div>
             <div className="mood-section-wrapper">
               <div className="average_mood">
                 <div className="mood-image-wrapper">
                   <img src={MehColored} className="mood-image" alt="meh" />
                 </div>
-                <p>Average Mood</p>
+                <p>AVERAGE MOOD</p>
               </div>
               <div className="variable_mood">
                 <div className="mood-image-wrapper">
@@ -128,7 +134,7 @@ function Employee({ loggedIn, setLoggedIn }) {
                     alt="variable"
                   />
                 </div>
-                <p>{getEmojiAndText().text}</p>
+                <p>{getEmojiAndText().text.toUpperCase()}</p>
               </div>
             </div>
             <div className="quote-section">
@@ -140,7 +146,6 @@ function Employee({ loggedIn, setLoggedIn }) {
           </div>
           <div className="employee-column-2">
             <div className="weekly-reports-section">
-              <h1>Weekly Reports</h1>
               <Chart userDataset={user.dataset} />
             </div>
 
