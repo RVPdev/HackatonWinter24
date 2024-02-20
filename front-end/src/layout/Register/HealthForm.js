@@ -40,77 +40,77 @@ function HealthForm({ userId, handleClose }) {
   return (
     <div className="health-form-wrapper">
       {error ? <ErrorAlert error={error} /> : null}
-      <h1>Daily Health Tracker</h1>
       <form className="health-form" onSubmit={handleSubmit(onSubmit)}>
-        <h4>How are you feeling?</h4>
+        <h1>DAILY HEALTH TRACKER</h1>
+        <h4>1. How are you feeling today?</h4>
         <div className="emoji-wrapper">
           <label className="formatted-radio">
-            Happy
+            <div>
+              <img className="emoji" src={HappyIcon} alt="happy icon" />
+            </div>
+            <p>Happy</p>
             <input
               type="radio"
               name="user_mood"
               value={1}
               {...register("user_mood", { required: true })}
             />
-            <div>
-              <img className="emoji" src={HappyIcon} alt="happy icon" />
-            </div>
           </label>
           <label className="formatted-radio">
-            Sad
+            <div>
+              <img className="emoji" src={SadIcon} alt="sad icon" />
+            </div>
+            <p>Sad</p>
             <input
               type="radio"
               name="user_mood"
               value={2}
               {...register("user_mood", { required: true })}
             />
-            <div>
-              <img className="emoji" src={SadIcon} alt="sad icon" />
-            </div>
           </label>
           <label className="formatted-radio">
-            Upset
+            <div>
+              <img className="emoji" src={AngryIcon} alt="upset icon" />
+            </div>
+            <p>Upset</p>
             <input
               type="radio"
               name="user_mood"
               value={3}
               {...register("user_mood", { required: true })}
             />
-            <div>
-              <img className="emoji" src={AngryIcon} alt="upset icon" />
-            </div>
           </label>
           <label className="formatted-radio">
-            Tired
+            <div>
+              <img className="emoji" src={TiredIcon} alt="tired icon" />
+            </div>
+            <p>Tired</p>
             <input
               type="radio"
               name="user_mood"
               value={4}
               {...register("user_mood", { required: true })}
             />
-            <div>
-              <img className="emoji" src={TiredIcon} alt="tired icon" />
-            </div>
           </label>
           <label className="formatted-radio">
-            Meh
+            <div>
+              <img className="emoji" src={MehIcon} alt="meh icon" />
+            </div>
+            <p>Meh</p>
             <input
               type="radio"
               name="user_mood"
               value={5}
               {...register("user_mood", { required: true })}
             />
-            <div>
-              <img className="emoji" src={MehIcon} alt="meh icon" />
-            </div>
           </label>
         </div>
         {errors["user_mood"] && (
           <p className="form-error-alert">Please check the mood</p>
         )}
 
-        <h4>How long did you sleep?</h4>
-        <div className="emoji-wrapper">
+        <h4>2. How long did you sleep?</h4>
+        <div className="emoji-wrapper radio-labels trb">
           <label className="radio-label">
             <p>&gt; 5 hours</p>
             <input
@@ -161,8 +161,8 @@ function HealthForm({ userId, handleClose }) {
           <p className="form-error-alert">Please check the sleep</p>
         )}
 
-        <h4>How active were you today?</h4>
-        <div className="emoji-wrapper">
+        <h4>3. How active were you today?</h4>
+        <div className="emoji-wrapper radio-labels">
           <label className="radio-label">
             <p>1</p>
             <input
@@ -213,8 +213,8 @@ function HealthForm({ userId, handleClose }) {
           <p className="form-error-alert">Please check the activity</p>
         )}
 
-        <h4>How stressed are you feeling today?</h4>
-        <div className="emoji-wrapper">
+        <h4>4. How stressed are you feeling today?</h4>
+        <div className="emoji-wrapper radio-labels">
           <label className="radio-label">
             <p>1</p>
             <input
@@ -265,7 +265,7 @@ function HealthForm({ userId, handleClose }) {
           <p className="form-error-alert">Please check the stress</p>
         )}
 
-        <button type="submit" className="submit-form-button">
+        <button type="submit" className="submit-form-btn">
           SUBMIT
         </button>
       </form>

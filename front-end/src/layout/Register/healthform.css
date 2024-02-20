@@ -1,0 +1,102 @@
+:root {
+  --bg-color: #fff0e3;
+  --input-bg: #d9d9d9;
+  --maroon-color: #e58784;
+  --font-family: "Noto Sans", sans-serif;
+  --body-font: "Montserrat", sans-serif;
+  --primary-color: #270a07;
+  --secondary-color: #442826;
+}
+
+.health-form-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-family: var(--body-font);
+}
+
+.health-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    border-radius: 15px;
+    margin: 5rem;
+    padding: 5rem 0;
+    /* margin-bottom: 20rem; */
+}
+
+.health-form > h1 {
+    width: 80%;
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+}
+
+.health-form > h4 {
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.emoji-wrapper{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formatted-radio{
+    display: flex;
+    flex-direction: column;
+}
+
+.formatted-radio > input{
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.formatted-radio > p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.formatted-radio > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emoji{
+    cursor: pointer;
+    width: 50%;
+}
+
+.radio-labels{
+    width: 70%;
+}
+
+.radio-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-label >input:checked{
+    background-color: var(--maroon-color);
+    
+}
+
+.trb{
+    width: 74%;
+}
