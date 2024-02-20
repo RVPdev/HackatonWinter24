@@ -139,7 +139,6 @@ export async function loadEmployee(employeeId) {
       },
     ],
   };
-  //return await fetchJson(url, options, {})
 }
 
 export async function searchEmployees(searchKeyword) {
