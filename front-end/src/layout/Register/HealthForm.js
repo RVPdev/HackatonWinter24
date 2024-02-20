@@ -35,8 +35,6 @@ function HealthForm({ userId, handleClose }) {
     }
   }
 
-  console.log(`user_id healthform: ${user_id}`);
-
   return (
     <div className="health-form-wrapper">
       {error ? <ErrorAlert error={error} /> : null}
