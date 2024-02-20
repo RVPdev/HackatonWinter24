@@ -10,7 +10,7 @@ const dataSourceTemplate = {
   chart: {
     bgColor: "#ffffff",
     captionFontSize: 20,
-    captionFontColor: "#000000",
+    captionFontColor: "#270A07",
     canvasbgColor: "#ffffff",
     canvasBorderThickness: 1,
     showAlternateHGridColor: 0,
