@@ -33,6 +33,7 @@
 
 .admin-title > h3 {
   font-size: 2rem;
+  margin-bottom: 5rem;
 }
 
 .btn-wrap {
@@ -46,6 +47,7 @@
   border: none;
   padding: 1rem 3rem;
   background-color: #e58784;
+  font-weight: 600;
 }
 
 .srch-btn {
@@ -56,6 +58,7 @@
   margin: 0; /* Removes default margin from <p> */
   display: flex; /* Align text properly */
   align-items: center; /* Center text vertically if needed */
+  font-weight: 600;
 }
 
 .btn-wrap > i {
