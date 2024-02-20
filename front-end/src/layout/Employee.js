@@ -47,48 +47,7 @@ function Employee({ loggedIn, setLoggedIn }) {
     const abortController = new AbortController();
     async function getUser() {
       try {
-        //const employee = await loadEmployee(userId) - backend not working properly;
-        const employee = {
-          user_first_name: "Jane",
-          user_last_name: "Doe",
-          administer_access: true,
-          average_mood: 3,
-          dataset: [
-            {
-              seriesname: "Activity",
-              data: [
-                {
-                  value: 4,
-                },
-                {
-                  value: 2,
-                },
-              ],
-            },
-            {
-              seriesname: "Sleep",
-              data: [
-                {
-                  value: 1,
-                },
-                {
-                  value: 4,
-                },
-              ],
-            },
-            {
-              seriesname: "Stress",
-              data: [
-                {
-                  value: 5,
-                },
-                {
-                  value: 5,
-                },
-              ],
-            },
-          ],
-        };
+        const employee = await loadEmployee(userId)
         setUser(employee);
         setIsAdmin(employee.administer_access);
       } catch (error) {
