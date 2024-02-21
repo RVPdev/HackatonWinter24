@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import LogoNameImage from "./../../assets/LOGOname.png"
+import { useNavigate, useLocation } from "react-router-dom";
+import LogoNameImage from "./../../assets/LOGOname.png";
 
-function Header({ loggedIn, setLoggedIn}) {
+function Header({ loggedIn, setLoggedIn }) {
   const [active, setActive] = useState(false); // state variable in charge for scrolling down
+  const location = useLocation();
+  const isAdminPath = location.pathname.includes("/admin");
 
   // Function to handle scroll
   const handleScroll = () => {
@@ -36,7 +38,9 @@ function Header({ loggedIn, setLoggedIn}) {
       <nav className="navbar container">
         <Link to="/" className="logo anchor">
           {/* <h2>Mental Health App</h2> */}
-          <div className="logo-name-wrapper"><img className="logo-name-image" src={LogoNameImage} alt="logo"/></div>
+          <div className="logo-name-wrapper">
+            <img className="logo-name-image" src={LogoNameImage} alt="logo" />
+          </div>
         </Link>
         {/* Division of menu and buttons */}
         <div className="list list-right">
@@ -67,16 +71,29 @@ function Header({ loggedIn, setLoggedIn}) {
               </button>
             </>
           ) : null}
-          {loggedIn ?  <button
-                className="list-link screen-sm-hidden btn sign-up-btn anchor"
-                onClick={() => {
-                  localStorage.removeItem("token")
-                  setLoggedIn(false)
-                  navigateTo("/")
-                }}
-              >
-                LOG OUT
-              </button> : null }
+          {loggedIn ? (
+            <button
+              className="list-link screen-sm-hidden btn sign-up-btn anchor"
+              onClick={() => {
+                localStorage.removeItem("token");
+                setLoggedIn(false);
+                navigateTo("/");
+              }}
+            >
+              LOG OUT
+            </button>
+          ) : null}
+
+          {isAdminPath && (
+            <button
+              className="list-link screen-sm-hidden btn sign-up-btn anchor"
+              onClick={() => {
+                navigateTo("/employees/:employeeId");
+              }}
+            >
+              Employee Dashboard
+            </button>
+          )}
         </div>
       </nav>
     </header>
