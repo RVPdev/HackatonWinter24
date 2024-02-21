@@ -37,8 +37,7 @@ function HealthForm({ userId, handleClose }) {
   };
 
   async function onSubmit(data) {
-    /* Submit healthform to db leveraging employee ID*/
-    // console.log(`Healthdata! ${JSON.stringify(data)}`);
+    console.log(`Healthdata! ${JSON.stringify(data)}`);
     try {
       await submitHealthData(user_id, data);
       handleClose ? handleClose() : navigate(`/employees/${user_id}`);
@@ -258,8 +257,8 @@ function HealthForm({ userId, handleClose }) {
           </label>
         </div>
         <div className="bottom-txt">
-          <h3 className="high-txt">a little active</h3>
-          <h3 className="high-txt">very active</h3>
+          <h3 className="high-txt">Not very active</h3>
+          <h3 className="high-txt">Very active</h3>
         </div>
         {errors["user_activity"] && (
           <p className="form-error-alert">Please check the activity</p>
@@ -314,8 +313,8 @@ function HealthForm({ userId, handleClose }) {
           </label>
         </div>
         <div className="bottom-txt">
-          <h3 className="high-txt">a little active</h3>
-          <h3 className="high-txt">very active</h3>
+          <h3 className="high-txt">A little stressed</h3>
+          <h3 className="high-txt">Very stressed</h3>
         </div>
         {errors["user_stress"] && (
           <p className="form-error-alert">Please check the stress</p>

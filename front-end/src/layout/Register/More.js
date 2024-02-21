@@ -17,7 +17,7 @@ function More({ loggedIn, userId }) {
   const user_id = location?.state?.user_id || userId;
 
   if (!loggedIn || !user_id) {
-    return <Navigate to="/register" replace />;
+    return <Navigate to="/register" />;
   }
 
   async function handleMoreSubmit(data) {
