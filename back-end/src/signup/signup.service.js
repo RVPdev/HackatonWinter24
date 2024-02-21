@@ -21,16 +21,26 @@ function update(data) {
       "user_height",
     ]);
 }
-function add(data) {
-  return knex("user_information")
-    .where({ user_id: data.user_id })
-    .update(data, [
-      "user_scheduled_time",
-    ]);
+
+function getInfoAndTime(user_id){
+  return knex('user_information')
+  .select("user_id", 
+  "user_scheduled_time",
+  "user_dob",
+  "user_gender",
+  "user_occupation",
+  "user_company",
+  "user_weight",
+  "user_height",)
+  .where('user_id',user_id)
 }
+
+
+
+
 module.exports = {
+  getInfoAndTime,
   create,
   isEmailNotExists,
   update,
-  add,
 };
