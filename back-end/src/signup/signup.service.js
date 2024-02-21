@@ -21,7 +21,25 @@ function update(data) {
       "user_height",
     ]);
 }
+
+function getInfoAndTime(user_id){
+  return knex('user_information')
+  .select("user_id", 
+  "user_scheduled_time",
+  "user_dob",
+  "user_gender",
+  "user_occupation",
+  "user_company",
+  "user_weight",
+  "user_height",)
+  .where('user_id',user_id)
+}
+
+
+
+
 module.exports = {
+  getInfoAndTime,
   create,
   isEmailNotExists,
   update,
