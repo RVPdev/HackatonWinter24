@@ -29,7 +29,7 @@
 
 .how-feeling-section {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 20px 40px;
     text-align: center;
     display: flex;
@@ -39,17 +39,23 @@
 }
 
 .mood-section-wrapper {
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
     font-weight: bold;
 }
 
+.weekly-reports-section {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
 .average_mood, .variable_mood {
     background-color: white;
     padding: 20px 40px;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -71,11 +77,10 @@
 
 .quote-section {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 20px 40px;
     font-style: italic;
     text-align: center;
-    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +89,7 @@
 
 .styled-nav-button {
     background-color:  #e58784;
-    border-radius: 5px;
+    border-radius: 15px;
     border: none;
     padding: 10px 20px;
     font-weight: bold;
@@ -92,7 +97,7 @@
 
 .styled-employee-button {
     background-color:  #e58784;
-    border-radius: 5px;
+    border-radius: 15px;
     border: none;
     padding: 10px 20px;
     font-weight: bold;
@@ -103,7 +108,7 @@
 .helpful-tips-section {
     background-color: white;
     padding: 20px 40px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
     display: flex;
     flex-direction: column;
