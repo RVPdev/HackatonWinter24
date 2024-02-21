@@ -109,8 +109,17 @@ function add(req, res, next) {
     })
     .catch(next);
 }
+
+function getInfoAndTime(req,res,next){
+ return service
+  .getInfoAndTime(req.params.user_id)
+  .then((data) => res.status(201).json({ data }))
+  .catch(next);
+}
+
 module.exports = {
   create: [hasRequiredProperties, isEmailValid, isEmailNotExists, create],
   update: [hasRequiredPropertiesAddInfo,isDateValid, update],
   add: [hasRequiredPropertiesAddTime, isTimeValid,add],
+  getInfoAndTime,
 };
