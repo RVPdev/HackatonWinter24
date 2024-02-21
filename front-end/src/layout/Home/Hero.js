@@ -15,7 +15,7 @@ function Hero() {
         <div className="info">
           <h1>EMPOWER YOUR TEAM</h1>
           <h2>Create a culture of mental wealth together</h2>
-          <button onClick={() => navigateTo("/login")}> JOIN US TODAY</button>
+          <button onClick={() => navigateTo("/register/create")}> JOIN US TODAY</button>
           <img
             src={img1}
             alt="centered placeholder"

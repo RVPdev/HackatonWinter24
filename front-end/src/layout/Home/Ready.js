@@ -11,7 +11,7 @@ function Ready() {
   return (
     <section className="hero" id="ready">
       <h2>Ready to get started?</h2>
-      <button onClick={() => navigateTo("/login")}>JOIN US TODAY</button>
+      <button onClick={() => navigateTo("/register/create")}>JOIN US TODAY</button>
     </section>
   );
 }
