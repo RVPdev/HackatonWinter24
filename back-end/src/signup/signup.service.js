@@ -22,6 +22,14 @@ function update(data) {
     ]);
 }
 
+function add(data) {
+  return knex("user_information")
+    .where({ user_id: data.user_id })
+    .update(data, [
+      "user_scheduled_time",
+    ]);
+}
+
 function getInfoAndTime(user_id){
   return knex('user_information')
   .select("user_id", 
@@ -40,6 +48,7 @@ function getInfoAndTime(user_id){
 
 module.exports = {
   getInfoAndTime,
+  add,
   create,
   isEmailNotExists,
   update,
