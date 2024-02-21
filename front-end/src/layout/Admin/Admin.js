@@ -3,8 +3,7 @@ import "./Admin.css";
 import React, { useEffect, useState } from "react";
 import ErrorAlert from "../ErrorAlert";
 import EmployeeTable from "./EmployeeTable";
-import { deleteEmployee } from "../../utils/api";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Modal, Box } from "@mui/material";
 import DeleteEmployee from "./DeleteEmployee";
 import { useCallback } from "react";
@@ -30,6 +29,7 @@ function Admin() {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   const [employeeToDelete, setEmployeeToDelete] = useState(null);
+  const [isAdmin, setIsAdmin] = useState(false)
 
   /* Determines if pop-up is open or not*/
   const [open, setOpen] = useState(false);
@@ -73,6 +73,22 @@ function Admin() {
     loadEmployees();
   };
 
+  /*Checks if user is logged in as admin */
+  useEffect(() => {
+    const token = JSON.parse(localStorage.getItem("token"))
+    if(token && token.administer_access) {      
+      setIsAdmin(true)
+    }
+
+  }, [])
+  
+
+  if(!isAdmin) {
+    return (<h2>
+      You are not logged in as an admin user. Please log in at <Link to="/login">the login page.</Link> 
+    </h2>)
+  }
+
   return (
     <>
       <Modal
@@ -98,7 +114,7 @@ function Admin() {
           <div className="top-ad">
             <div className="admin-title">
               <h2>Welcome Admin User!</h2>
-              <h3>Company Name</h3>
+              {/* <h3>Company Name</h3> */}
             </div>
           </div>
 

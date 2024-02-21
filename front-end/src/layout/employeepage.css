@@ -11,6 +11,20 @@
     padding: 40px;
 }
 
+.btn-wrap {
+    width: 20%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    border: none;
+    padding: 1rem 3rem;
+    background-color: #e58784;
+    font-weight: 600;
+  }
+
 .employee-page button, .employee-page a {
     color: #270A07
 }

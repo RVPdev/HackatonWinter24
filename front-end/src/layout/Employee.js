@@ -81,6 +81,16 @@ function Employee({ loggedIn, setLoggedIn }) {
     );
   }
 
+  if( userId !==loggedIn.user_id.toString()) {
+    localStorage.removeItem("token")
+    return (
+      <h2>
+        You are not authorized to view this user and are now being logged out. Please log in at{" "}
+        <Link to="/login">the login page</Link>
+      </h2>
+    );
+  }
+
   if (user) {
     return (
       <div className="employee-page">

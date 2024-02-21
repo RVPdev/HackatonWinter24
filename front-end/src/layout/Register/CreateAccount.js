@@ -18,8 +18,13 @@ function CreateAccount({ loggedIn, setLoggedIn }) {
   /* Submits data to DB and receives an employee ID*/
   async function handleCreateSubmit(data) {
     try {
-      const user_id = await createAccount(data);
-      setLoggedIn(true);
+      const response = await createAccount(data)
+      const {user_id, administer_access} = response;
+      const token = {
+        user_id, 
+        administer_access
+      }
+      setLoggedIn(token);
       navigate("/register/more", {
         replace: true,
         state: {
