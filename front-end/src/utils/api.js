@@ -59,7 +59,7 @@ export async function createAccount(newAccountData) {
   };
 
   const response = await fetchJson(url, options, {});
-  return response
+  return response;
 }
 
 export async function submitMore(user_id, moreData) {
@@ -92,53 +92,31 @@ export async function loadEmployee(employeeId) {
     headers,
   };
 
-  const response = await fetchJson(url, options)
-  console.log(`loadEmployee response: ${JSON.stringify(response)}`)
+  const response = await fetchJson(url, options);
   return response;
+}
 
-  return {
-    user_first_name: "Jane",
-    user_last_name: "Doe",
-    user_average_mood: 3.5,
-    dataset: [
-      {
-        seriesname: "Activity",
-        data: [
-          { value: "4" },
-          { value: "2" },
-          { value: "3" },
-          { value: "4" },
-          { value: "5" },
-          { value: "3" },
-          { value: "5" },
-        ],
-      },
-      {
-        seriesname: "Sleep",
-        data: [
-          { value: "4" },
-          { value: "3" },
-          { value: "1" },
-          { value: "2" },
-          { value: "3" },
-          { value: "5" },
-          { value: "1" },
-        ],
-      },
-      {
-        seriesname: "Stress",
-        data: [
-          { value: "3" },
-          { value: "2" },
-          { value: "4" },
-          { value: "1" },
-          { value: "5" },
-          { value: "2" },
-          { value: "4" },
-        ],
-      },
-    ],
+export async function loadAdditional(employeeId) {
+  const url = `${API_BASE_URL}/signup/${employeeId}`;
+  const options = {
+    method: "GET",
+    headers,
   };
+
+  let response = await fetchJson(url, options);
+  response = response[0];
+
+  /* If the user exists, send the additional information to prefill the form. Otherwise, send empty object to prefill*/
+  if (response) {
+    response.user_dob = response.user_dob.slice(
+      0,
+      response.user_dob.indexOf("T")
+    );
+  } else {
+    response = {}
+  }
+
+  return response;
 }
 
 export async function searchEmployees(searchKeyword) {

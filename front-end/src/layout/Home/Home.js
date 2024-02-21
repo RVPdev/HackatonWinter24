@@ -7,13 +7,13 @@ import Footer from "./Footer";
 
 function Home() {
   return (
-    <body>
+    <>
       <Hero />
       <Stress />
       <Help />
       <Ready />
       <Footer/>
-    </body>
+    </>
   );
 }
 

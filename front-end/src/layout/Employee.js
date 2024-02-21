@@ -169,7 +169,7 @@ function Employee({ loggedIn, setLoggedIn }) {
               </div>
 
               <button className="styled-employee-button" onClick={handleOpen}>
-                <p>ADD YOUR DAILY ENTRY</p>
+                <p> + ADD YOUR DAILY ENTRY</p>
               </button>
             </div>
             <div className="mood-section-wrapper">

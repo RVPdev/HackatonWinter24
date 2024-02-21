@@ -1,27 +1,34 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate, Navigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { submitMore } from "../../utils/api";
+import { loadAdditional, submitMore } from "../../utils/api";
 import "../Register/register.css";
 import ErrorAlert from "../ErrorAlert";
 
 function More({ loggedIn, userId }) {
-  const {
-    register,
-    handleSubmit,
-    formState : {errors},
-  } = useForm();
   const navigate = useNavigate();
   const [error, setError] = useState(null);
   const location = useLocation();
   const user_id = location?.state?.user_id || userId;
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    defaultValues: async () => {
+      if (user_id) {
+        return loadAdditional(user_id);
+      } else {
+        return {}
+      }
+    },
+  });
 
   if (!loggedIn || !user_id) {
     return <Navigate to="/register" />;
   }
 
   async function handleMoreSubmit(data) {
-    console.log(`user_id: ${user_id}, data: ${JSON.stringify(data)}`);
     try {
       await submitMore(user_id, data);
 

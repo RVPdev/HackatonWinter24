@@ -3,26 +3,33 @@ import { useNavigate, useLocation, Navigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { submitReminder } from "../../utils/api";
 import ErrorAlert from "../ErrorAlert";
+import { loadAdditional } from "../../utils/api";
 
 function Reminder({ loggedIn, userId }) {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm({
+    defaultValues :  async () => {
+      if (user_id) {
+        return loadAdditional(user_id);
+      } else {
+        return {}
+      }
+    },
+  });
+
   const navigate = useNavigate();
   const [error, setError] = useState(null);
   const location = useLocation();
   const user_id = location?.state?.user_id || userId;
 
-  // if(!loggedIn || !user_id) {
-  //   return <Navigate to="/register" replace />
-  // }
+  if (!loggedIn || !user_id) {
+    return <Navigate to="/register" />;
+  }
 
   async function handleReminderSubmit(data) {
-    /*send to db leveraging employeeId */
-    console.log(data);
-
     try {
       await submitReminder(user_id, data);
       navigate("/register/mental", {
@@ -36,6 +43,7 @@ function Reminder({ loggedIn, userId }) {
     }
   }
 
+
   return (
     <div className="page">
       <div className="page-container">
@@ -44,14 +52,10 @@ function Reminder({ loggedIn, userId }) {
           <h1>When would you like to receive a reminder?</h1>
           <input
             type="time"
-            name="time"
             id="time"
             required
-            {...register("user_scheduled_time")}
+            {...register("user_scheduled_time", {required: true})}
           />
-          {errors["user_scheduled_time"] && (
-            <p className="form-error-alert">Please select a date of birth</p>
-          )}
           <button type="submit" className="submit-form-btn custom-btn">
             SUBMIT
           </button>
