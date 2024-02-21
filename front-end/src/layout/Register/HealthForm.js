@@ -25,7 +25,7 @@ function HealthForm({ userId, handleClose }) {
 
   async function onSubmit(data) {
     /* Submit healthform to db leveraging employee ID*/
-    console.log(`Healthdata! ${JSON.stringify(data)}`);
+    // console.log(`Healthdata! ${JSON.stringify(data)}`);
     try {
       await submitHealthData(user_id, data);
       handleClose ? handleClose() : navigate(`/employees/${user_id}`);
@@ -35,10 +35,12 @@ function HealthForm({ userId, handleClose }) {
     }
   }
 
+  console.log(handleClose)
+
   return (
     <div className="health-form-wrapper">
       {error ? <ErrorAlert error={error} /> : null}
-      <form className="health-form" onSubmit={handleSubmit(onSubmit)}>
+      <form className={`health-form ${handleClose ? 'pop-up-form' : ''}`} onSubmit={handleSubmit(onSubmit)}>
         <h1>DAILY HEALTH TRACKER</h1>
         <h4>1. How are you feeling today?</h4>
         <div className="emoji-wrapper">
