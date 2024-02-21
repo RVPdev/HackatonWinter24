@@ -59,7 +59,7 @@ export async function createAccount(newAccountData) {
   };
 
   const response = await fetchJson(url, options, {});
-  return response.user_id;
+  return response
 }
 
 export async function submitMore(user_id, moreData) {

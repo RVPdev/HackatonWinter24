@@ -2,11 +2,18 @@
 import Footer from "./Footer";
 import Header from "./Header/Header";
 import Main from "./Main";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Layout() {
 
-  const [loggedIn, setLoggedIn] = useState(false)
+  const [loggedIn, setLoggedIn] = useState()
+
+  useEffect(()=>{
+    const token = JSON.parse(localStorage.getItem("token"))
+    if(token) {
+      setLoggedIn(token)
+    }
+  }, [])
 
   return (
     <>

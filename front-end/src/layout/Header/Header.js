@@ -70,6 +70,7 @@ function Header({ loggedIn, setLoggedIn}) {
           {loggedIn ?  <button
                 className="list-link screen-sm-hidden btn sign-up-btn anchor"
                 onClick={() => {
+                  localStorage.removeItem("token")
                   setLoggedIn(false)
                   navigateTo("/")
                 }}

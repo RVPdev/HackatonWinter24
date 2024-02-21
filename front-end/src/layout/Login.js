@@ -18,16 +18,19 @@ function Login({loggedIn, setLoggedIn}) {
   const [error, setError] = useState(null)
 
   async function submitLogin(data) {
-    console.log(data);
     const response = await login(data);
 
     if(!response) {
       setError({message: "Username and password doesn't exist or is incorrect"})
     } else {
       const { user_id, administer_access } = response;
-      console.log(`USERID: ${user_id}`);
-      setLoggedIn(true)
-        navigate(`/employees/${user_id}`);
+      const token = {
+        user_id, 
+        administer_access
+      }
+      localStorage.setItem("token", JSON.stringify(token))
+      setLoggedIn(token)
+      navigate(`/employees/${user_id}`);
     }
     
   }
