@@ -117,7 +117,7 @@ export default function Chart({userDataset}) {
       <ReactFusioncharts
         type="msline"
         width="100%"
-        height="600"
+        height="300"
         dataFormat="JSON"
         dataSource={dataset}
       />

@@ -27,11 +27,7 @@ function Login({loggedIn, setLoggedIn}) {
       const { user_id, administer_access } = response;
       console.log(`USERID: ${user_id}`);
       setLoggedIn(true)
-      if (administer_access) {
-        navigate(`/admin`);
-      } else {
         navigate(`/employees/${user_id}`);
-      }
     }
     
   }
@@ -79,7 +75,7 @@ function Login({loggedIn, setLoggedIn}) {
           <Link className="btn-text" to="/register">
             Create an account
           </Link>
-          <button type="submit" className="submit-form-btn">
+          <button type="submit" className="submit-form-btn log-in-btn">
             LOG IN
           </button>
         </form>

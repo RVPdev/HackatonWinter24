@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import LogoNameImage from "./../../assets/LOGOname.png"
 
 function Header({ loggedIn, setLoggedIn}) {
   const [active, setActive] = useState(false); // state variable in charge for scrolling down
@@ -34,7 +35,8 @@ function Header({ loggedIn, setLoggedIn}) {
     <header className={`header ${active ? "activated" : ""}`} id="header">
       <nav className="navbar container">
         <Link to="/" className="logo anchor">
-          <h2>Mental Health App</h2>
+          {/* <h2>Mental Health App</h2> */}
+          <div className="logo-name-wrapper"><img className="logo-name-image" src={LogoNameImage} alt="logo"/></div>
         </Link>
         {/* Division of menu and buttons */}
         <div className="list list-right">

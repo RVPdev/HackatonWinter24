@@ -47,7 +47,7 @@ function Employee({ loggedIn, setLoggedIn }) {
     const abortController = new AbortController();
     async function getUser() {
       try {
-        const employee = await loadEmployee(userId)
+        const employee = await loadEmployee(userId);
         setUser(employee);
         setIsAdmin(employee.administer_access);
       } catch (error) {
@@ -71,9 +71,7 @@ function Employee({ loggedIn, setLoggedIn }) {
     } else {
       return { emoji: HappyColored, text: "Happy" };
     }
-  }, [user])
-
-
+  }, [user]);
 
   if (!loggedIn || !userId) {
     return (
@@ -88,15 +86,6 @@ function Employee({ loggedIn, setLoggedIn }) {
     return (
       <div className="employee-page">
         {error ? <ErrorAlert error={error} /> : null}
-        <div className="link-wrapper">
-          <Link className="styled-nav-button" to="/register/more" state={{ user_id: userId }}>
-            Edit Additional Information
-          </Link>
-          <Link className="styled-nav-button" to="/register/reminder" state={{ user_id: userId }}>
-            Edit Reminder Time
-          </Link>
-          {isAdmin ? <Link to="/admin">Go to Admin Page</Link> : null}
-        </div>
         <Modal
           open={open}
           onClose={handleClose}
@@ -107,9 +96,28 @@ function Employee({ loggedIn, setLoggedIn }) {
             <HealthForm userId={userId} handleClose={handleClose} />
           </Box>
         </Modal>
-        <h1 className="employee-header">
-          Welcome {user["user_first_name"]} {user["user_last_name"]}
-        </h1>
+        <div className="employee-header">
+          <h1>
+            Welcome {user["user_first_name"]} {user["user_last_name"]}
+          </h1>
+          <div className="link-wrapper">
+            <Link
+              className="styled-nav-button"
+              to="/register/more"
+              state={{ user_id: userId }}
+            >
+              Edit Additional Information
+            </Link>
+            <Link
+              className="styled-nav-button"
+              to="/register/reminder"
+              state={{ user_id: userId }}
+            >
+              Edit Reminder Time
+            </Link>
+            {isAdmin ? <Link className="styled-nav-button" to="/admin">Go to Admin Page</Link> : null}
+          </div>
+        </div>
         <div className="employee-page-wrapper">
           <div className="employee-column-1">
             <div className="how-feeling-section">

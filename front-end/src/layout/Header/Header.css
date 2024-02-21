@@ -159,6 +159,16 @@ btn:hover {
   display: block;
 }
 
+.logo-name-wrapper {
+  width: 600px;
+  height: 60px; 
+}
+
+.logo-name-image {
+  object-fit: scale-down;
+  max-height: 100%;
+}
+
 /* Media Quries */
 
 @media screen and (min-width: 1024px) {
