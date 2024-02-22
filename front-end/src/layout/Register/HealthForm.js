@@ -169,7 +169,7 @@ function HealthForm({ userId, handleClose }) {
         <h4>2. How long did you sleep?</h4>
         <div className="emoji-wrapper radio-labels trb">
           <label className="radio-label">
-            <p>&gt; 5 hours</p>
+            <p>&lt; 5 hours</p>
             <input
               type="radio"
               name="user_sleep"
@@ -324,7 +324,7 @@ function HealthForm({ userId, handleClose }) {
           </label>
         </div>
         <div className="bottom-txt">
-          <h3 className="high-txt">A little stressed</h3>
+          <h3 className="high-txt">Not very stressed</h3>
           <h3 className="high-txt">Very stressed</h3>
         </div>
         {errors["user_stress"] && (
