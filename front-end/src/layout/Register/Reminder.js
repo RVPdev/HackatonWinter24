@@ -9,7 +9,6 @@ function Reminder({ loggedIn, userId }) {
   const {
     register,
     handleSubmit,
-    formState: { errors },
   } = useForm({
     defaultValues :  async () => {
       if (user_id) {

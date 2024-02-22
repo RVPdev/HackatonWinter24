@@ -60,6 +60,7 @@ function Header({ loggedIn, setLoggedIn }) {
             </>
           ) : null}
           {loggedIn ? (
+            <>
             <button
               className="list-link screen-sm-hidden btn sign-up-btn anchor"
               onClick={() => {
@@ -70,6 +71,15 @@ function Header({ loggedIn, setLoggedIn }) {
             >
               LOG OUT
             </button>
+            <button
+              className="list-link screen-sm-hidden btn sign-up-btn anchor"
+              onClick={() => {
+                navigateTo(`/employees/${loggedIn.user_id}`);
+              }}
+            >
+              DASHBOARD
+            </button>
+            </>
           ) : null}
           {isAdminPath ? (
             <button

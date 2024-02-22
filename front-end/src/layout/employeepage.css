@@ -203,3 +203,9 @@
     flex-direction: column;
     height: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .employee-page-wrapper {
+        flex-direction: column;
+    }
+}

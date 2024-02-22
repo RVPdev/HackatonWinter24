@@ -16,7 +16,7 @@ import MeditateImage from "./../assets/dashboard/meditate.png";
 import RunImage from "./../assets/dashboard/run.png";
 import Modal from "@mui/material/Modal";
 import { loadEmployee } from "../utils/api";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import HealthForm from "./Register/HealthForm.js";
 import Chart from "./Chart.js";
 import ErrorAlert from "./ErrorAlert.js";
@@ -126,7 +126,7 @@ function Employee({ loggedIn, setLoggedIn }) {
             </Link>
             {isAdmin ? (
               <Link className="styled-nav-button" to="/admin">
-                Go to Admin Page
+                Admin Page
               </Link>
             ) : null}
           </div>

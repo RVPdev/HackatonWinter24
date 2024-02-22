@@ -6,7 +6,7 @@ import LoginImage from "./../assets/login_create/login_image.png";
 import ErrorAlert from "./ErrorAlert";
 import { useState } from "react";
 
-function Login({loggedIn, setLoggedIn}) {
+function Login({ loggedIn, setLoggedIn }) {
   const {
     register,
     handleSubmit,
@@ -15,24 +15,25 @@ function Login({loggedIn, setLoggedIn}) {
 
   const navigate = useNavigate();
 
-  const [error, setError] = useState(null)
+  const [error, setError] = useState(null);
 
   async function submitLogin(data) {
     const response = await login(data);
 
-    if(!response) {
-      setError({message: "Username and password doesn't exist or is incorrect"})
+    if (!response) {
+      setError({
+        message: "Username and password doesn't exist or is incorrect",
+      });
     } else {
       const { user_id, administer_access } = response;
       const token = {
-        user_id, 
-        administer_access
-      }
-      localStorage.setItem("token", JSON.stringify(token))
-      setLoggedIn(token)
+        user_id,
+        administer_access,
+      };
+      localStorage.setItem("token", JSON.stringify(token));
+      setLoggedIn(token);
       navigate(`/employees/${user_id}`);
     }
-    
   }
 
   return (
@@ -52,27 +53,25 @@ function Login({loggedIn, setLoggedIn}) {
       <div className="right-register-section">
         <form className="styled-form" onSubmit={handleSubmit(submitLogin)}>
           <h1>Log in</h1>
-          {error? <ErrorAlert error={error} /> : null}
+          {error ? <ErrorAlert error={error} /> : null}
           <div className="form-input">
             <label htmlFor="user_email">Email</label>
             <input
-              required
               type="text"
-              name="user_email"
               placeholder="Enter your email address"
-              {...register("user_email", {required: true})}
+              {...register("user_email", { required: true })}
             />
+            {errors["user_email"] ? <p>Please check the email</p> : null}
           </div>
           <div className="form-input">
             <label htmlFor="user_password">Password</label>
             <input
-              required
               type="password"
-              name="user_password"
               placeholder="Enter your password"
               autoComplete="on"
-              {...register("user_password", {required: true})}
+              {...register("user_password", { required: true })}
             />
+            {errors["user_password"] ? <p>Please check the password</p> : null}
           </div>
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <Link className="btn-text" to="/register">

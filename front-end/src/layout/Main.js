@@ -9,7 +9,6 @@ import Register from "./Register/Register";
 
 function Main({loggedIn, setLoggedIn}) {
 
-
   return (
     <main>
       <Routes>

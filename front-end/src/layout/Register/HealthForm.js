@@ -32,22 +32,17 @@ function HealthForm({ userId, handleClose }) {
 
   const handleLabelClick = (moodValue) => {
     setActive(moodValue);
-    // Additional logic to update form state if necessary
-    console.log(active, "hi");
   };
 
+  /* If you arrived at healthform from pop up, you want to close it. Otherwise, navigate to dashboard.  */
   async function onSubmit(data) {
-    console.log(`Healthdata! ${JSON.stringify(data)}`);
     try {
       await submitHealthData(user_id, data);
       handleClose ? handleClose() : navigate(`/employees/${user_id}`);
     } catch (error) {
-      console.log("error");
       setError(error);
     }
   }
-
-  console.log(handleClose);
 
   return (
     <div className="health-form-wrapper">
@@ -81,7 +76,11 @@ function HealthForm({ userId, handleClose }) {
             id="happy_mood"
             {...register("user_mood", { required: true })}
           />
-          <label className="formatted-radio" htmlFor="sad_mood" onClick={() => handleLabelClick(2)}>
+          <label
+            className="formatted-radio"
+            htmlFor="sad_mood"
+            onClick={() => handleLabelClick(2)}
+          >
             <div>
               {active === 2 ? (
                 <img className="emoji" src={SadIconColor} alt="sad icon" />
@@ -99,7 +98,11 @@ function HealthForm({ userId, handleClose }) {
             id="sad_mood"
             {...register("user_mood", { required: true })}
           />
-          <label className="formatted-radio" htmlFor="angry_mood" onClick={() => handleLabelClick(3)}>
+          <label
+            className="formatted-radio"
+            htmlFor="angry_mood"
+            onClick={() => handleLabelClick(3)}
+          >
             <div>
               {active === 3 ? (
                 <img className="emoji" src={AngryIconColor} alt="angry icon" />
@@ -116,7 +119,11 @@ function HealthForm({ userId, handleClose }) {
             id="angry_mood"
             {...register("user_mood", { required: true })}
           />
-          <label className="formatted-radio" htmlFor="tired-mood" onClick={() => handleLabelClick(4)}>
+          <label
+            className="formatted-radio"
+            htmlFor="tired-mood"
+            onClick={() => handleLabelClick(4)}
+          >
             <div>
               {active === 4 ? (
                 <img className="emoji" src={TiredIconColor} alt="Tired icon" />
@@ -133,7 +140,11 @@ function HealthForm({ userId, handleClose }) {
             id="tired-mood"
             {...register("user_mood", { required: true })}
           />
-          <label className="formatted-radio" htmlFor="meh_mood" onClick={() => handleLabelClick(5)}>
+          <label
+            className="formatted-radio"
+            htmlFor="meh_mood"
+            onClick={() => handleLabelClick(5)}
+          >
             <div>
               {active === 5 ? (
                 <img className="emoji" src={MehIconColor} alt="Meh icon" />
@@ -143,13 +154,13 @@ function HealthForm({ userId, handleClose }) {
             </div>
             <p>Meh</p>
           </label>
-            <input
-              type="radio"
-              name="user_mood"
-              value={5}
-              id="meh_mood"
-              {...register("user_mood", { required: true })}
-            />
+          <input
+            type="radio"
+            name="user_mood"
+            value={5}
+            id="meh_mood"
+            {...register("user_mood", { required: true })}
+          />
         </div>
         {errors["user_mood"] && (
           <p className="form-error-alert">Please check the mood</p>
@@ -203,7 +214,7 @@ function HealthForm({ userId, handleClose }) {
             />
           </label>
         </div>
-          
+
         {errors["user_sleep"] && (
           <p className="form-error-alert">Please check the sleep</p>
         )}
