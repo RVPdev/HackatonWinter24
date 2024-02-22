@@ -6,8 +6,9 @@ import LogoNameImage from "./../../assets/LOGOname.png";
 
 function Header({ loggedIn, setLoggedIn }) {
   const [active, setActive] = useState(false); // state variable in charge for scrolling down
+
   const location = useLocation();
-  const isAdminPath = location.pathname.includes("/admin");
+  const isDashboardPath = location.pathname.includes("/employees/");
 
   // Function to handle scroll
   const handleScroll = () => {
@@ -61,35 +62,27 @@ function Header({ loggedIn, setLoggedIn }) {
           ) : null}
           {loggedIn ? (
             <>
-            <button
-              className="list-link screen-sm-hidden btn sign-up-btn anchor"
-              onClick={() => {
-                localStorage.removeItem("token");
-                setLoggedIn(false);
-                navigateTo("/");
-              }}
-            >
-              LOG OUT
-            </button>
-            <button
-              className="list-link screen-sm-hidden btn sign-up-btn anchor"
-              onClick={() => {
-                navigateTo(`/employees/${loggedIn.user_id}`);
-              }}
-            >
-              DASHBOARD
-            </button>
+              <button
+                className="list-link screen-sm-hidden btn sign-up-btn anchor"
+                onClick={() => {
+                  localStorage.removeItem("token");
+                  setLoggedIn(false);
+                  navigateTo("/");
+                }}
+              >
+                LOG OUT
+              </button>
+              {!isDashboardPath ? (
+                <button
+                  className="list-link screen-sm-hidden btn sign-up-btn anchor"
+                  onClick={() => {
+                    navigateTo(`/employees/${loggedIn.user_id}`);
+                  }}
+                >
+                  DASHBOARD
+                </button>
+              ) : null}
             </>
-          ) : null}
-          {isAdminPath ? (
-            <button
-              className="list-link screen-sm-hidden btn sign-up-btn anchor"
-              onClick={() => {
-                navigateTo(`/employees/${loggedIn.user_id}`);
-              }}
-            >
-              Employee Dashboard
-            </button>
           ) : null}
         </div>
       </nav>
