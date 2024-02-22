@@ -25,6 +25,7 @@ function CreateAccount({ loggedIn, setLoggedIn }) {
         administer_access
       }
       setLoggedIn(token);
+      localStorage.setItem("token", JSON.stringify(token))
       navigate("/register/more", {
         replace: true,
         state: {
