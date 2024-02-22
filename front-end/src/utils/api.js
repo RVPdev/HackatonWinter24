@@ -106,8 +106,8 @@ export async function loadAdditional(employeeId) {
   let response = await fetchJson(url, options);
   response = response[0];
 
-  /* If the user exists, send the additional information to prefill the form. Otherwise, send empty object to prefill*/
-  if (response) {
+  /* If the user dob exists, send the additional information to prefill the form. Otherwise, send empty object to prefill*/
+  if (response.user_dob) {
     response.user_dob = response.user_dob.slice(
       0,
       response.user_dob.indexOf("T")
