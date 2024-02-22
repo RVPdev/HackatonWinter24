@@ -177,7 +177,7 @@ function Employee({ loggedIn, setLoggedIn }) {
                 <div className="mood-image-wrapper">
                   <img src={MehColored} className="mood-image" alt="meh" />
                 </div>
-                <p>AVERAGE MOOD</p>
+                <p style={{fontSize: "14px"}}>AVERAGE MOOD</p>
               </div>
               <div className="variable_mood">
                 <div className="mood-image-wrapper">
@@ -187,7 +187,7 @@ function Employee({ loggedIn, setLoggedIn }) {
                     alt="variable"
                   />
                 </div>
-                <p>{getEmojiAndText().text.toUpperCase()}</p>
+                <p style={{fontSize: "14px"}}>{getEmojiAndText().text.toUpperCase()}</p>
               </div>
             </div>
             <div className="quote-section">
