@@ -74,6 +74,7 @@ function CreateAccount({ loggedIn, setLoggedIn }) {
             <label htmlFor="user_password">Password</label>
             <input
               type="password"
+              autoComplete="on"
               placeholder="Enter your password"
               {...register("user_password", {
                 required: true,

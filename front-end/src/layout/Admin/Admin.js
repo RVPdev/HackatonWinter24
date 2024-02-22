@@ -19,7 +19,7 @@ const style = {
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
-  display: "flex"
+  display: "flex",
 };
 
 function Admin() {
@@ -29,7 +29,7 @@ function Admin() {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   const [employeeToDelete, setEmployeeToDelete] = useState(null);
-  const [isAdmin, setIsAdmin] = useState(false)
+  const [isAdmin, setIsAdmin] = useState(false);
 
   /* Determines if pop-up is open or not*/
   const [open, setOpen] = useState(false);
@@ -75,18 +75,19 @@ function Admin() {
 
   /*Checks if user is logged in as admin */
   useEffect(() => {
-    const token = JSON.parse(localStorage.getItem("token"))
-    if(token && token.administer_access) {      
-      setIsAdmin(true)
+    const token = JSON.parse(localStorage.getItem("token"));
+    if (token && token.administer_access) {
+      setIsAdmin(true);
     }
+  }, []);
 
-  }, [])
-  
-
-  if(!isAdmin) {
-    return (<h2>
-      You are not logged in as an admin user. Please log in at <Link to="/login">the login page.</Link> 
-    </h2>)
+  if (!isAdmin) {
+    return (
+      <h2>
+        You are not logged in as an admin user. Please log in at{" "}
+        <Link to="/login">the login page.</Link>
+      </h2>
+    );
   }
 
   return (
@@ -114,7 +115,6 @@ function Admin() {
           <div className="top-ad">
             <div className="admin-title">
               <h2>Welcome Admin User!</h2>
-              {/* <h3>Company Name</h3> */}
             </div>
           </div>
 
@@ -144,17 +144,17 @@ function Admin() {
             </form>
           </div>
 
-          <div className="employee-wrap">
-            <h2>Employees</h2>
-            <div className="employee-table">
-              {employees ? (
+          {employees ? (
+            <div className="employee-wrap">
+              <h2>Employees</h2>
+              <div className="employee-table">
                 <EmployeeTable
                   employees={employees}
                   handleDelete={handleDelete}
                 />
-              ) : null}
+              </div>
             </div>
-          </div>
+          ) : null}
         </div>
       </section>
     </>

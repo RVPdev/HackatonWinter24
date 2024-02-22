@@ -81,12 +81,12 @@ function Employee({ loggedIn, setLoggedIn }) {
     );
   }
 
-  if( userId !==loggedIn.user_id.toString()) {
-    localStorage.removeItem("token")
+  if (userId !== loggedIn.user_id.toString()) {
+    localStorage.removeItem("token");
     return (
       <h2>
-        You are not authorized to view this user and are now being logged out. Please log in at{" "}
-        <Link to="/login">the login page</Link>
+        You are not authorized to view this user and are now being logged out.
+        Please log in at <Link to="/login">the login page</Link>
       </h2>
     );
   }
@@ -124,16 +124,52 @@ function Employee({ loggedIn, setLoggedIn }) {
             >
               Edit Reminder Time
             </Link>
-            {isAdmin ? <Link className="styled-nav-button" to="/admin">Go to Admin Page</Link> : null}
+            {isAdmin ? (
+              <Link className="styled-nav-button" to="/admin">
+                Go to Admin Page
+              </Link>
+            ) : null}
           </div>
         </div>
         <div className="employee-page-wrapper">
           <div className="employee-column-1">
             <div className="how-feeling-section">
               <h1>How are you feeling?</h1>
+              <div className="emoji-img-wrapper" onClick={handleOpen}>
+                <div className="emoji-img-name">
+                  <div className="emoji-img-only">
+                    <img className="plus-btn-img" src={HappyIcon} alt="icon" />
+                  </div>
+                  <p>Happy</p>
+                </div>
+                <div className="emoji-img-name">
+                  <div className="emoji-img-only">
+                    <img className="plus-btn-img" src={SadIcon} alt="icon" />
+                  </div>
+                  <p>Sad</p>
+                </div>
+                <div className="emoji-img-name">
+                  <div className="emoji-img-only">
+                    <img className="plus-btn-img" src={AngryIcon} alt="icon" />
+                  </div>
+                  <p>Upset</p>
+                </div>
+                <div className="emoji-img-name">
+                  <div className="emoji-img-only">
+                    <img className="plus-btn-img" src={TiredIcon} alt="icon" />
+                  </div>
+                  <p>Tired</p>
+                </div>
+                <div className="emoji-img-name">
+                  <div className="emoji-img-only">
+                    <img className="plus-btn-img" src={MehIcon} alt="icon" />
+                  </div>
+                  <p>Meh</p>
+                </div>
+              </div>
+
               <button className="styled-employee-button" onClick={handleOpen}>
-                {/* <img className="plus-btn-img" src={HappyIcon} alt="icon" /> */}
-                <p>ADD YOUR DAILY ENTRY</p>
+                <p> + ADD YOUR DAILY ENTRY</p>
               </button>
             </div>
             <div className="mood-section-wrapper">

@@ -48,6 +48,7 @@
   padding: 1rem 3rem;
   background-color: #e58784;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .srch-btn {
