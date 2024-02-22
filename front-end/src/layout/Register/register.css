@@ -115,6 +115,7 @@
   font-weight: 600;
   font-family: var(--body-font);
   margin-top: 5rem;
+  cursor: pointer;
 }
 
 .log-in-btn {
