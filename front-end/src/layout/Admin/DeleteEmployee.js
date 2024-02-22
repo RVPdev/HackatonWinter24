@@ -1,4 +1,3 @@
-import React from "react";
 import { deleteEmployee } from "../../utils/api";
 
 function DeleteEmployee({
@@ -11,6 +10,7 @@ function DeleteEmployee({
     handleClose();
   };
 
+  /* Deletes employee from DB and refreshes list of employees */
   const onDelete = async () => {
     try {
       await deleteEmployee(employeeToDelete.user_id);

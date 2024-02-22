@@ -15,7 +15,7 @@ function Main({loggedIn, setLoggedIn}) {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login loggedIn={loggedIn} setLoggedIn={setLoggedIn} />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin" element={<Admin loggedIn={loggedIn} />} />
         <Route path="/register/*" element={<Register loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>} />
         <Route path="/employees/:userId" element={<Employee loggedIn={loggedIn} setLoggedIn={setLoggedIn} />} />
         <Route path="*" element={<NotFound />} />

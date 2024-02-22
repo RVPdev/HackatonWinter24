@@ -8,6 +8,7 @@ import { Modal, Box } from "@mui/material";
 import DeleteEmployee from "./DeleteEmployee";
 import { useCallback } from "react";
 
+/* Styling for Material UI Box that holds pop-up*/
 const style = {
   position: "absolute",
   top: "50%",
@@ -22,14 +23,13 @@ const style = {
   display: "flex",
 };
 
-function Admin() {
+function Admin({loggedIn}) {
   // State to hold the search input
   const [searchQuery, setSearchQuery] = useState("");
   const [employees, setEmployees] = useState(null);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   const [employeeToDelete, setEmployeeToDelete] = useState(null);
-  const [isAdmin, setIsAdmin] = useState(false);
 
   /* Determines if pop-up is open or not*/
   const [open, setOpen] = useState(false);
@@ -50,7 +50,7 @@ function Admin() {
     setEmployeeToDelete(user);
   };
 
-  /* Loads employees from db - called when search query is executed or when employee is deleted */
+  /* Loads employees from DB - called when search query is executed or when an employee is deleted */
   const loadEmployees = useCallback(async () => {
     try {
       const response = await searchEmployees(searchQuery);
@@ -60,28 +60,22 @@ function Admin() {
     }
   }, [searchQuery]);
 
-  /* Opens modal (pop-up) if there is an employee to delete*/
+  /* Opens modal (pop-up) if user has clicked to delete an employee*/
   useEffect(() => {
     if (employeeToDelete) {
       handleOpen();
     }
   }, [employeeToDelete]);
 
-  // Function to handle the form submission
+  /* Function to handle the search submission */
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the form from refreshing the page
+    e.preventDefault(); 
     loadEmployees();
   };
 
-  /*Checks if user is logged in as admin */
-  useEffect(() => {
-    const token = JSON.parse(localStorage.getItem("token"));
-    if (token && token.administer_access) {
-      setIsAdmin(true);
-    }
-  }, []);
 
-  if (!isAdmin) {
+  /* Checks if user is logged in and is admin. */
+  if (!loggedIn?.administer_access) {
     return (
       <h2>
         You are not logged in as an admin user. Please log in at{" "}

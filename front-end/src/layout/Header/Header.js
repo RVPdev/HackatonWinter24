@@ -37,24 +37,12 @@ function Header({ loggedIn, setLoggedIn }) {
     <header className={`header ${active ? "activated" : ""}`} id="header">
       <nav className="navbar container">
         <Link to="/" className="logo anchor">
-          {/* <h2>Mental Health App</h2> */}
           <div className="logo-name-wrapper">
             <img className="logo-name-image" src={LogoNameImage} alt="logo" />
           </div>
         </Link>
         {/* Division of menu and buttons */}
         <div className="list list-right">
-          {/* <button
-            className={`btn place-items-center screen-lg-hidden menu-toggle-icon ${
-              buttonActive ? "activated" : ""
-            } `}
-            id="menu-toggle-icon"
-            onClick={clickHandler}
-          >
-            <i className="ri-menu-3-line open-menu-icon"></i>
-            <i className="ri-close-line close-menu-icon"></i>
-          </button> */}
-
           {!loggedIn ? (
             <>
               <button
@@ -83,17 +71,16 @@ function Header({ loggedIn, setLoggedIn }) {
               LOG OUT
             </button>
           ) : null}
-
-          {isAdminPath && (
+          {isAdminPath ? (
             <button
               className="list-link screen-sm-hidden btn sign-up-btn anchor"
               onClick={() => {
-                navigateTo("/employees/:employeeId");
+                navigateTo(`/employees/${loggedIn.user_id}`);
               }}
             >
               Employee Dashboard
             </button>
-          )}
+          ) : null}
         </div>
       </nav>
     </header>
